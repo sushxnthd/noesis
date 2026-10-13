@@ -1,0 +1,17 @@
+{
+  "timestamp_utc": "2026-10-13",
+  "status": "frozen before holdout execution",
+  "training_horizon": 6,
+  "architecture": "two-ReLU scalar recurrent cell with trainable plus/minus biases and trainable cap, initialized cap=12",
+  "optimizer": "Adam lr=0.05 350 steps float64 CPU",
+  "holdout_caps": [9,10],
+  "predicted_shortest_failure_lengths": [10,11],
+  "holdout_seeds": [8,9,10,11],
+  "predictions": {
+    "max_abs_cap_gradient": 0.0,
+    "final_cap": 12.0,
+    "first_output_mismatch_length_with_0.5_margin": 13,
+    "train_mse_upper_bound": 1e-9
+  },
+  "disclosure": "This is a frozen prospective holdout after an exploratory 8-seed cohort; not a blind study."
+}

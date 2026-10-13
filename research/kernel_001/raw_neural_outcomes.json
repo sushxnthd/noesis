@@ -1,0 +1,152 @@
+{
+  "protocol": "exploratory 8 seeds + prospective frozen 4-seed holdout; exhaustive 64 length-six strings and every prefix",
+  "exact_caps_1_to_10": [
+    {
+      "M": 1,
+      "enumerated_sequences": 3,
+      "first_failure_length": 2
+    },
+    {
+      "M": 2,
+      "enumerated_sequences": 7,
+      "first_failure_length": 3
+    },
+    {
+      "M": 3,
+      "enumerated_sequences": 15,
+      "first_failure_length": 4
+    },
+    {
+      "M": 4,
+      "enumerated_sequences": 31,
+      "first_failure_length": 5
+    },
+    {
+      "M": 5,
+      "enumerated_sequences": 63,
+      "first_failure_length": 6
+    },
+    {
+      "M": 6,
+      "enumerated_sequences": 127,
+      "first_failure_length": 7
+    },
+    {
+      "M": 7,
+      "enumerated_sequences": 255,
+      "first_failure_length": 8
+    },
+    {
+      "M": 8,
+      "enumerated_sequences": 511,
+      "first_failure_length": 9
+    },
+    {
+      "M": 9,
+      "enumerated_sequences": 1023,
+      "first_failure_length": 10
+    },
+    {
+      "M": 10,
+      "enumerated_sequences": 2047,
+      "first_failure_length": 11
+    }
+  ],
+  "exploratory": [
+    [
+      0,
+      1.000000002377426,
+      -1.0000000009865186,
+      9.338590730432093e-18
+    ],
+    [
+      1,
+      1.00000000051888,
+      -1.0000000006581609,
+      8.617749734064392e-18
+    ],
+    [
+      2,
+      0.9999999992446649,
+      -0.9999999998386134,
+      1.904163722780199e-18
+    ],
+    [
+      3,
+      1.0000000025742166,
+      -1.0000000035857106,
+      1.3170895633622167e-17
+    ],
+    [
+      4,
+      1.0000000006580674,
+      -1.000000001481359,
+      5.084223415677485e-19
+    ],
+    [
+      5,
+      1.0000000000092961,
+      -0.9999999996033334,
+      4.630698387866088e-19
+    ],
+    [
+      6,
+      0.9999999990072608,
+      -0.9999999996794787,
+      3.7591997042697445e-19
+    ],
+    [
+      7,
+      1.0000000010516819,
+      -1.0000000012807622,
+      2.9964338256704913e-19
+    ]
+  ],
+  "holdout": [
+    [
+      8,
+      0.99999999927342,
+      -1.000000002346684,
+      7.10274175627869e-19
+    ],
+    [
+      9,
+      1.0000000010157346,
+      -1.000000001988689,
+      3.6389709018905387e-19
+    ],
+    [
+      10,
+      0.9999999995661526,
+      -1.000000000737162,
+      5.766409148725173e-19
+    ],
+    [
+      11,
+      0.9999999996975061,
+      -0.999999997543069,
+      2.67182598666146e-18
+    ]
+  ],
+  "columns": [
+    "seed",
+    "learned_plus",
+    "learned_minus",
+    "final_train_mse"
+  ],
+  "common": {
+    "cap_init": 12,
+    "cap_final": 12,
+    "max_cap_gradient": 0,
+    "first_mismatch_length_with_absolute_error_ge_0_5": 13,
+    "all_lengths_through_12_correct": true,
+    "training_horizon": 6,
+    "steps": 350,
+    "optimizer": "Adam",
+    "lr": 0.05,
+    "dtype": "float64",
+    "cpu": true
+  },
+  "freeze_sha256": "38b3f1dd56b18c800561f8a554612cc2243b7f2f237919c4331df5dbf692f5fe",
+  "caveat": "trained floats are not exact integers; exact minimality theorem applies to rational biases +/-1 only"
+}
