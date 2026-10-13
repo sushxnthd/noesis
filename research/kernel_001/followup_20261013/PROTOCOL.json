@@ -1,0 +1,16 @@
+{
+  "date_utc": "2026-10-13",
+  "question": "Does finite-horizon gradient training move token weights into a provably correct unbounded quantized-counter region, while a dormant cap still prevents all-length correctness?",
+  "seeds": [100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115],
+  "training_horizon": 6,
+  "steps": 350,
+  "optimizer": "Adam",
+  "lr": 0.05,
+  "dtype": "float64",
+  "cap": 16,
+  "initialization": "independent p~Uniform(0.05,2.45), q~Uniform(-2.45,-0.05), torch seeded",
+  "certification": "exact Fraction.from_float(p,q); p in (1/2,3/2), q in (-3/2,-1/2)",
+  "arms": ["pretraining uncapped quantized", "posttraining uncapped quantized", "posttraining capped quantized"],
+  "predictions": ["posttraining uncapped certification rate exceeds pretraining rate", "every posttraining capped network meeting weight intervals has shortest zero-test failure exactly 2M+1", "cap receives zero gradient on training data"],
+  "limitations": "Quantization and exact identity recurrent skip are architectural; cap removal is explicit surgery, not spontaneous learned algorithm acquisition."
+}
