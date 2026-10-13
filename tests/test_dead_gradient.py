@@ -19,3 +19,10 @@ def test_balanced_exposed_final_zero_gradient():
         M=F(k)-F(2,3)
         _,loss,grad=gd_step([1]*(k+1)+[-1]*(k+1),M)
         assert loss==grad==0
+
+
+def test_frozen_protocol_hash():
+    import hashlib,json
+    from pathlib import Path
+    base=Path(__file__).resolve().parents[1]/"research/kernel_001/dead_gradient"
+    assert hashlib.sha256((base/"PROTOCOL.json").read_bytes()).hexdigest()==json.loads((base/"RESULTS.json").read_text())["protocol_sha256"]

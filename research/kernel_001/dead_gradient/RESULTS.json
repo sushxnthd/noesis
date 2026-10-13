@@ -296,5 +296,5 @@
     "checks_per_row": 8
   },
   "claim": "The shortest zero-test witness has zero final-only cap gradient; prefix supervision shifts finite failure horizon +2, not to infinity.",
-  "protocol_sha256": "f3934a18a7eee0f1575552daa2d0f3afc55e49cc214624df6f948a612957100e"
+  "protocol_sha256": "79c692d70c9240dcc61f80a8590850c95d7054dcecf1ae1ec35810a4afa92ce4"
 }
