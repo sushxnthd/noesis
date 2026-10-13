@@ -1,0 +1,8 @@
+# Run 139 — primary-literature collision audit (2026-10-14)
+
+- El-Naggar et al. (ICGI 2023), *Formal and Empirical Studies of Counting Behaviour in ReLU RNNs*: https://proceedings.mlr.press/v217/el-naggar23a.html — exact counter indicator conditions and empirical failure of ordinarily trained exact counters. Direct overlap with exact unit-mode/output-gain observations.
+- El-Naggar et al. (EACL SRW 2023), *Theoretical Conditions and Empirical Failure of Bracket Counting on Long Sequences with Linear Recurrent Networks*: https://aclanthology.org/2023.eacl-srw.15/ — necessary/sufficient exact counting conditions and training mismatch.
+- Dankowiakowski and Ronca (NeurIPS 2025), *Metric Automata Theory: A Unifying Theory of RNNs*: https://papers.nips.cc/paper_files/paper/2025/hash/c03c2e3e2ad8057aefc3da880476784d-Abstract-Conference.html — robustness and finite versus unbounded precision in recurrent systems. Relevant to rejecting exact coefficient equality as robust learning evidence.
+- Nowak, Cotterell, Boumasmoud (ICML 2026), *An Algebraic View of the Expressivity of Recurrent Language Models*: https://proceedings.mlr.press/v306/nowak26b.html — differing arithmetic models materially alter recurrent expressivity. Exact-rational stored-weight analysis is NOT equivalent to hardware float behavior.
+
+**Priority conclusion:** The run139 theorem is elementary and substantially anticipated by existing exact counting conditions. It is a restricted replicated negative observation, not a new general law. The next kernel must evaluate genuinely learned dynamics and prediction of unseen transitions rather than rediscover precision-dependent counting conditions.
