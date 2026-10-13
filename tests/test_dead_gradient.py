@@ -26,3 +26,13 @@ def test_frozen_protocol_hash():
     from pathlib import Path
     base=Path(__file__).resolve().parents[1]/"research/kernel_001/dead_gradient"
     assert hashlib.sha256((base/"PROTOCOL.json").read_bytes()).hexdigest()==json.loads((base/"RESULTS.json").read_text())["protocol_sha256"]
+
+
+def test_independent_checker_on_committed_raw_outcomes():
+    import json
+    from pathlib import Path
+    from research.kernel_001.dead_gradient.independent_check import verify
+    base=Path(__file__).resolve().parents[1]/"research/kernel_001/dead_gradient"
+    rows=json.loads((base/"RESULTS.json").read_text())["rows"]
+    result=verify(rows)
+    assert result=={"status":"passed","independently_verified":12,"checks_per_row":8}
