@@ -1,0 +1,19 @@
+{
+  "run": 139,
+  "date": "2026-10-14",
+  "kernel": "001: task-coupled invariant versus finite-horizon extrapolation",
+  "status": "frozen before outcome computation",
+  "source": "run138/RAW_OUTCOMES.json (22 existing ordinarily gradient-trained RNN checkpoints)",
+  "question": "Do exact learned unit recurrent rays certify exact task output, and can output-gain residuals predict the first finite-horizon counting failure across two architectures and two training precisions?",
+  "eligibility": "A[j,j] == 1 exactly as stored binary rational; E[plus,j] > 0; E[plus,k] <= 0 and A[k,j] <= 0 for every k != j. All tests use exact Fraction.from_float, no tolerances.",
+  "primary_endpoint": "For every eligible checkpoint, exact integer first n>=1 with |y(+^n)-n| > 1/10, as n=floor((1/10)/|w[j]*E[plus,j]-1|)+1; independent checker must verify exact minimality and ray induction.",
+  "scalar_success": "Fraction of eligible checkpoints independently verified to have the exact predicted first failure n; target 1.0, with at least 2 eligible checkpoints per precision and at least 1 from each dimension.",
+  "strongest_competitor": "This is an elementary identity restricted to known single-coordinate invariant rays, not a generally applicable neural algorithm-acquisition certificate; no inference about mixed-token counting.",
+  "cheapest_falsification": "Recompute eligibility directly from raw A/E/w and independently check n-1/n via exact Fraction arithmetic; compare counts and groupings.",
+  "publishable_threshold": "Predictive improvement on prospectively frozen held-out trained architectures and unseen task families, robust to adversarial hidden gates and with a primary-literature novelty audit.",
+  "learning_relevance_threshold": "Must use gradient-trained A,E,w checkpoints (not constructed coefficients), matched float32/float64 and 2D/3D, and demonstrate a diagnostic consequence not visible from 256-step pass/fail alone.",
+  "kill_condition": "Any independent verification mismatch kills the exact law as implemented; if no precision/architecture coverage or no measurable horizon separation, kill the empirical extension and keep only the elementary theorem.",
+  "wildcard": "On one preselected eligible checkpoint, perturb output readout by one adjacent floating-point representable step; assess first-failure horizon change; do not alter main evaluation.",
+  "claims_scope": "Only repeated increment input, mathematical real-arithmetic recurrence with stored binary coefficients, and strict absolute error > 0.1; not float32 runtime, not arbitrary input words.",
+  "compute": "CPU only; no retraining or user hardware"
+}
