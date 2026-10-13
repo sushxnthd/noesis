@@ -1,0 +1,50 @@
+[
+  {
+    "seed": 80,
+    "dimension": 2,
+    "dtype": "torch.float32",
+    "first_failure": 12173660
+  },
+  {
+    "seed": 80,
+    "dimension": 2,
+    "dtype": "torch.float64",
+    "first_failure": 881096922110118
+  },
+  {
+    "seed": 93,
+    "dimension": 2,
+    "dtype": "torch.float32",
+    "first_failure": 1400043
+  },
+  {
+    "seed": 95,
+    "dimension": 2,
+    "dtype": "torch.float32",
+    "first_failure": 5204928
+  },
+  {
+    "seed": 95,
+    "dimension": 2,
+    "dtype": "torch.float64",
+    "first_failure": 1638808763908189
+  },
+  {
+    "seed": 202,
+    "dimension": 3,
+    "dtype": "torch.float32",
+    "first_failure": 4440637
+  },
+  {
+    "seed": 206,
+    "dimension": 3,
+    "dtype": "torch.float32",
+    "first_failure": 3824100
+  },
+  {
+    "seed": 206,
+    "dimension": 3,
+    "dtype": "torch.float64",
+    "first_failure": 2218939927293197
+  }
+]
