@@ -1,0 +1,2 @@
+# Smallest supported claim
+A specialized exact-gradient composition objective converts 16 initially incorrect two-dimensional ReLU recurrent networks, with no initial eigenvalue-1 mode, into networks with all-length reflected-counting certificates. A scalar ++-only gradient control fits ++ but fails +- in all 16. This is a restricted positive training transition and a usable *sufficient* reachable-ray certificate, not spontaneous or model-agnostic algorithm acquisition. No publication-level novelty established.
