@@ -1,0 +1,300 @@
+{
+  "exact_arithmetic": "fractions.Fraction",
+  "rows": [
+    {
+      "k": 3,
+      "initial_cap": "7/3",
+      "shortest_before": {
+        "length": 7,
+        "word": "++++---",
+        "true": 1,
+        "model": "0"
+      },
+      "final_only_loss": "1",
+      "final_only_gradient": "0",
+      "final_only_cap": "7/3",
+      "prefix_loss": "25/9",
+      "prefix_gradient": "-10/3",
+      "prefix_cap": "19/6",
+      "shortest_after_prefix": {
+        "length": 9,
+        "word": "+++++----",
+        "true": 1,
+        "model": "0"
+      },
+      "balanced_final_loss": "0",
+      "balanced_final_gradient": "0"
+    },
+    {
+      "k": 4,
+      "initial_cap": "10/3",
+      "shortest_before": {
+        "length": 9,
+        "word": "+++++----",
+        "true": 1,
+        "model": "0"
+      },
+      "final_only_loss": "1",
+      "final_only_gradient": "0",
+      "final_only_cap": "10/3",
+      "prefix_loss": "25/9",
+      "prefix_gradient": "-10/3",
+      "prefix_cap": "25/6",
+      "shortest_after_prefix": {
+        "length": 11,
+        "word": "++++++-----",
+        "true": 1,
+        "model": "0"
+      },
+      "balanced_final_loss": "0",
+      "balanced_final_gradient": "0"
+    },
+    {
+      "k": 5,
+      "initial_cap": "13/3",
+      "shortest_before": {
+        "length": 11,
+        "word": "++++++-----",
+        "true": 1,
+        "model": "0"
+      },
+      "final_only_loss": "1",
+      "final_only_gradient": "0",
+      "final_only_cap": "13/3",
+      "prefix_loss": "25/9",
+      "prefix_gradient": "-10/3",
+      "prefix_cap": "31/6",
+      "shortest_after_prefix": {
+        "length": 13,
+        "word": "+++++++------",
+        "true": 1,
+        "model": "0"
+      },
+      "balanced_final_loss": "0",
+      "balanced_final_gradient": "0"
+    },
+    {
+      "k": 6,
+      "initial_cap": "16/3",
+      "shortest_before": {
+        "length": 13,
+        "word": "+++++++------",
+        "true": 1,
+        "model": "0"
+      },
+      "final_only_loss": "1",
+      "final_only_gradient": "0",
+      "final_only_cap": "16/3",
+      "prefix_loss": "25/9",
+      "prefix_gradient": "-10/3",
+      "prefix_cap": "37/6",
+      "shortest_after_prefix": {
+        "length": 15,
+        "word": "++++++++-------",
+        "true": 1,
+        "model": "0"
+      },
+      "balanced_final_loss": "0",
+      "balanced_final_gradient": "0"
+    },
+    {
+      "k": 7,
+      "initial_cap": "19/3",
+      "shortest_before": {
+        "length": 15,
+        "word": "++++++++-------",
+        "true": 1,
+        "model": "0"
+      },
+      "final_only_loss": "1",
+      "final_only_gradient": "0",
+      "final_only_cap": "19/3",
+      "prefix_loss": "25/9",
+      "prefix_gradient": "-10/3",
+      "prefix_cap": "43/6",
+      "shortest_after_prefix": {
+        "length": 17,
+        "word": "+++++++++--------",
+        "true": 1,
+        "model": "0"
+      },
+      "balanced_final_loss": "0",
+      "balanced_final_gradient": "0"
+    },
+    {
+      "k": 8,
+      "initial_cap": "22/3",
+      "shortest_before": {
+        "length": 17,
+        "word": "+++++++++--------",
+        "true": 1,
+        "model": "0"
+      },
+      "final_only_loss": "1",
+      "final_only_gradient": "0",
+      "final_only_cap": "22/3",
+      "prefix_loss": "25/9",
+      "prefix_gradient": "-10/3",
+      "prefix_cap": "49/6",
+      "shortest_after_prefix": {
+        "length": 19,
+        "word": "++++++++++---------",
+        "true": 1,
+        "model": "0"
+      },
+      "balanced_final_loss": "0",
+      "balanced_final_gradient": "0"
+    },
+    {
+      "k": 9,
+      "initial_cap": "25/3",
+      "shortest_before": {
+        "length": 19,
+        "word": "++++++++++---------",
+        "true": 1,
+        "model": "0"
+      },
+      "final_only_loss": "1",
+      "final_only_gradient": "0",
+      "final_only_cap": "25/3",
+      "prefix_loss": "25/9",
+      "prefix_gradient": "-10/3",
+      "prefix_cap": "55/6",
+      "shortest_after_prefix": {
+        "length": 21,
+        "word": "+++++++++++----------",
+        "true": 1,
+        "model": "0"
+      },
+      "balanced_final_loss": "0",
+      "balanced_final_gradient": "0"
+    },
+    {
+      "k": 10,
+      "initial_cap": "28/3",
+      "shortest_before": {
+        "length": 21,
+        "word": "+++++++++++----------",
+        "true": 1,
+        "model": "0"
+      },
+      "final_only_loss": "1",
+      "final_only_gradient": "0",
+      "final_only_cap": "28/3",
+      "prefix_loss": "25/9",
+      "prefix_gradient": "-10/3",
+      "prefix_cap": "61/6",
+      "shortest_after_prefix": {
+        "length": 23,
+        "word": "++++++++++++-----------",
+        "true": 1,
+        "model": "0"
+      },
+      "balanced_final_loss": "0",
+      "balanced_final_gradient": "0"
+    },
+    {
+      "k": 11,
+      "initial_cap": "31/3",
+      "shortest_before": {
+        "length": 23,
+        "word": "++++++++++++-----------",
+        "true": 1,
+        "model": "0"
+      },
+      "final_only_loss": "1",
+      "final_only_gradient": "0",
+      "final_only_cap": "31/3",
+      "prefix_loss": "25/9",
+      "prefix_gradient": "-10/3",
+      "prefix_cap": "67/6",
+      "shortest_after_prefix": {
+        "length": 25,
+        "word": "+++++++++++++------------",
+        "true": 1,
+        "model": "0"
+      },
+      "balanced_final_loss": "0",
+      "balanced_final_gradient": "0"
+    },
+    {
+      "k": 12,
+      "initial_cap": "34/3",
+      "shortest_before": {
+        "length": 25,
+        "word": "+++++++++++++------------",
+        "true": 1,
+        "model": "0"
+      },
+      "final_only_loss": "1",
+      "final_only_gradient": "0",
+      "final_only_cap": "34/3",
+      "prefix_loss": "25/9",
+      "prefix_gradient": "-10/3",
+      "prefix_cap": "73/6",
+      "shortest_after_prefix": {
+        "length": 27,
+        "word": "++++++++++++++-------------",
+        "true": 1,
+        "model": "0"
+      },
+      "balanced_final_loss": "0",
+      "balanced_final_gradient": "0"
+    },
+    {
+      "k": 13,
+      "initial_cap": "37/3",
+      "shortest_before": {
+        "length": 27,
+        "word": "++++++++++++++-------------",
+        "true": 1,
+        "model": "0"
+      },
+      "final_only_loss": "1",
+      "final_only_gradient": "0",
+      "final_only_cap": "37/3",
+      "prefix_loss": "25/9",
+      "prefix_gradient": "-10/3",
+      "prefix_cap": "79/6",
+      "shortest_after_prefix": {
+        "length": 29,
+        "word": "+++++++++++++++--------------",
+        "true": 1,
+        "model": "0"
+      },
+      "balanced_final_loss": "0",
+      "balanced_final_gradient": "0"
+    },
+    {
+      "k": 14,
+      "initial_cap": "40/3",
+      "shortest_before": {
+        "length": 29,
+        "word": "+++++++++++++++--------------",
+        "true": 1,
+        "model": "0"
+      },
+      "final_only_loss": "1",
+      "final_only_gradient": "0",
+      "final_only_cap": "40/3",
+      "prefix_loss": "25/9",
+      "prefix_gradient": "-10/3",
+      "prefix_cap": "85/6",
+      "shortest_after_prefix": {
+        "length": 31,
+        "word": "++++++++++++++++---------------",
+        "true": 1,
+        "model": "0"
+      },
+      "balanced_final_loss": "0",
+      "balanced_final_gradient": "0"
+    }
+  ],
+  "independent_verification": {
+    "status": "passed",
+    "independently_verified": 12,
+    "checks_per_row": 8
+  },
+  "claim": "The shortest zero-test witness has zero final-only cap gradient; prefix supervision shifts finite failure horizon +2, not to infinity.",
+  "protocol_sha256": "f3934a18a7eee0f1575552daa2d0f3afc55e49cc214624df6f948a612957100e"
+}

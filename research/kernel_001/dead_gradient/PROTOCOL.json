@@ -1,0 +1,37 @@
+{
+  "name": "Kernel 001: shortest-witness dead-gradient and prefix-supervision intervention",
+  "date": "2026-10-13",
+  "model": "h_next = ReLU(h+s) - ReLU(h+s-M), s in {-1,+1}",
+  "training": "exact rational one-step GD on final squared count loss vs prefix squared count loss",
+  "k_values": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "initial_cap": "M=k-2/3",
+  "eta": "1/4",
+  "frozen_predictions": {
+    "shortest_initial_zero_test_failure": "2*k+1",
+    "final_only_gradient_at_shortest_failure": "0",
+    "final_only_loss_at_shortest_failure": "1",
+    "prefix_gradient": "-10/3",
+    "cap_after_prefix_step": "k+1/6",
+    "shortest_after_prefix_step": "2*k+3",
+    "high_depth_balanced_final_loss_and_gradient": "0,0"
+  },
+  "important_limitations": [
+    "Deliberately saturated architecture; not spontaneous algorithm learning",
+    "Exact-real arithmetic and squared count loss, not binary zero-test loss",
+    "Single GD step; cap remains finite; no unbounded correctness",
+    "Elementary theorem, no novelty claimed"
+  ]
+}
