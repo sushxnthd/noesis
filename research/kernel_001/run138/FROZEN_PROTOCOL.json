@@ -1,0 +1,20 @@
+{
+  "run": 138,
+  "date_local": "2026-10-14",
+  "kernel": "001 — output-coupled inductive simulation",
+  "question": "Does the stored-weight exact unit-mode phenomenon in Run 137 persist under matched-initialization float64 training and an independently parameterized 3-state ReLU RNN?",
+  "frozen_before_execution": true,
+  "comparative_legacy_seeds": [80,93,95],
+  "comparative_legacy_architecture": "2-state ReLU RNN, matched float32 initialization, train independently in float32 and float64",
+  "prospective_fresh_seeds": [200,201,202,203,204,205,206,207],
+  "prospective_architecture": "3-state ReLU RNN, independently parameterized A(3x3), E(3x3), w(3), matched initial float32 tensors; train independently in float32 and float64",
+  "train": "ordinary output MSE at each prefix of all 3^6 six-token sequences; Adam 1200 steps lr=0.025; no hidden-state objective or projection; CPU only",
+  "exact_plus_ray_eligibility": "For coordinate j: Eplus[j]>0, Eplus[k]<=0 and A[k,j]<=0 for every k!=j, A[j,j]==1 exactly as stored binary float; this implies h(+^n)=n Eplus[j] e_j. Require w[j]*Eplus[j] not equal 1 for delayed output drift classification.",
+  "primary_endpoint": "Count exact-plus-ray eligible checkpoints among float64 legacy 2D and float32/float64 fresh 3D; test whether all three Run137 legacy seeds retain eligibility under float64 with same initial tensors.",
+  "falsification": "If any matched float64 legacy seed lacks exact unit A[j,j], Run137 exact-unit mode is not precision-stable. If all three persist, the simple numerical-rounding explanation is weakened.",
+  "independent_checker": "Use Python Fraction.from_float for stored coefficients, independently test all eligibility inequalities and n=0,1,2,3 plus-only exact rational trajectories. Verify primary count from raw parameter arrays.",
+  "publishable_threshold": "A spoof-resistant output-coupled certificate prospectively tracking gradient-trained algorithm acquisition in an unseen architecture and task; this experiment alone cannot establish it.",
+  "learning_relevance_threshold": "Ordinary gradient training modifies all A/E/w and independently assessed plus/return length-256 generalization; compare exact mode across precision and 3D architecture.",
+  "kill_condition": "If precision-stability fails, kill exact binary32-equality as evidence of robust algorithm acquisition and reformulate around quantitative approximate invariants with calibrated finite-horizon prediction; no third unsupported positive claim.",
+  "compute": "local cloud CPU only; zero personal spend"
+}
