@@ -1,0 +1,2 @@
+Final complete local Run154 reproducibility package SHA256: b8f652efbeef27172a98651769f7b5b9293221c1476d8a5849db87bb49a05f1a
+Contains all 24 frozen local checkpoints, scripts, raw results, independent decimal checks, protocol, and provenance. Separate public-CI checkpoint artifact ID: 11901540700.
