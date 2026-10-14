@@ -8,3 +8,5 @@
 **LIMITATIONS:** Architecture already contains saturation; no positive learned unbounded algorithm. Trained weights are approximate, not exact; classification threshold is 0.5 absolute state error. Training illustrates that finite supervision cannot identify a dormant cap.
 
 **NEXT:** Evaluate task-relevant unbounded simulation obligations, not hidden norm alone (useless unbounded auxiliary states can spoof that).
+
+**Run 145 — ordinary-gradient checkpoint:** Archived float32 seed 205 trained on length-six ternary reflected counting (MSE 2.9067269480265168e-8). Both active coordinates are coupled, no output calibration or parameter edits. Despite rho(raw A)<1, repeated increments first exceed 0.1 exact-real output error at n=141 (0.09953518 at n=140, 0.10074808 at n=141). Independent checker and CI passed. Exploratory mixed-word Pareto search timed out at depth 80; no global mixed-word shortest claim. No positive algorithm-acquisition certificate or unseen-family prediction.

@@ -10,3 +10,5 @@
 **UNTESTED:** Task-relevant inductive simulation relations with unbounded distinguishing suffixes in *trained* networks.
 
 **CAVEAT:** This is a deliberately engineered spoof, not evidence that unconstrained RNNs spontaneously learn saturation. Elementary construction, novelty unestablished.
+
+**Run 145 — exact trained-model negative:** On ordinary-gradient-trained seed 205 (3-state ReLU), exact rational ||A^32||_infinity=0.9874237072485514<1 certifies rho(raw A)<1. On repeated increments, h3 stays zero and active 2x2 B has a strictly positive expanding cone v=(1,37121/50000). Hence output grows exponentially and counting error is unbounded. First |error|>0.1 on repeated increments occurs at n=141. This falsifies raw-matrix spectral-radius-only stability/algorithmicity screening. Not a new nonlinear stability theorem. Source: run145/certificate.py and independent_check.py.
