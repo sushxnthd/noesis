@@ -1,0 +1,9 @@
+Run 153 verified findings (2026-10-14).
+Training: original Run 150 latent-regularized four-state ReLU checkpoints, seeds 208-215.
+Task: reflected ternary counter. Threshold: absolute error > 0.1.
+Seed 208: beam witness 0000000011111110000000000, depth 25, exact binary error magnitude 0.10268626646227033. Neutral-suffix control: depth 83.
+Seed 210: beam witness 00000000000011111111, depth 20, exact binary error magnitude 0.10671969371042027. Neutral-suffix control: depth 28.
+Seed 214: beam witness 0000000022, depth 10, exact binary error magnitude 0.10188142037900315. Neutral-suffix control: depth 25.
+Seeds 209, 211, 212, 213, 215: no beam witness through depth 128. NOT certified.
+Independent Fraction.from_float and 90-digit Decimal checks agree on all six failure witnesses.
+Five local tests passed. Search retrospective and non-exhaustive; all lengths are upper bounds on failure horizon.
