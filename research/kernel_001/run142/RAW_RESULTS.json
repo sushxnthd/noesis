@@ -1,0 +1,46 @@
+{
+  "source": "Run138 gradient-trained checkpoints, retrospective selection",
+  "exact_real_semantics": true,
+  "threshold": "strict > 1/10",
+  "rows": [
+    {
+      "seed": 202,
+      "dtype": "float32",
+      "certified_j": 2,
+      "initial_certified": false,
+      "original_gain_exact": "140737491524637/140737488355328",
+      "neutral_c_exact": "15618755/4503599627370496",
+      "family": "neutral^n",
+      "first_n": 31009438
+    },
+    {
+      "seed": 202,
+      "dtype": "float64",
+      "certified_j": null,
+      "initial_certified": false,
+      "rejection": "A[2,2] != 1"
+    },
+    {
+      "seed": 206,
+      "dtype": "float32",
+      "certified_j": 0,
+      "initial_certified": false,
+      "original_gain_exact": "70368746017803/70368744177664",
+      "neutral_c_exact": "-5186595/562949953421312",
+      "family": "plus neutral^n",
+      "first_n": 9106639
+    },
+    {
+      "seed": 206,
+      "dtype": "float64",
+      "certified_j": 0,
+      "initial_certified": false,
+      "original_gain_exact": "10141204801825835669002888900113/10141204801825835211973625643008",
+      "neutral_c_exact": "-1326634455439097/162259276829213363391578010288128",
+      "family": "plus neutral^n",
+      "first_n": 10261932966499288
+    }
+  ],
+  "local_independent": "SymPy 3 accepted; 3069 binary words; 3 neutral boundaries; 3 local pytest tests",
+  "remote_ci": "https://github.com/sushxnthd/noesis/actions/runs/38501360752 passed; exact-rational test"
+}
