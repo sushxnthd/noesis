@@ -1,0 +1,1 @@
+Exact ReLU cap: h1'=ReLU(h1+1); h2'=ReLU(h1-127/2); y=h1-h2. All-plus output y_n=n for n<=64, with mask [1,0] on steps 33..64 and no zero preactivation at step 64. At n=65, y=129/2, error=-1/2. Thus finite-prefix mask constancy does not certify future behavior.
