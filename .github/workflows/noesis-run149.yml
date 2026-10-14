@@ -1,0 +1,33 @@
+name: NOESIS run149 exact neutral ablation
+on:
+  push:
+    branches:
+      - research/kernel-001-run149-neutral-ablation
+  pull_request:
+    paths:
+      - 'research/kernel_001/run149/**'
+      - '.github/workflows/noesis-run149.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install numpy
+      - name: Verify exact witnesses
+        run: cd research/kernel_001/run149 && python -m unittest -v test_run149.py && python independent_exact.py
+      - name: Verify rigorous all-word upper bound
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+        run: |
+          python research/kernel_001/run149/interval_ablation.py
+          python - <<'PY'
+          import json
+          p=json.load(open('research/kernel_001/run149/INTERVAL_OUTCOME.json'))
+          assert len(p['rows'])==13
+          assert all(x['possibly_bad']==0 for x in p['rows'])
+          assert p['rows'][-1]['max_error_upper']<0.008
+          PY

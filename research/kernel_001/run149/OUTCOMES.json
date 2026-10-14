@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-14",
+  "tolerance": 0.1,
+  "task": "nonnegative ternary counter; 0 increment, 1 decrement, 2 neutral",
+  "depth": 13,
+  "models": [
+    {
+      "seed": 214,
+      "variants": [
+        {
+          "clamp": null,
+          "first_failure": 13,
+          "max_error": 0.11199123726426041,
+          "n13_fails": 2
+        },
+        {
+          "clamp": 3,
+          "first_failure": null,
+          "max_error": 0.007240039268566756,
+          "n13_fails": 0
+        },
+        {
+          "clamp": 0,
+          "first_failure": 7,
+          "max_error": 0.9292034176683286,
+          "n13_fails": 29285
+        },
+        {
+          "clamp": 1,
+          "first_failure": 2,
+          "max_error": 12.001515862361792,
+          "n13_fails": 897775
+        },
+        {
+          "clamp": 2,
+          "first_failure": 13,
+          "max_error": 0.11199123726426041,
+          "n13_fails": 2
+        }
+      ]
+    },
+    {
+      "seed": 210,
+      "variants": [
+        {
+          "clamp": null,
+          "first_failure": null,
+          "max_error": 0.00011241967176900403,
+          "n13_fails": 0
+        },
+        {
+          "clamp": 3,
+          "first_failure": 2,
+          "max_error": 11.999373765633408,
+          "n13_fails": 897775
+        },
+        {
+          "clamp": 0,
+          "first_failure": null,
+          "max_error": 0.001635715625028844,
+          "n13_fails": 0
+        },
+        {
+          "clamp": 1,
+          "first_failure": null,
+          "max_error": 0.00011241967176900403,
+          "n13_fails": 0
+        },
+        {
+          "clamp": 2,
+          "first_failure": null,
+          "max_error": 0.00011241967176900403,
+          "n13_fails": 0
+        }
+      ]
+    },
+    {
+      "seed": 215,
+      "variants": [
+        {
+          "clamp": null,
+          "first_failure": null,
+          "max_error": 6.855074552447604e-7,
+          "n13_fails": 0
+        },
+        {
+          "clamp": 3,
+          "first_failure": null,
+          "max_error": 6.855074552447604e-7,
+          "n13_fails": 0
+        },
+        {
+          "clamp": 0,
+          "first_failure": 2,
+          "max_error": 11.878778312447833,
+          "n13_fails": 897775
+        },
+        {
+          "clamp": 1,
+          "first_failure": null,
+          "max_error": 6.855074552447604e-7,
+          "n13_fails": 0
+        },
+        {
+          "clamp": 2,
+          "first_failure": 2,
+          "max_error": 6.2832229027084985,
+          "n13_fails": 1033191
+        }
+      ]
+    }
+  ],
+  "rigorous_seed214_clamp3": {
+    "max_error_upper": 0.007240039268581634,
+    "possible_bad_through13": 0,
+    "all_words_depth13": 1594323
+  },
+  "exact_witnesses": [
+    {
+      "seed": 214,
+      "word": "0022222222222",
+      "original_error": 0.11199123726426027,
+      "clamp3_error": 0.0003642255520329174
+    },
+    {
+      "seed": 210,
+      "word": "02",
+      "original_error": -0.00000718138884762717,
+      "clamp3_error": -0.9999035132247276
+    }
+  ],
+  "scope": "float64 exploratory across variants; outward rigorous bound only for seed214 clamp3; exact Fraction witnesses"
+}
