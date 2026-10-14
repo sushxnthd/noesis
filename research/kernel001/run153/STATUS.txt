@@ -1,1 +1,1 @@
-Run 153 in progress. Frozen cohort: eight archived latent checkpoints, seeds 208–215. Do not infer global minimality from beam search.
+Run 153: frozen cohort eight archived latent checkpoints (208-215). Deterministic beam over full ternary alphabet through depth 128. Four candidates per target bucket per score; neutral-only control. A witness proves failure but does not prove shortest failure. No new training.
