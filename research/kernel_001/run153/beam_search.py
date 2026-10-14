@@ -1,4 +1,4 @@
-"""Deterministic adversarial witness search. NOT a shortest-failure verifier."""
+"""NOESIS Run 153 deterministic adversarial witness search (not global minimality)."""
 import json,itertools
 from pathlib import Path
 import numpy as np
@@ -31,7 +31,8 @@ def neutral_control(seed,max_depth=128):
     words=np.array(list(itertools.product(range(3),repeat=6)),dtype=np.int8)
     h=np.zeros((len(words),4));q=np.zeros(len(words),dtype=np.int32)
     for t in range(6):
-        x=words[:,t];h=np.maximum(0,h@A.T+E[x]);q=np.maximum(0,q+(x==0)-(x==1))
+        x=words[:,t];h=np.maximum(0,h@A.T+E[x])
+        q=np.maximum(0,q+(x==0).astype(np.int32)-(x==1).astype(np.int32))
     for depth in range(7,max_depth+1):
         h=np.maximum(0,h@A.T+E[2])
         err=h@w-q;j=int(np.argmax(abs(err)))
@@ -40,5 +41,4 @@ def neutral_control(seed,max_depth=128):
     return None
 if __name__=='__main__':
     for seed in range(208,216):
-        try: print(seed,search(seed),neutral_control(seed))
-        except FileNotFoundError: print(seed,'checkpoint not uploaded; regenerate with run150 training script')
+        print(seed,search(seed),neutral_control(seed))
