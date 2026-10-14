@@ -1,0 +1,17 @@
+name: noesis-run154-replay
+on: [push, workflow_dispatch]
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install numpy torch
+      - run: python research/kernel001/run154/train.py 216 240
+      - run: python -m research.kernel001.run154.full_eval
+      - uses: actions/upload-artifact@v4
+        with:
+          name: run154-checkpoints
+          path: research/kernel001/run154/CHECKPOINT_SEED_*.json
