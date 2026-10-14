@@ -1,0 +1,1 @@
+Run 142 (2026-10-14): exact-rational verification of latent reflected counting on binary input for previously trained 3-state RNNs, seeds 202 and 206 in float32 and float64. Compare initialized and trained parameters. Verify all-length symbolic recurrence and neutral-token drift using independent checker. This is retrospective, not a new holdout.
