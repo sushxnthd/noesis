@@ -1,0 +1,22 @@
+[
+  {
+    "seed": 222,
+    "checkpoint_sha256": "d01a02065c43ae9b647cdd4e480cc33cbc6d1e22de6bc45561fdaaaa4a2b62fd",
+    "first_neutral_suffix_failure": 3090553,
+    "first_total_length": 3090554,
+    "previous_error_decimal": "-0.099999993320122805950333035991122405856",
+    "failure_error_decimal": "-0.100000025676818524033986225179799286084",
+    "neutral_defect_decimal": "-3.2356695718083653189188676880228E-8",
+    "increment_relative_error_exact": "2867239603229041020385921/50000000000000000000000000000000"
+  },
+  {
+    "seed": 239,
+    "checkpoint_sha256": "2f98d80a341fe6f4fb0588bd8d9a24dac6bef44352aeb74ec573df39bb3f7b79",
+    "first_neutral_suffix_failure": 28802732784,
+    "first_total_length": 28802732785,
+    "previous_error_decimal": "0.09999999999658452952000724609785959525679946",
+    "failure_error_decimal": "0.10000000000005642222344432295702675927067808",
+    "neutral_defect_decimal": "3.47189270343707685916716401387862E-12",
+    "increment_relative_error_exact": "110411946954539124853909/50000000000000000000000000000000"
+  }
+]
