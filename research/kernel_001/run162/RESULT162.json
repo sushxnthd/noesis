@@ -1,0 +1,31 @@
+{
+  "run": 162,
+  "threshold": 0.1,
+  "limit": 2000000,
+  "semantics": "round each product and sum to binary32, no FMA",
+  "frozen_primary_success": true,
+  "outcomes": [
+    {
+      "seed": 222,
+      "checkpoint_sha256": "d01a02065c43ae9b647cdd4e480cc33cbc6d1e22de6bc45561fdaaaa4a2b62fd",
+      "active_coordinate": 2,
+      "binary32_first_increment_failure": 3679,
+      "binary32_output": 3678.89990234375,
+      "binary32_signed_error": -0.10009765625,
+      "full_matrix_matches_scalar": true,
+      "binary64_first_failure_le_2m": null,
+      "binary64_end_error": -2.3283064365386963e-10
+    },
+    {
+      "seed": 239,
+      "checkpoint_sha256": "2f98d80a341fe6f4fb0588bd8d9a24dac6bef44352aeb74ec573df39bb3f7b79",
+      "active_coordinate": 4,
+      "binary32_first_increment_failure": 3582,
+      "binary32_output": 3582.10009765625,
+      "binary32_signed_error": 0.10009765625,
+      "full_matrix_matches_scalar": true,
+      "binary64_first_failure_le_2m": null,
+      "binary64_end_error": 0
+    }
+  ]
+}
