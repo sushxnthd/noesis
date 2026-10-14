@@ -15,3 +15,4 @@ jobs:
       - run: python -m pip install numpy pytest
       - run: OPENBLAS_NUM_THREADS=1 python -m pytest -q tests/test_run151.py
       - run: OPENBLAS_NUM_THREADS=1 python research/kernel_001/run151/global_horizon.py
+      - run: OPENBLAS_NUM_THREADS=1 python research/kernel_001/run151/independent_longdouble.py
