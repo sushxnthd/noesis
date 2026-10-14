@@ -1,0 +1,19 @@
+name: noesis-run142-independent
+
+on:
+  push:
+    branches: [research/kernel-001-transition-closure]
+  pull_request:
+    branches: [main]
+
+jobs:
+  exact-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install sympy pytest
+      - run: python research/kernel_001/run142/independent_check.py
+      - run: python -m pytest -q research/kernel_001/run142/test_run142.py
