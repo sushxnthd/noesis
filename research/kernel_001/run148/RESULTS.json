@@ -1,0 +1,30 @@
+{
+  "seed": 214,
+  "threshold": 0.1,
+  "training_length": 6,
+  "train_mse": 5.434735772524846e-9,
+  "previous_all_plus_first_failure": 125,
+  "global_ternary_first_failure": 13,
+  "all_words_verified_through": 12,
+  "word_count_at_12": 531441,
+  "maximum_abs_error_upper_bound_at_12": 0.09471137709841537,
+  "word_count_at_13": 1594323,
+  "first_failure_witnesses": [
+    {
+      "word": "0022222222222",
+      "error_interval": [
+        0.11199123726423954,
+        0.11199123726428084
+      ]
+    },
+    {
+      "word": "0202222222222",
+      "error_interval": [
+        0.1008466502637253,
+        0.1008466502637635
+      ]
+    }
+  ],
+  "status": "locally verified; independent exact-rational witness checks; remote CI pending",
+  "claim": "global shortest >0.1 counting error under exact-real stored-coefficient semantics; seed 214 only"
+}
