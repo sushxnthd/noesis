@@ -1,0 +1,28 @@
+{
+  "seed": 205,
+  "coefficient_semantics": "stored float32 values interpreted as exact rationals",
+  "raw_A_32_inf_norm": 0.9874237072485514,
+  "raw_A_Schur_stable": true,
+  "active_coordinates": [
+    0,
+    1
+  ],
+  "v": [
+    "1",
+    "37121/50000"
+  ],
+  "cone_expansion_epsilon": 0.0000050227570533752445,
+  "b_dominance_c": 0.5802107777036356,
+  "first_plus_error_gt_0_1": 141,
+  "errors_for_display": {
+    "6": 0.0007760228888229325,
+    "12": 0.0024735389408019064,
+    "140": 0.09953518427161999,
+    "141": 0.10074807936177638,
+    "256": 0.28726814351263424
+  },
+  "unbounded_error_proved": true,
+  "mixed_global_shortest": "NOT ESTABLISHED",
+  "independent_checker": "PASSED",
+  "local_pytest": "4 passed"
+}
