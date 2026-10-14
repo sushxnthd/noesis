@@ -1,0 +1,1 @@
+Exact first errors by seed: 208=12, 209=13, 210=410, 211=50, 212=19, 213=16, 214=125, 215=no error through 512. Frozen predictions matched all except seed 211 (abstention). Seven eligible; three prospectively eligible; three prospectively exact. Seeds 210, 214, 215 have independently checked two-dimensional inductive cones.
