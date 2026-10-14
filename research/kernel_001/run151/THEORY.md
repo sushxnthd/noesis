@@ -1,0 +1,2 @@
+# THEORY ledger — Run 151
+Finite-horizon first-failure minimality is certified for each seed214 variant under exact-real semantics of stored float32 parameters, using exhaustive 3-ary breadth-first evaluation and a conservative IEEE-754 forward-error envelope. Independent Fraction arithmetic confirms each failure witness. This is NOT an inductive all-length counting certificate. The finite-horizon method is not a novel theorem. Naive finite closure, single-token cones, and neutral-state identity remain insufficient for complete algorithmicity.

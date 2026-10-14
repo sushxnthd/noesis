@@ -1,0 +1,7 @@
+{
+ "run":151,"seed":214,"threshold":0.1,"checkpoint_sha256_original_json":"f9cbb72b06efba87a1e9e7e259441a1507dff3498920879d2a4b8756c948a378",
+ "baseline":{"first_failure":13,"witness":"0022222222222","exact_witness_error":0.11199123726425908,"maximum_error_at_depth_12":0.09471137709839761,"roundoff_bound_at_depth_13":1.4990215323521208e-10},
+ "latent":{"first_failure":10,"witness":"0000000022","exact_witness_error":0.1018814203790034,"maximum_error_at_depth_9":0.058429189339604726,"roundoff_bound_at_depth_10":7.278639459695783e-11},
+ "output":{"first_failure":13,"witness":"0002222222222","exact_witness_error":0.10083200928050529,"maximum_error_at_depth_12":0.08299766928224539,"roundoff_bound_at_depth_13":1.2328491067783276e-10},
+ "independent_rational_witness_checker":"passed","local_tests":"3 passed","remote_ci":"pending"
+}
