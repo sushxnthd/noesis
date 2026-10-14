@@ -1,0 +1,3 @@
+# THEORY ledger — Run 146
+
+The third ReLU coordinate remains zero by induction because its input bias and couplings from the other coordinates are negative. The reachable 2D block is positive and monotone. For each sequence length and exact reflected task count, componentwise upper and lower integer bounds can be Pareto-pruned without losing worst-case output extrema. Outward rounding of learned binary32 coefficients and states gives rigorous enclosures. All words of length <=140 have error within 0.1; exact +^141 exceeds 0.1. No general architecture theorem or novel mathematical primitive is claimed.
