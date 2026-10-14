@@ -1,0 +1,28 @@
+{
+  "run": 161,
+  "cohort": [
+    224,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238
+  ],
+  "n": 14,
+  "certified": 0,
+  "primary_success": false,
+  "kill": true,
+  "all_models_no_structural_coordinate": true,
+  "independent_local_check": "14/14 agree",
+  "tests_local": "3/3 passed",
+  "model_provenance": "archived run154B local CHECKPOINT_SEED_*.json; exact hashes in SHA256.txt",
+  "limits": "one-ray fixed A,E0 only"
+}

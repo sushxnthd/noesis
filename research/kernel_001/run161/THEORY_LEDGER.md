@@ -1,0 +1,6 @@
+# THEORY ledger — Run 161
+**Theorem (necessary one-ray conditions).** Consider h'=ReLU(Ah+E[t]) with h=u*c*e_k, u>0, reflected counter c, exact rational serialized parameters. If A and E[0] remain fixed and the simulation holds for all words, then A[k,k]=1; E[0,k]=u>0; A[j,k]<=0 and E[0,j]<=0 for j!=k. Proof: increments from arbitrarily large c force slope A[k,k]=1, and the off-ray coordinates must stay zero for every c>=0, including c=0. Thus any violation blocks this exact one-ray simulation regardless of edits to E[1], E[2], or w.
+
+**Frozen held-out result.** For all 14 Run154B archived checkpoints (seeds 224,226–238), *every* k fails at least one fixed-A/E[0] structural condition; none has A[k,k]=1. Therefore 0/14 can satisfy the frozen Run160 sparse projection. This is a certificate of **inapplicability of that restricted method**, not a proof the networks lack a reusable algorithm or cannot be repaired by other methods.
+
+**Limits.** A nonlinear, multidimensional task quotient or a repair changing A and E[0] is not excluded. Decimal serialization is interpreted exactly, not IEEE inference arithmetic. A held-out cohort was frozen before inspection, but weights came from a previously archived training experiment, not prospectively newly trained.

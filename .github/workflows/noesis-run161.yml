@@ -1,0 +1,30 @@
+name: noesis-run161-independent
+on:
+  push:
+    branches: [research/kernel-001-run161-prospective-ray-coverage]
+  workflow_dispatch:
+jobs:
+  heldout-audit:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: run154-checkpoints
+          run-id: 38576881242
+          github-token: ${{ github.token }}
+          path: /tmp/noesis161-checkpoints
+      - run: python research/kernel_001/run161/audit161.py /tmp/noesis161-checkpoints > /tmp/RESULT161_REMOTE.json
+      - run: python research/kernel_001/run161/independent161.py /tmp/noesis161-checkpoints > /tmp/INDEPENDENT161_REMOTE.json
+      - run: NOESIS_RUN161_CHECKPOINTS=/tmp/noesis161-checkpoints python -m pytest -q research/kernel_001/run161/test_run161.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: noesis-run161-remote
+          path: /tmp/*161_REMOTE.json
