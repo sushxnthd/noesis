@@ -1,0 +1,23 @@
+name: NOESIS Run 157 closed-form proof
+on:
+  push:
+    branches: ["research/kernel-001-run157-late-fixed-mask-failures"]
+  workflow_dispatch:
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Exact all-length proof
+        run: |
+          python research/kernel001/run157/certify157_closed_form.py research/kernel001/run157/RUN157_SEED_222.json research/kernel001/run157/RUN157_SEED_239.json
+      - name: Independent decimal checker
+        run: |
+          python research/kernel001/run157/independent157_closed_form.py research/kernel001/run157/RUN157_SEED_222.json research/kernel001/run157/RUN157_SEED_239.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: noesis-run157-all-length-results
+          path: CLOSED_FORM157.json
