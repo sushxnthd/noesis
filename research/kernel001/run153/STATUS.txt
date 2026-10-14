@@ -1,0 +1,1 @@
+Run 153 in progress. Frozen cohort: eight archived latent checkpoints, seeds 208–215. Do not infer global minimality from beam search.
