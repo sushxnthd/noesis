@@ -1,0 +1,160 @@
+{
+  "run": 152,
+  "date": "2026-10-14",
+  "protocol": "retrospective extension, depth 12 then 14; no prospective claim",
+  "task": "reflected ternary counting",
+  "threshold": 0.1,
+  "depth": 14,
+  "counts_failure_le14": {
+    "baseline": 4,
+    "latent": 1,
+    "output": 3
+  },
+  "records": [
+    {
+      "seed": 208,
+      "variant": "baseline",
+      "first_failure_le14": 12,
+      "depth14_max_abs_error": 0.21449775708097513
+    },
+    {
+      "seed": 208,
+      "variant": "latent",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 0.054859375970350274
+    },
+    {
+      "seed": 208,
+      "variant": "output",
+      "first_failure_le14": 13,
+      "depth14_max_abs_error": 0.1377123625859954
+    },
+    {
+      "seed": 209,
+      "variant": "baseline",
+      "first_failure_le14": 10,
+      "depth14_max_abs_error": 0.20792007238235338
+    },
+    {
+      "seed": 209,
+      "variant": "latent",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 6.45961660383326e-7
+    },
+    {
+      "seed": 209,
+      "variant": "output",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 0.000007886861560597327
+    },
+    {
+      "seed": 210,
+      "variant": "baseline",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 0.00012908685148171203
+    },
+    {
+      "seed": 210,
+      "variant": "latent",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 0.06573732078090094
+    },
+    {
+      "seed": 210,
+      "variant": "output",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 0.00013026943454796935
+    },
+    {
+      "seed": 211,
+      "variant": "baseline",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 0.08417146205817985
+    },
+    {
+      "seed": 211,
+      "variant": "latent",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 0.0001348036680563127
+    },
+    {
+      "seed": 211,
+      "variant": "output",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 0.07088933161280837
+    },
+    {
+      "seed": 212,
+      "variant": "baseline",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 0.06877688162371984
+    },
+    {
+      "seed": 212,
+      "variant": "latent",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 0.000016346232225572497
+    },
+    {
+      "seed": 212,
+      "variant": "output",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 0.04962093787460198
+    },
+    {
+      "seed": 213,
+      "variant": "baseline",
+      "first_failure_le14": 11,
+      "depth14_max_abs_error": 0.2775155580333664
+    },
+    {
+      "seed": 213,
+      "variant": "latent",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 0.0000022065632841313
+    },
+    {
+      "seed": 213,
+      "variant": "output",
+      "first_failure_le14": 11,
+      "depth14_max_abs_error": 0.3368982304795813
+    },
+    {
+      "seed": 214,
+      "variant": "baseline",
+      "first_failure_le14": 13,
+      "depth14_max_abs_error": 0.12913698766949816
+    },
+    {
+      "seed": 214,
+      "variant": "latent",
+      "first_failure_le14": 10,
+      "depth14_max_abs_error": 0.32879494365696615
+    },
+    {
+      "seed": 214,
+      "variant": "output",
+      "first_failure_le14": 13,
+      "depth14_max_abs_error": 0.11882777589128538
+    },
+    {
+      "seed": 215,
+      "variant": "baseline",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 7.533874952787311e-7
+    },
+    {
+      "seed": 215,
+      "variant": "latent",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 0.0000016062435665982687
+    },
+    {
+      "seed": 215,
+      "variant": "output",
+      "first_failure_le14": null,
+      "depth14_max_abs_error": 0.000003689098269866755
+    }
+  ],
+  "smallest_claim": "Across 8 matched seeds, hidden-state neutral consistency removes 3/4 baseline failures within depth 14 but creates one earlier failure; not a universal algorithm-acquisition intervention."
+}
