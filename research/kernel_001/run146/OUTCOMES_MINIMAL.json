@@ -1,0 +1,22 @@
+{
+  "seed": 205,
+  "trained": true,
+  "checkpoint_source": "research/kernel_001/run145/CHECKPOINT.json",
+  "coefficient_semantics": "stored float32 as exact rational",
+  "threshold": 0.1,
+  "first_failure_all_ternary_words": 141,
+  "witness": "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++",
+  "n140_upper_bound": 0.09954723610528111,
+  "n140_lower_bound": -0.027552548819684983,
+  "exact_witness_error_141": 0.10074807936177638,
+  "primary_grid": {
+    "Q": 4294967296,
+    "D": 10000000
+  },
+  "independent_grid": {
+    "Q": 1073741824,
+    "D": 10000000
+  },
+  "local_tests": "4 passed",
+  "remote_ci": "NOT RUN — code upload blocked"
+}
