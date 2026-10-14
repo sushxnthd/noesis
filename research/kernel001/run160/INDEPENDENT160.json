@@ -1,0 +1,16 @@
+[
+  {
+    "seed": 222,
+    "checked_words": 3280,
+    "max_decimal_error": "3E-109",
+    "decimal_precision": 110,
+    "status": "PASS finite high-precision checker"
+  },
+  {
+    "seed": 239,
+    "checked_words": 3280,
+    "max_decimal_error": "1E-109",
+    "decimal_precision": 110,
+    "status": "PASS finite high-precision checker"
+  }
+]

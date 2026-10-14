@@ -1,0 +1,87 @@
+[
+  {
+    "seed": 222,
+    "original_checkpoint_sha256": "d01a02065c43ae9b647cdd4e480cc33cbc6d1e22de6bc45561fdaaaa4a2b62fd",
+    "width": 4,
+    "active_coordinate": 2,
+    "changed_scalar_count": 5,
+    "max_abs_parameter_change": "238418579/2000000000000000",
+    "exact_length_six_words_checked": 729,
+    "original_nonexact_witness": "02",
+    "original_witness_error": "6247024086624291804632435779943/250000000000000000000000000000000000000",
+    "all_alphabet_all_length_exact_rational_certificate": true,
+    "support_minimality_scope": "fixed A,E[0], same one-ray representation",
+    "edits": [
+      [
+        "E[1,2]",
+        "-9344198703765869/10000000000000000",
+        "-4672098755836487/5000000000000000"
+      ],
+      [
+        "E[2,2]",
+        "-755868345692079/25000000000000000000000",
+        "0"
+      ],
+      [
+        "w[2]",
+        "10701829195022583/10000000000000000",
+        "5000000000000000/4672098755836487"
+      ],
+      [
+        "E[1,1]",
+        "7698298887248711/1000000000000000000000000",
+        "0"
+      ],
+      [
+        "E[1,3]",
+        "25298283468089267/10000000000000000000000000",
+        "0"
+      ]
+    ]
+  },
+  {
+    "seed": 239,
+    "original_checkpoint_sha256": "2f98d80a341fe6f4fb0588bd8d9a24dac6bef44352aeb74ec573df39bb3f7b79",
+    "width": 6,
+    "active_coordinate": 4,
+    "changed_scalar_count": 6,
+    "max_abs_parameter_change": "110411946954539124853909/28483086824417115000000000000000",
+    "exact_length_six_words_checked": 729,
+    "original_nonexact_witness": "2",
+    "original_witness_error": "211150938370882515232289991766257/100000000000000000000000000000000000000000000",
+    "all_alphabet_all_length_exact_rational_certificate": true,
+    "support_minimality_scope": "fixed A,E[0], same one-ray representation",
+    "edits": [
+      [
+        "E[2,4]",
+        "19778044219737057/10000000000000000000000000000",
+        "0"
+      ],
+      [
+        "w[4]",
+        "8777138590812683/5000000000000000",
+        "10000000000000000/5696617364883423"
+      ],
+      [
+        "E[1,2]",
+        "21163468200136037/100000000000000000000000000",
+        "0"
+      ],
+      [
+        "E[1,3]",
+        "385480362907753/40000000000000000000000000",
+        "0"
+      ],
+      [
+        "E[1,5]",
+        "4870969599890529/50000000000000000000000000",
+        "0"
+      ],
+      [
+        "E[2,2]",
+        "9538887735249801/100000000000000000000000000",
+        "0"
+      ]
+    ]
+  }
+]
