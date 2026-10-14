@@ -1,0 +1,40 @@
+{
+  "run": 154,
+  "holdout4": {
+    "n": 8,
+    "failures": [
+      216
+    ],
+    "false_negative": 216,
+    "score216": 0.034785249536792406,
+    "witness_depth216": 33,
+    "exact_error216": 0.1018235035926955,
+    "success": false
+  },
+  "holdout_widths": {
+    "n": 16,
+    "widths": [
+      5,
+      6
+    ],
+    "tp": 5,
+    "fp": 2,
+    "fn": 1,
+    "tn": 8,
+    "confirmed_failure_seeds": [
+      225,
+      226,
+      230,
+      233,
+      235,
+      238
+    ],
+    "false_positive_seeds": [
+      229,
+      237
+    ],
+    "false_negative_seed": 225,
+    "success": false
+  },
+  "note": "No beam witness is not a correctness certificate. All discovered witnesses independently checked with exact rational and 110-digit decimal arithmetic."
+}
