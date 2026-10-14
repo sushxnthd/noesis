@@ -1,0 +1,1 @@
+Seed 210: active coordinates 0,3; ratio interval [1,3]. Seed 214: active 0,1; interval [2,9/2]. Seed 215: active 0,2; interval [2/5,1/2]. Each cone is invariant under the learned active 2x2 recurrence and compatible with all ReLU activation signs, as checked with exact binary-rational stored weights.
