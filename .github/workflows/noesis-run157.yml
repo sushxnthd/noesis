@@ -1,0 +1,24 @@
+name: NOESIS Run 157 exact interval proof
+on:
+  push:
+    branches: ["research/kernel-001-run157-late-fixed-mask-failures"]
+  workflow_dispatch:
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify interval certificates
+        run: |
+          python research/kernel001/run157/certify157.py research/kernel001/run157/RUN157_SEED_217.json research/kernel001/run157/RUN157_SEED_221.json --output RESULT157.json
+      - name: Independent checker
+        run: |
+          pip install mpmath
+          python research/kernel001/run157/independent157.py research/kernel001/run157/RUN157_SEED_217.json research/kernel001/run157/RUN157_SEED_221.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: noesis-run157-exact-results
+          path: RESULT157.json
