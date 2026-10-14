@@ -1,0 +1,3 @@
+# Run 162 frozen protocol
+
+Audit seeds 222 and 239 from Run 160 after exact sparse repair. For each, find the first increment-only sequence length n <= 2,000,000 where binary32 readout absolute counting error exceeds 0.1. Prediction: both will fail within this limit. Use original archived parameters, identical Run 160 repairs, no further fitting. Validate using independent scalar and full-network IEEE binary32 implementations. Repeat binary64 as control. Report negative outcomes and arithmetic disagreements. This is a finite-precision semantic audit, not a novel theorem or proof of learning acquisition.
