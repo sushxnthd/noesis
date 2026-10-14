@@ -24,3 +24,10 @@ def test_small_relative_increment_defects():
     c=load("certify158")
     for seed in (222,239):
         assert F(c.check(seed)["increment_relative_error_all_n"])<F(1,1000000)
+
+def test_capped_baseline():
+    from fractions import Fraction as F
+    m=load("cap_baseline158")
+    assert m.normalized_cap_error(12,12)==0
+    assert m.normalized_cap_error(12,120)==F(9,10)
+    assert m.normalized_cap_error(12,1200)==F(99,100)
