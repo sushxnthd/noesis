@@ -1,0 +1,1 @@
+Seed 208: all-symbol witness at depth 25, neutral-only at 83. Seed 210: all-symbol at 20, neutral-only at 28. Seed 214: all-symbol at 10, neutral-only at 25. Each witness independently checked using exact arithmetic. Other five latent checkpoints: no witness found by deterministic beam through depth 128; NOT a robustness guarantee.
