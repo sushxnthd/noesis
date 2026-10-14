@@ -1,0 +1,7 @@
+# Run 149: mechanism-guided intervention has no cross-seed transfer
+
+Archived gradient-trained seed 214, four-state ReLU RNN: neutral-only clamp of hidden coordinate 3 (zero-based) reduces the global maximum counting error through 13 tokens from 0.11199123726426041 to <=0.007240039268581634 (outward-rounded exhaustive all-word certificate). Original model has two failures at length 13; modified model has zero possible failures for all 3^13 words. Exact-rational witness `0022222222222`: original +0.11199123726426027, modified +0.0003642255520329174.
+
+Strong transfer falsification: unchanged seed 210 originally has error -0.0000071813888476 on word `02`, but the same coordinate-3 clamp yields -0.9999035132247276, exact rational arithmetic. Seed 215 unchanged through 13. The frozen cross-checkpoint publishability threshold is NOT met. Fixed-index clamping is retired as a general intervention; it remains a locally effective causal intervention on seed 214. No unbounded algorithm certificate or novel law established.
+
+THEORY: finite-horizon interval enclosure applies to the modified model only. LEARNING: causal response depends on learned coordinate roles and fails to transfer between gradient-trained checkpoints. See local complete reproducibility package for code, raw outcomes, tests and independent checker; GitHub code upload was rejected by execution safety checks. Literature: https://proceedings.mlr.press/v217/el-naggar23a.html
