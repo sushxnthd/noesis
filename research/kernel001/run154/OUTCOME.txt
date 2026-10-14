@@ -1,0 +1,1 @@
+Seed 216: predicted safe, exact witness at 33 tokens. The diagnostic fails its success gate. Other seven had no beam witness through 128.
