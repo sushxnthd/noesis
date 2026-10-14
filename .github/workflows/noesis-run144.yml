@@ -1,0 +1,13 @@
+name: NOESIS Run 144
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install numpy
+      - run: tar -xzf research/kernel_001/run144/NOESIS_run144_artifacts.tar.gz
+      - run: cd research/kernel_001/run144 && python run144.py && python independent_check.py && python -m unittest -v test_run144.py && sha256sum -c SHA256SUMS.txt
