@@ -1,0 +1,25 @@
+{
+  "run": 187,
+  "protocol_sha256": "d6818e1db45c97387d64df9aa89e6f15c36dc901f7dc68f5c3a055b59cb2daa4",
+  "status": "frozen before training",
+  "seeds": [
+    101,
+    103,
+    107,
+    109
+  ],
+  "steps": [
+    0,
+    100,
+    300,
+    600,
+    1200
+  ],
+  "width": 8,
+  "training_words": 64,
+  "length": 6,
+  "optimizer": "Adam",
+  "lr": 0.02,
+  "success": "at least one independent rigorous two-box all-word certificate with logit margin >=0.1",
+  "claims": "proof of concept only; not novel law"
+}
