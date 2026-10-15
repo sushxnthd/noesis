@@ -1,0 +1,2 @@
+RUN183 frozen pre-evaluation SHA256: cbe88d1fe0346984f310e2da3e22d6b81016f4035ad7fc45a7c8cb3f5fa6b7b2
+Selection: 256 gradient-trained model-word evaluations, 128 predicted pass, 128 predicted fail; horizon 2048; threshold 0.1; 32-cycle linear forecast; source Run181 checkpoints. No held-out outcomes inspected.
