@@ -1,0 +1,1 @@
+GitHub branch writes: protocol 37f627a, prediction hash be2070e, outcome ab32ff8. Full raw prediction JSON, checkpoint artifacts, generator, and research-specific CI have not been uploaded. Generic repository CI does not verify Run180. Full local archive is the evidence source pending remote write-through.
