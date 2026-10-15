@@ -1,0 +1,1 @@
+Run 181: 48 gradient-trained model snapshots, 30 training-fit-matched, 9 pass, 21 fail. AUC(D)=AUC(B)=AUC(train MSE)=1.000; advantage 0.000. Five observed fail-to-pass snapshot transitions. Independent NumPy 192/192 clocks, 96/96 scores. No general algorithm-acquisition claim.

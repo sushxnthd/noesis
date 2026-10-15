@@ -1,0 +1,1 @@
+{"total_snapshots":48,"fit_matched":30,"positives":9,"negatives":21,"auc":{"neutral_probe_D":1.0,"baseline_B":1.0,"train_mse":1.0},"auc_improvement":0.0,"fail_to_pass_transitions":[[3,401,800,1200],[3,405,400,800],[3,409,400,800],[7,405,200,400],[7,409,800,1200]],"primary_success":false,"independent_clocks":192,"independent_scores":96,"independent_mismatches":0}
