@@ -1,0 +1,1 @@
+NOESIS Run174 frozen protocol: 32 archived trained checkpoints, 98 balanced words, 32-cycle composition residual predicting failures by 8192 cycles. See local evidence package.
