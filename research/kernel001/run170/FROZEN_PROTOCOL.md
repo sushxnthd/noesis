@@ -1,0 +1,1 @@
+NOESIS run170 frozen protocol: retrospective exact proof attempt on unchanged run169 width3 seed406. Require rational cone proof, directed-rounding endpoint, and full mask-region enclosure. Failure recorded; no novelty claim.
