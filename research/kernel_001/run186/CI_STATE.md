@@ -1,0 +1,1 @@
+Local pytest: 5/5 passed. Remote Actions status unverified because available workflow lookup returns PR-triggered runs only. Draft PR creation was blocked. Large frozen and raw artifacts are retained in the reproducibility archive and not fully mirrored to GitHub.
