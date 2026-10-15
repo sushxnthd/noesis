@@ -1,0 +1,5 @@
+# THEORY — Run 184
+**Exact:** For one unchanged gradient-trained width-7 seed-409 epoch-200 checkpoint, all ten cyclic rotations of balanced word 1110001001 have a forward-invariant single-active-neuron interval under exact-rational interpretation of stored binary64 parameters. The 10-block map is an affine contraction. Endpoint sign checks imply activation stability for every repetition.
+**Exact classification:** rotations 0,6,8 satisfy |output-6|<0.1 for every k>=0; rotations 1,2,3,4,5,7,9 have exact first failure clocks 186,87,57,87,186,186,148.
+**Proof scope:** repeated single words after prefix 000000. Not arbitrary concatenations, not a global learned counter certificate. No new general theorem or historical novelty claimed. All phases have equal word length and symbol counts.
+**Prior art:** El-Naggar et al. (2023), https://proceedings.mlr.press/v217/el-naggar23a.html ; Dave et al. (2025), https://proceedings.mlr.press/v284/dave25a.html . This is a trained-model diagnostic counterexample, not a priority claim for affine dynamics.

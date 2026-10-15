@@ -1,0 +1,42 @@
+{
+  "checkpoint": "Run181 width7 seed409 epoch200",
+  "train_mse": 0.000007237924895283261,
+  "prefix": "000000",
+  "word": "1110001001",
+  "rotations": [
+    "1110001001",
+    "1100010011",
+    "1000100111",
+    "0001001111",
+    "0010011110",
+    "0100111100",
+    "1001111000",
+    "0011110001",
+    "0111100010",
+    "1111000100"
+  ],
+  "first_failure": [
+    null,
+    186,
+    87,
+    57,
+    87,
+    186,
+    null,
+    186,
+    null,
+    148
+  ],
+  "exact_all_length_correct": [
+    0,
+    6,
+    8
+  ],
+  "finite_failures": 7,
+  "baseline_predicted_failure_count": 10,
+  "baseline_false_fail": 3,
+  "protocol_commit": "8550d653d55909fb168249815996effa776182f2",
+  "proof_semantics": "exact rationals of stored binary64 parameters",
+  "independent": "100-digit Decimal direct replay 2048 repetitions",
+  "limits": "one checkpoint; repeated single word; not arbitrary composition or algorithm acquisition"
+}
