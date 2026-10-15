@@ -1,0 +1,1 @@
+Run 180 negative: 128 evaluations, 57 failures, zero baseline classification errors, independent replay 128/128. Frozen prediction SHA256 2d2dacd8b69ebdf97bcb373993180c3398528808f813df88272907762dc18d03. No breakthrough.
