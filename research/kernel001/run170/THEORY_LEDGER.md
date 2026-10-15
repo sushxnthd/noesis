@@ -1,0 +1,2 @@
+# THEORY ledger — Run 170
+Exact-rational cone and interval proof for original gradient-trained Run169 width3 seed406. On 0^6(01)^k, k<=7901, both token masks stay (+,+,-), output error strictly decreases, e7900 > -0.1 and e7901 < -0.1. Hence first failure k=7901. This retrospective proof uses O(log k) interval powering and a forward-invariant cone. Classical affine-system mathematics; not a new universal law. See run170_cert.py and RESULT170.json.

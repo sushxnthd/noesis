@@ -1,0 +1,14 @@
+{
+  "run":170,
+  "checkpoint":"run169/checkpoints/w3_seed406.json",
+  "checkpoint_sha256":"fbd726880b76805a248c5c7d394ce993e98ddb3cc3863937088dc20368d2fc06",
+  "semantics":"stored decimal weights as exact rationals",
+  "first_failure_cycle":7901,
+  "error_7900_interval":["-0.099997112219778808566559561262948251065908122670322746330303489571631731341798580057958246891820242","-0.099997112219778808566559561262948251065908122670322746330303489571631731341798580057958246891815522"],
+  "error_7901_interval":["-0.100009707674039983380882059237166488636406108566780541891975559977545479318472663499152934799518574","-0.100009707674039983380882059237166488636406108566780541891975559977545479318472663499152934799513851"],
+  "strict_monotonicity_to_failure":true,
+  "all_masks_proven_to_failure":true,
+  "independent_check":{"first_failure":7901,"mask_changes":0,"verified_cycles":7901},
+  "smallest_claim":"retrospective O(log k) proof of exact first restricted-language failure in one unchanged gradient-trained network",
+  "field_breakthrough":false
+}

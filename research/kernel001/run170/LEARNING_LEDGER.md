@@ -1,0 +1,2 @@
+# LEARNING ledger — Run 170
+Source model is unchanged and gradient trained. No new training or algorithm-acquisition transition. The proof strengthens verification of a previously observed delayed failure, on one restricted sequence family under exact-rational semantics. It does not predict unseen checkpoints. Continue Kernel001 only if a task-observable stability diagnostic beats fit/local-error baselines in a frozen held-out study. Previous failed candidate diagnostics remain retired. Source: El-Naggar et al., ICGI 2023.
