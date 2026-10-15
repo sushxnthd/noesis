@@ -1,0 +1,20 @@
+name: NOESIS Run183 exact proof
+on:
+  push:
+    branches:
+      - 'research/kernel-001-run183-matched-difficulty-audit'
+  pull_request:
+    paths:
+      - 'research/kernel001/run183/**'
+      - '.github/workflows/noesis-run183-proof.yml'
+  workflow_dispatch:
+jobs:
+  exact-proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify rational invariant of unchanged trained checkpoint
+        run: python research/kernel001/run183/proof183.py
