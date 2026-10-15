@@ -1,0 +1,7 @@
+import numpy as np
+
+def widen_lo(x):
+    return np.nextafter(x, -np.inf)
+
+def widen_hi(x):
+    return np.nextafter(x, np.inf)
