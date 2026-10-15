@@ -1,0 +1,11 @@
+RUN177 archived-cohort derived outcomes
+Order: width 3 then 7; seed 400..415 ascending; within each seed words 1011001010,1011010100,001001010111,100101110100.
+128-bit accepted flags (MSB first): fffffffffff0f04f00000f000ff00f0f
+Accepted: 73/128 (width3=53, width7=20).
+Rejected: 55; all sign-undecidable.
+Accepted incorrect archived affine clocks: 0.
+Independent direct full-horizon replay: 20 activation-switching cases, 0 accepted switches.
+Known width7 seed414 late switches at cycles 781,1232: both rejected.
+RUN177_RESULTS.json SHA256: 6dcca31965ed6a0b1b06c616c41b29fd66e2557f7c1057263a1d7e92b7067a00
+run177_compact.py SHA256: 704078ee4e5df344612ad284b5af2d532144930a7eb2af73233c222329a72218
+Source: frozen Run176 32 checkpoints; retrospective method check; no breakthrough.
