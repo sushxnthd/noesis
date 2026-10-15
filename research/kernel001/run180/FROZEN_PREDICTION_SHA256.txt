@@ -1,0 +1,2 @@
+2d2dacd8b69ebdf97bcb373993180c3398528808f813df88272907762dc18d03  RUN180_FROZEN_PREDICTIONS.json
+Selection: 11200 candidate pairs, 32 checkpoints, 350 balanced words of length 2-10. Four deterministic cases per checkpoint; only first 32 true neural cycles used. Full-horizon evaluation not yet performed.
