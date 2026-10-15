@@ -1,0 +1,5 @@
+# Run 187 results
+
+Four width-8 generic tanh RNNs trained on all 64 length-six parity words. At epoch 600, seeds 101 and 107 each correctly classified every prefix of 4096 length-12 words and 128 length-128 random words. At epoch 300, those seeds passed under 1% of length-12 whole words. A frozen two-box interval-hull certificate failed for all 20 checkpoints, with initial output intervals crossing the required sign margin. No unbounded guarantee established. Independent PyTorch/NumPy heldout accuracies matched on 12 saved checkpoints. An exploratory length-4096 test passed 32/32 sequences for seeds 101 and 107; this is not a proof.
+
+TRAINED.json local SHA256: c5eddbd14ffa77d73feb94da553863b62a402b8c7755914490ba7c2bd37c1508. Correct SHA256 of pretraining PROTOCOL.md: c2a2fda2414282586a3eb5c63b6228d28448dabca90e375655a81a9fd461e9ae. FREEZE.json has an incorrect protocol digest, preserved as an audit discrepancy. The full trained artifact is in the local reproducibility archive, not yet remotely uploaded.
