@@ -1,0 +1,1 @@
+First failure: k=203110 on balanced block 111000. Local exact and C++ checkers agree. Restricted-family result only.
