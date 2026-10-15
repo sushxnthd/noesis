@@ -1,0 +1,2 @@
+# Run170 provenance
+Protocol commit 9ec4d13 preceded proof. Proof commit 8c9f527 includes exact and independent checkers. Generic CI 38692061987 passed 31 tests, 1 skipped (includes Run170 tests). Direct file-write and draft PR actions were blocked; the Git data route worked. A dedicated workflow was not committed. No main merge. Checkpoint from Run169, already known first failure, no prospective prediction.
