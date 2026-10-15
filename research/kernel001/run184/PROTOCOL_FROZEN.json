@@ -1,0 +1,29 @@
+{
+  "run": 184,
+  "created_utc": "2026-10-15",
+  "active_kernel": "001 matched-difficulty acquisition / cyclic-phase transfer adversary",
+  "source_run": 181,
+  "checkpoint": {
+    "width": 7,
+    "seed": 409,
+    "epoch": 200,
+    "train_mse": 0.000007237924895283261,
+    "source_sha256": "77af27664f5cf0e063bc3751d062cd130cae593507f3131212892707b1ebc3ac",
+    "parameter_sha256_canonical": "c65f38fe9017e7fec715ec7afebc4fc2d39a41e1d59275187af55faab06ee47c"
+  },
+  "certified_word": "1110001001",
+  "prefix": "000000",
+  "candidate_words": "all 10 cyclic rotations of the certified 10-token word, including the original as control",
+  "horizon": 2048,
+  "threshold": 0.1,
+  "output_target": 6,
+  "semantics": "original stored binary64 parameters interpreted as exact rationals for proof; float64 simulation only for screening",
+  "frozen_hypothesis": "At least one nonidentity cyclic rotation violates abs(output-6)<=0.1 by 2048 repetitions although the original is proven correct for all repetitions.",
+  "primary_scalar": "number of nonidentity rotations failing by repetition 2048",
+  "success_criterion": "at least one rotation fails and original passes; at least one failing rotation independently checked and exact-rationally certified",
+  "baseline_competitor": "cyclic permutations may share sufficient balanced-counting dynamics; 32-cycle linear drift may already predict every failure",
+  "independent_check": "independent Decimal or direct NumPy replay plus exact rational inequality for a selected witness",
+  "no_peeking": "No evaluation beyond the 32-cycle horizon before protocol commit. The word family and success criterion are frozen before running full-horizon simulations.",
+  "claim_boundary": "word-specific phase sensitivity in one unchanged gradient-trained checkpoint, not an algorithm-acquisition law",
+  "kill_condition": "If no rotation fails by 2048, retire cyclic-phase adversary on this checkpoint and retain negative."
+}
