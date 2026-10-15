@@ -1,0 +1,1 @@
+Run168 exact gauge test: 16/16 ratios >100; 1936/1936 rational equalities; 1072 independent equalities; 3/3 local tests. Raw Jacobian norm is not gauge invariant. Full evidence upload blocked.
