@@ -1,0 +1,8 @@
+NOESIS Kernel001 Run174 FROZEN PROTOCOL (before evaluation; 2026-10-15)
+Data: all 32 unchanged gradient-trained Run169 checkpoints, widths 3 and 7, seeds 400..415. Sorted checkpoint SHA256 manifest digest b5b538916eba46171e52f22fa887706f4344a04927804d3da0cb938ccb1bd63c.
+Task: after prefix 000000, repeat each of 98 balanced binary words of lengths 2,4,6,8, all target 6. Float64 sequential ReLU recurrence h=max(A@h+E[token],0), y=w@h, epsilon 0.1.
+Score R=max_B abs((y_B(32)-6)-(y_01(32)-6)). Positive label: any word first fails after cycle 32 and by cycle 8192. Exclude from delayed ranking checkpoints failing on any word by cycle 32, but report them all.
+Baselines: training MSE; abs(01 error at cycle 1); abs(01 error at cycle 32); max_B abs(error_B at cycle 1); max_B abs(error_B at cycle 32).
+Matched: MSE <= 1e-8, abs(01 cycle1 error)<=1e-4, no early failure. Success requires >=2 positives and >=2 negatives in EACH width, pooled AUC(R)>=strongest baseline AUC+0.10 and width-specific AUC(R)>=0.80. If events insufficient, INCONCLUSIVE; if sufficient but threshold fails, FALSIFIED. Ties 0.5; nonfinite is failure. No post hoc selection or tuning.
+Competing explanation: short-horizon fit predicts everything. Cheapest falsification: this archived-model, newly frozen held-out task family. Publishability requires new seeds/architectures, independent verification, priority audit, strongest spoofs, and proof/prediction. Learning relevance requires genuine incremental prediction on trained models. Kill this diagnostic after three substantive failed improvements.
+THEORY: task-observable output errors invariant to positive diagonal hidden-state rescaling; no sufficiency law claimed. LEARNING: frozen evaluation of trained networks, no retraining.
