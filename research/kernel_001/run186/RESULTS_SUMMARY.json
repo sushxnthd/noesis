@@ -1,0 +1,37 @@
+{
+  "run": 186,
+  "cohort": "29 unchanged gradient-trained Run181 checkpoints x 16 held-out balanced words",
+  "pairs": 464,
+  "passed_at_8192": 110,
+  "failed_at_8192": 354,
+  "linear_errors": 3,
+  "hybrid_errors": 3,
+  "primary_success": false,
+  "primary_improvement": 0,
+  "frozen_prediction_sha256": "871515dd2130460b903a4b2ed1c0f95af435f364f6ad94802de8f9036f10e9e0",
+  "source_sha256": "77af27664f5cf0e063bc3751d062cd130cae593507f3131212892707b1ebc3ac",
+  "exceptions": [
+    {
+      "checkpoint": "w3_s409_e800",
+      "word": "011100",
+      "linear_predicted_failure_at_8192": true,
+      "observed_pass_at_8192": true,
+      "exact_first_failure": 8623
+    },
+    {
+      "checkpoint": "w3_s409_e800",
+      "word": "101010",
+      "linear_predicted_failure_at_8192": true,
+      "observed_pass_at_8192": true,
+      "exact_first_failure": 8623
+    },
+    {
+      "checkpoint": "w3_s409_e800",
+      "word": "110001",
+      "linear_predicted_failure_at_8192": true,
+      "observed_pass_at_8192": true,
+      "exact_first_failure": 8623
+    }
+  ],
+  "limits": "The three exceptions share one checkpoint and fail shortly after the finite horizon. No improvement over baseline or evidence of unbounded algorithm acquisition. The 464-case raw file and full frozen prediction JSON are in the local reproducibility archive; remote upload of those large files remains incomplete."
+}
