@@ -1,0 +1,2 @@
+02e1b09ba4d5fb589bde4f9281bbc1f528b722ee35f4f032501a87a5564b7949  FROZEN_PROTOCOL_RUN177.md
+Retrospective 128 archived Run176 model-word cases; outward-rounded inductive box; success >=64 accepted, zero late-switch acceptance, zero wrong accepted affine clocks.
