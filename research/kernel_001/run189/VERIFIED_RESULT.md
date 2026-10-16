@@ -1,0 +1,3 @@
+# NOESIS Run 189 — verified transfer and regression
+
+New seed 127, epoch 600: all-length prefix parity certified using 2048 parity/suffix interval boxes. Two independent exact-real interval checkers pass. Seed 111, epoch 300: independently certified all-length parity using 512 boxes; at epoch 600, after training loss improved, the same trajectory fails on 0000000001 (parity 1, output -0.85077608867685235). Original four-seed training source SHA256 51811aa3f54730b3b4556fdbbb5f9b9fe28e03afef331257354692313d4a79fb. Remote preregistration was blocked; protocol was locally hashed before training. Do not call this a model-agnostic learning law.
