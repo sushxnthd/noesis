@@ -5,7 +5,6 @@
   "architecture": "fully coupled 2D symbol-gated tanh RNN",
   "training": "800 full-batch Adam steps on all 729 length-6 ternary reset-parity words; 100% training accuracy",
   "checkpoint_file": "research/kernel_001/run210/checkpoints/seed_773.json",
-  "source_archive_sha256": "212df318db2f0991f60e930410c4fc4d67a53053ca0b984fb2dd6f9894e904ad",
   "counterexample": "010011001100100",
   "length": 15,
   "correct_class": 0,
@@ -24,5 +23,6 @@
   "minimum_length_status": "numerically globally shortest through 14; not rigorously proved minimal",
   "certificate_scope": "one exact-real trained-checkpoint error with two independent interval implementations",
   "interpretation": "Run210 seed773 interval-box abstention corresponds to a real model error; does not prove all abstentions are errors",
-  "prior_art_status": "not audited to breakthrough standard"
+  "prior_art_status": "not audited to breakthrough standard",
+  "run210_checkpoints_sha256": "212df318db2f0991f60e930410c4fc4d67a53053ca0b984fb2dd6f9894e904ad"
 }
