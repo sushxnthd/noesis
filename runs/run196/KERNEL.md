@@ -1,0 +1,3 @@
+# Active kernel 001 — task-aligned inductive simulation
+
+Question: certify reusable parity behavior in trained RNNs, not finite-range heuristics. Frontier: neural parity acquisition, automata extraction and RNN verification are established prior art. Success scalar: independent exact all-length certificate at both seed233 epochs. Rival: finite-horizon spoof or unsound interval bound. Falsify by independent base/closure/output checks and capped parity control. Publishable threshold: prospective unseen-task/architecture advantage over finite baselines. Learning threshold: unmodified gradient-trained checkpoints. Kill after three failures to transfer beyond parity/tanh RNN. Backups: train-time margin prediction; cross-architecture abstraction (inactive).
