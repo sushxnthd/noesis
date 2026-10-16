@@ -1,0 +1,26 @@
+name: noesis-run197-proof
+on:
+  push:
+    branches:
+      - research/kernel-001-run197-mod3-frozen-transfer
+  workflow_dispatch:
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install mpmath
+      - name: Verify all words through length 15
+        run: |
+          cd research/kernel-001/run197
+          python independent_check.py --maxdepth 14 > PROOF_PREFIX_LOG.txt
+          python exact_length15.py > PROOF_LENGTH15_LOG.txt
+          python -c "import json; x=json.load(open('EXACT_LENGTH15.json')); assert x['inputs_checked']==32768 and x['wrong_count']==1 and x['ambiguous']==0"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: run197-independent-proof
+          path: research/kernel-001/run197/PROOF_*_LOG.txt
