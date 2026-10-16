@@ -1,0 +1,16 @@
+{
+ "exact_length": 15,
+ "inputs_checked": 32768,
+ "wrong_count": 1,
+ "wrong": [
+  {
+   "word": "000000101010000",
+   "true": 0,
+   "predicted": 1
+  }
+ ],
+ "ambiguous": 0,
+ "precision_decimal_digits": 45,
+ "independent_interval": true,
+ "elapsed_seconds": 65.84
+}
