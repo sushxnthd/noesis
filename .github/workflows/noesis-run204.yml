@@ -1,0 +1,10 @@
+name: noesis-run204
+on:
+  push:
+    branches: [research/kernel-001-run204-quotient-information-bound]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python research/kernel-001/run204/independent_finite_lemma.py
