@@ -1,0 +1,23 @@
+name: noesis-run211-proof
+on:
+  push:
+    branches:
+      - research/kernel-001-run211-abstention-adversary
+  workflow_dispatch:
+jobs:
+  independent-witness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install numpy mpmath
+      - run: python research/kernel_001/run211/verify_primary.py
+      - run: python research/kernel_001/run211/verify_independent_decimal.py
+      - run: OPENBLAS_NUM_THREADS=1 python research/kernel_001/run211/beam.py
+      - run: OPENBLAS_NUM_THREADS=1 python research/kernel_001/run211/exhaustive_float64.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: run211-numerical-enumeration
+          path: research/kernel_001/run211/EXHAUSTIVE_FLOAT64.json

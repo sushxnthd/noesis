@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "seed": 773,
+  "epoch": 800,
+  "architecture": "fully coupled 2D symbol-gated tanh RNN",
+  "training": "800 full-batch Adam steps on all 729 length-6 ternary reset-parity words; 100% training accuracy",
+  "checkpoint_file": "research/kernel_001/run210/checkpoints/seed_773.json",
+  "source_archive_sha256": "212df318db2f0991f60e930410c4fc4d67a53053ca0b984fb2dd6f9894e904ad",
+  "counterexample": "010011001100100",
+  "length": 15,
+  "correct_class": 0,
+  "predicted_class": 1,
+  "logit_interval_primary": [
+    "0.78649425024194519497398178488433767761871638915300183557896801848212510285037042275610207930708",
+    "0.78649425024194519497398178488433767761871638915300183557896801848212510285037042275655109150452"
+  ],
+  "logit_interval_independent": [
+    "0.78649425024194519497398178488433767761871638915300183557896801848212510285037042274307727",
+    "0.78649425024194519497398178488433767761871638915300183557896801848212510285037042276957414"
+  ],
+  "float64_exhaustive_through_length": 14,
+  "float64_min_margin_at_length_14": 1.7818091041612139,
+  "float64_errors_through_length_14": 0,
+  "minimum_length_status": "numerically globally shortest through 14; not rigorously proved minimal",
+  "certificate_scope": "one exact-real trained-checkpoint error with two independent interval implementations",
+  "interpretation": "Run210 seed773 interval-box abstention corresponds to a real model error; does not prove all abstentions are errors",
+  "prior_art_status": "not audited to breakthrough standard"
+}
