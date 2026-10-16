@@ -3,7 +3,14 @@ from pathlib import Path
 from candidate import first_error, propose_boxes
 from verify_interval import prove_first_error, prove_all
 R=Path(__file__).resolve().parent
-rows=[r for r in json.loads((R/'RUN209_CHECKPOINTS.json').read_text())['rows'] if r['epoch']==800]
+full=R/'RUN209_CHECKPOINTS.json'
+if full.exists():
+ rows=[r for r in json.loads(full.read_text())['rows'] if r['epoch']==800]
+else:
+ compact=json.loads((R/'EPOCH800_COMPACT.json').read_text())
+ rows=[{'seed':seed,'epoch':800,'loss':loss,'train_accuracy':1.0,
+        'params':{'w':w,'b':b,'v':v,'c':c}}
+       for seed,loss,w,b,v,c in compact['rows']]
 out=[]
 for row in rows:
  n,word=first_error(row)
