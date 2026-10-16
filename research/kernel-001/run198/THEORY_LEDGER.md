@@ -1,0 +1,2 @@
+# THEORY ledger — Run198
+A frozen task-aligned 455-word probe (length15, exactly three ones) is not sufficient even for length15 correctness in a trained modulo3 RNN. Seed269 epoch800 has no probe errors, but word 111001110011000 (8 ones, true residue2) is misclassified as residue1. Independent 40-digit directed intervals with exact rational binary64 weights verify all 455 probe words and the witness. Full-universe 73-error count is numerical, not an exact exhaustive interval theorem. No all-length certificate.

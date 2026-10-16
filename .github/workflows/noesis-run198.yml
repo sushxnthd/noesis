@@ -1,0 +1,22 @@
+name: noesis-run198-frozen-transfer
+on:
+  push:
+    branches: [research/kernel-001-run198-evidence]
+  workflow_dispatch:
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install numpy torch mpmath
+      - run: python research/kernel-001/run198/run198.py train
+      - run: python research/kernel-001/run198/run198.py eval
+      - run: python research/kernel-001/run198/interval_probe.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: noesis-run198-reproduction
+          path: research/kernel-001/run198/CI_*.json

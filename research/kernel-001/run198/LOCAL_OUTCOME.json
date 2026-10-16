@@ -1,0 +1,46 @@
+{
+  "run": 198,
+  "protocol_commit": "cf92a40f7fed7c61170821b456ba5b86831004eb",
+  "checkpoint_sha256": "81e10a8981b0a1eaf1b5f63704cb76deb1cf9a5a8ef140ad3c0b62a3a61f8a3b",
+  "seeds": [
+    269,
+    271,
+    277,
+    281
+  ],
+  "epochs": [
+    400,
+    800
+  ],
+  "probe_errors": [
+    20,
+    0,
+    29,
+    9,
+    171,
+    23,
+    274,
+    301
+  ],
+  "universe_errors": [
+    2493,
+    73,
+    439,
+    32,
+    3335,
+    1266,
+    11104,
+    11099
+  ],
+  "R": 1.9958627612794697,
+  "success": false,
+  "certified_miss": {
+    "seed": 269,
+    "epoch": 800,
+    "probe_words_correct": 455,
+    "witness": "111001110011000",
+    "true_residue": 2,
+    "predicted_residue": 1
+  },
+  "limitation": "Full-universe counts numerical; probe and witness independently interval verified."
+}

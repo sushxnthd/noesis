@@ -1,0 +1,2 @@
+# LEARNING ledger — Run198
+Held-out seeds 269/271/277/281, checkpoints 400 and 800, all 100% training accuracy. Frozen probe: 827 errors / 3640 evaluations. Exhaustive numerical length15: 29841 errors / 262144 evaluations. R=1.9958627612794697, below frozen 3x threshold. Seed269 epoch800: 0/455 probe errors but 73 numerical length15 errors, with an independently proven missed witness. Seed271 epoch800's 20.25x per-checkpoint enrichment is exploratory and cannot rescue the failed aggregate. Second failed prospective transfer after Run197.
