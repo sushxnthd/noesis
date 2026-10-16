@@ -1,5 +1,8 @@
 name: noesis-run193
-on: [push]
+on:
+  push:
+    branches:
+      - research/kernel-001-run193-shortest-checkpoint-separator
 jobs:
   test:
     runs-on: ubuntu-latest
