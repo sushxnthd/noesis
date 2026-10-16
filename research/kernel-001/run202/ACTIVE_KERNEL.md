@@ -1,0 +1,14 @@
+# NOESIS active Kernel 001 — task-quotient inductive simulation
+
+Run202 froze and tested the previous zero-tail fixed-period proof on six held-out trained checkpoints. The composite primary criterion FAILED: 5/6 model-specific zero-tail certificates, but zero certified changes in eventual class. That direction is retired as a *primary* acquisition diagnostic, retained only as an auxiliary verifier.
+
+1. **Precise question.** Can automatically synthesized task-state quotient regions certify correct streaming mod-3 updates on **both** input symbols for all lengths of a genuinely gradient-trained RNN, despite noncontractive or chaotic hidden-state motion, and reject the original bounded-heuristic spoof?
+2. **Primary-literature frontier.** Weiss, Goldberg & Yahav (ICML 2018) extract automata from trained RNNs; Jacoby, Barrett & Katz (ATVA 2020) infer RNN invariants; Ryou et al. (CAV 2021) verify RNNs with polyhedral abstractions; van Rossem & Saxe (ICML 2025) study parity algorithm-acquisition phase transitions. No claim that automaton extraction, quotienting, or RNN verification alone is novel.
+3. **One exact success criterion.** At least one previously unseen gradient-trained checkpoint obtains a sound, independently verified *all-binary-input* count-mod-3 inductive simulation certificate, and the same frozen synthesizer rejects a cap/spoof model that agrees at every finite evaluation horizon. Count = 1 qualifying certificate.
+4. **Strongest competing explanation.** Task labels leak the intended automaton into a hand-built partition; certification succeeds only on specially constructed attractors and cannot predict training transitions.
+5. **Cheapest decisive falsification.** On a preselected trained checkpoint, attempt a three-class output-aligned region partition, prove initial-state inclusion, and check both 0/1 transition inclusions with outward intervals. If a single reachable counterexample violates a proposed region or spoof passes, record failure.
+6. **Publishable threshold.** Prospective transfer to unseen architecture/task, strongest spoof controls, independent checker, mechanism-derived prediction of a held-out training transition, and comprehensive priority audit.
+7. **Learning relevance threshold.** At least one genuine gradient-trained checkpoint certified for all binary strings, followed by a frozen experiment showing certificate presence/absence predicts a generalization transition beyond finite-horizon accuracy.
+8. **Kill condition.** Three substantive failed synthesis/proof attempts or any unsound acceptance require killing/reformulating this quotient candidate; no parameter-only cosmetic retries.
+
+**One active kernel; zero backups.** No claim of field-level breakthrough. All prior negative evidence and failed workflows retained. Only free public compute; do not load user laptop.
