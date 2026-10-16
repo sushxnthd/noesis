@@ -1,0 +1,14 @@
+{
+  "type": "posthoc_wildcard",
+  "seed": 307,
+  "word": "1110001010100010",
+  "true_residue": 1,
+  "epoch400_prediction": 1,
+  "epoch800_prediction": 2,
+  "interval_digits": 70,
+  "exact_stored_binary64": true,
+  "verified": true,
+  "first_numerical_regression_length": 16,
+  "number_regressions_at_length16": 1,
+  "shorter_no_regressions": "numerical exhaustive only"
+}
