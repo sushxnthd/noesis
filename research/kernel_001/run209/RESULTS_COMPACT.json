@@ -1,0 +1,53 @@
+{
+  "run": 209,
+  "frozen_commit": "c31947addda756d38613a98d7fde2c86aad146a2",
+  "criterion": "at least three incorrect and >=0.8 shortest-witness family agreement",
+  "n_seeds": 12,
+  "all_training_accuracy": 1,
+  "all_sampled_heldout256_errors": 0,
+  "positive_all_length": [
+    659,
+    661,
+    673,
+    701,
+    709,
+    719,
+    727,
+    733
+  ],
+  "negative_first_error": [
+    {
+      "seed": 677,
+      "length": 11,
+      "word": "10000000001",
+      "verified_logit_lower": 4.294806450579584
+    },
+    {
+      "seed": 683,
+      "length": 10,
+      "word": "1000000001",
+      "verified_logit_lower": 3.3377117136746226
+    },
+    {
+      "seed": 691,
+      "length": 11,
+      "word": "10000000001",
+      "verified_logit_lower": 1.3422027564753056
+    },
+    {
+      "seed": 739,
+      "length": 8,
+      "word": "10000001",
+      "verified_logit_lower": 1.157789960972771
+    }
+  ],
+  "score": 1,
+  "pass": true,
+  "independent_local_checkers": [
+    "mpmath.iv outward intervals 85 digits",
+    "Fraction/Decimal directed intervals 95 digits"
+  ],
+  "checkpoints_sha256": "32987ecc802fa8b8bd7b7410620a191f9bc3266aeae3596f7a1a30398c6a4fc8",
+  "full_local_proofs_sha256": "c61b868358b9474e365907d6c3703992023c0ad5d6d2690780b6444751ee8554",
+  "remote_full_proof_verified": false
+}
