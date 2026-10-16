@@ -1,0 +1,38 @@
+{
+  "status": "locally independently interval-verified",
+  "frozen_protocol_commit": "3ea5d8ef906bfab526284a6cc705cdc0fa13b0c1",
+  "first_failures": {
+    "379": 27,
+    "389": 8,
+    "397": 8,
+    "401": 16,
+    "421": 19,
+    "431": 9,
+    "443": 8,
+    "457": 8,
+    "463": 11,
+    "491": 8,
+    "503": 8,
+    "523": 8,
+    "557": 8,
+    "563": 27,
+    "569": 9,
+    "601": 9,
+    "607": 8,
+    "613": 13,
+    "617": 8,
+    "647": 9
+  },
+  "num_uncertified_checkpoints": 20,
+  "certified_first_failures": 20,
+  "new_errors_not_seen_in_random_heldout256": 18,
+  "witness_pattern": "1 followed by L-2 zeros followed by 1",
+  "witness_expected": 0,
+  "witness_predicted": 1,
+  "independent_methods": [
+    "mpmath.iv interval hull and exact binary64 rational parameters",
+    "Fraction/Decimal outward tanh interval hull and exact binary64 rational parameters",
+    "independent brute force all ternary words for first failure <=8"
+  ],
+  "claim": "All 20 Run207 uncertified epoch800 checkpoints are provably incorrect on a first-length witness <=27, even though 18 had no errors in Run207 random heldout256."
+}
