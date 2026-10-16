@@ -1,0 +1,15 @@
+name: noesis-run203-source-check
+on:
+  push:
+    branches: [research/kernel-001-run203-output-quotient-falsification]
+jobs:
+  source-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m py_compile research/kernel-001/run203/*.py
+      - run: test -s research/kernel-001/run203/FROZEN_PROTOCOL.md
+      - run: test -s research/kernel-001/run203/RESULTS.md

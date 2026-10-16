@@ -1,0 +1,68 @@
+{
+  "source_sha256": "5f2ea6c259cf07ae4cd1915cad3aea3ce85c20723401b33ef4e1197a67384c32",
+  "frozen_primary": {
+    "seed": 307,
+    "epoch": 400,
+    "criterion": "independently certified reachable transition-congruence violation",
+    "pass": true,
+    "shortest_max_prefix_depth": 7,
+    "words": [
+      {
+        "x": "1",
+        "pred": 1,
+        "truth": 1,
+        "margin": 8.939643186068075
+      },
+      {
+        "x": "1110001",
+        "pred": 1,
+        "truth": 1,
+        "margin": 5.1120976033265375
+      },
+      {
+        "x": "10",
+        "pred": 1,
+        "truth": 1,
+        "margin": 7.1114447889621
+      },
+      {
+        "x": "11100010",
+        "pred": 2,
+        "truth": 1,
+        "margin": 3.4748457185373938
+      }
+    ],
+    "interval_verified_words": 510
+  },
+  "secondary": {
+    "seed": 307,
+    "epoch": 800,
+    "shortest_max_prefix_depth": 8,
+    "words": [
+      {
+        "x": "1",
+        "pred": 1,
+        "truth": 1
+      },
+      {
+        "x": "11010001",
+        "pred": 1,
+        "truth": 1
+      },
+      {
+        "x": "10",
+        "pred": 1,
+        "truth": 1
+      },
+      {
+        "x": "110100010",
+        "pred": 2,
+        "truth": 1
+      }
+    ],
+    "interval_verified_words": 1022
+  },
+  "primary_checker": "mpmath.iv 70dps exact-binary64",
+  "independent_checker": "Decimal directed 110 digits with conservative exp inflation",
+  "classification": "falsified coarse output partition; no positive all-length learned-algorithm certificate"
+}
