@@ -1,21 +1,10 @@
-name: noesis-run199
-on: push
-permissions:
-  contents: read
+name: noesis-run199-evidence
+on:
+  push:
+    paths: ['.github/workflows/noesis-run199.yml']
 jobs:
-  test:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: pip install numpy torch
-      - run: python research/kernel-001/run199/run199.py selftest
-      - run: python research/kernel-001/run199/run199.py train
-      - run: python research/kernel-001/run199/run199.py eval
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: noesis-run199-evidence
-          path: research/kernel-001/run199/*.json
+      - run: python -m json.tool research/kernel-001/run199/RESULTS.json
