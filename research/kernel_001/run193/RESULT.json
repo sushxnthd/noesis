@@ -1,0 +1,25 @@
+{
+  "run": 193,
+  "status": "proved",
+  "proof_method": "complete outward-rounded interval DFS on exact binary64 checkpoint parameters",
+  "precision_dps": 45,
+  "source_checkpoint_sha256": "592939a6f4da487eff78252c20141df9bccbcc3769324fe94d4ef3eeb71a60df",
+  "seed": 163,
+  "checkpoints": [300, 600],
+  "first_separating_length": 17,
+  "all_shorter_words_verified": 131070,
+  "words_at_length_17_verified": 131072,
+  "length_17_disagreements": 2,
+  "count_by_length_1_to_17": [2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768,65536,131072],
+  "witnesses": [
+    {"word":"00111100000000011","true_parity_sign":-1,"epoch300_sign":1,"epoch600_sign":-1,
+     "epoch300_logit_interval":"[0.84742488013288274222162802105109806211005094407784, 0.84742488013288274222162802105109806211007492589975]",
+     "epoch600_logit_interval":"[-7.5180969079340368940367459999596979631477509874264, -7.5180969079340368940367459999596979631477499182357]"},
+    {"word":"01111000000000001","true_parity_sign":1,"epoch300_sign":-1,"epoch600_sign":1,
+     "epoch300_logit_interval":"[-0.31755810667205349294420506520906323854791886037257, -0.31755810667205349294420506520906323854789981637612]",
+     "epoch600_logit_interval":"[7.9280338680816530942173490959155305240386965781656, 7.9280338680816530942173490959155305240387124829031]"}
+  ],
+  "local_exact_enumeration_seconds": 255.84,
+  "independent_witness_checker": "directed 80-digit Decimal intervals; passed both witnesses",
+  "claim_limit": "One post-hoc selected gradient-trained RNN trajectory; not a new algorithm-acquisition certificate or prospective prediction."
+}
