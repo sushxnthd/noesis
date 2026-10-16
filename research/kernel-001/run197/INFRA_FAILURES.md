@@ -1,0 +1,5 @@
+# Preserved failures
+
+1. GitHub write of the verbose initial frozen protocol was blocked by connector safety checks; a shorter protocol was successfully committed before any training. The complete detailed design and this note were written locally. This is a connector limitation, not scientific evidence.
+2. Initial independent interval enumeration used breadth-first interval-state storage. It timed out after verifying through length 13. No correctness conclusion was drawn from the timeout. The checker was rewritten to depth-first traversal with identical interval equations, completed length 14, and retained the failed attempt's partial log (`INDEPENDENT_9_LOG.txt` is a prior successful small test; the timed-out log was overwritten by the final successful run). The failure is preserved here.
+3. All 16 fixed-suffix box screens abstained because output separation failed; negative result preserved in `RESULTS.json`.

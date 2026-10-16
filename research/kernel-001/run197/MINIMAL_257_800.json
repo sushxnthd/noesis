@@ -1,0 +1,86 @@
+[
+ {
+  "depth": 1,
+  "wrong": 0,
+  "total": 2
+ },
+ {
+  "depth": 2,
+  "wrong": 0,
+  "total": 4
+ },
+ {
+  "depth": 3,
+  "wrong": 0,
+  "total": 8
+ },
+ {
+  "depth": 4,
+  "wrong": 0,
+  "total": 16
+ },
+ {
+  "depth": 5,
+  "wrong": 0,
+  "total": 32
+ },
+ {
+  "depth": 6,
+  "wrong": 0,
+  "total": 64
+ },
+ {
+  "depth": 7,
+  "wrong": 0,
+  "total": 128
+ },
+ {
+  "depth": 8,
+  "wrong": 0,
+  "total": 256
+ },
+ {
+  "depth": 9,
+  "wrong": 0,
+  "total": 512
+ },
+ {
+  "depth": 10,
+  "wrong": 0,
+  "total": 1024
+ },
+ {
+  "depth": 11,
+  "wrong": 0,
+  "total": 2048
+ },
+ {
+  "depth": 12,
+  "wrong": 0,
+  "total": 4096
+ },
+ {
+  "depth": 13,
+  "wrong": 0,
+  "total": 8192
+ },
+ {
+  "depth": 14,
+  "wrong": 0,
+  "total": 16384
+ },
+ {
+  "depth": 15,
+  "wrong": 1,
+  "total": 32768,
+  "first_index": 1344,
+  "witness": "000000101010000",
+  "true": 0,
+  "pred": 1,
+  "logits": [
+   0.7262221935564191,
+   3.0684651469615285,
+   -0.5295709290390879
+  ]
+ }
+]

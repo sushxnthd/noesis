@@ -1,0 +1,7 @@
+{
+ "pass_short": 126,
+ "length7_failures": 128,
+ "first_failure": "0000000",
+ "certificate_rejected_by_witness": true,
+ "gradient_trained": false
+}
