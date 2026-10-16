@@ -1,0 +1,18 @@
+name: noesis-run192-exact
+on:
+  push:
+    branches: [research/kernel-001-run192-finite-equivalence-infinite-divergence]
+jobs:
+  exact-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install mpmath sympy
+      - run: python research/kernel_001/run192/verify_finite.py
+      - run: python research/kernel_001/run192/verify_unary.py
+      - run: python research/kernel_001/run192/independent_finite_decimal.py
+      - run: python research/kernel_001/run192/independent_decimal.py
+      - run: python research/kernel_001/run191/independent_check.py
