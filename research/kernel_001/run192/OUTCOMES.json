@@ -1,0 +1,33 @@
+{
+  "run": 192,
+  "seed": 163,
+  "epochs": [
+    300,
+    600
+  ],
+  "selection": "post_hoc",
+  "trained_sha256": "592939a6f4da487eff78252c20141df9bccbcc3769324fe94d4ef3eeb71a60df",
+  "finite": {
+    "distinct_prefixes": 8190,
+    "disagreements": 0,
+    "min_abs_logit_lower": 1.7061423208582052,
+    "independent_decimal_verified": true
+  },
+  "infinite": {
+    "epoch300_wrong_for_all_zero_lengths_at_least": 181,
+    "epoch600_correct_for_all_zero_lengths_at_least": 1,
+    "epoch600_anchor": 80,
+    "transformed_box_radius": "1e-8",
+    "max_row_norm_upper": 0.6949956391960701,
+    "output_upper": -8.95933613928861,
+    "independent_decimal_verified": true
+  },
+  "learning": {
+    "train_loss_e300": 0.05032711561123008,
+    "train_loss_e600": 0.04521537906826043,
+    "length12_passes_both": 3120,
+    "random_length128_passes_e300": 2,
+    "random_length128_passes_e600": 0
+  },
+  "status": "verified locally, remote CI pending"
+}
