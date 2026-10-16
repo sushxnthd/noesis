@@ -1,0 +1,3 @@
+# THEORY ledger — Run 197
+
+Independent 45-digit outward interval verification establishes exact-real correctness of seed 257, epoch 800, for every nonempty binary word through length 14 (32,766 words), and incorrect classification of `000000101010000` at length 15. Therefore the shortest incorrect input length is 15. All eight modulo-three trained checkpoints failed the fixed suffix-box output-separation screen at k=6 and k=8. This is abstention, not proof of incorrectness. No all-length certificate transferred. The experiment does not establish a new universal law. A length-six capped modulo-three control passes training-horizon evaluations and fails at length seven.
