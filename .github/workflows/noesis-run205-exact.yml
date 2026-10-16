@@ -16,4 +16,5 @@ jobs:
       - run: cd research/kernel_001/run205 && python verify_repo_independent.py
       - run: cd research/kernel_001/run205 && python spoof205.py
       - run: cd research/kernel_001/run205 && python spoof205_decimal.py
+      - run: cd research/kernel_001/run205 && python transition_witness205.py
       - run: cd research/kernel_001/run205 && python -m unittest -q test_run205.py
