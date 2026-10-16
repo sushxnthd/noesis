@@ -1,0 +1,1 @@
+Run 202 frozen heldout seeds 293 307 311 epochs 400 800. Criterion three certificates and one epoch transition.
