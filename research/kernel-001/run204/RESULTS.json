@@ -1,0 +1,54 @@
+{
+  "source_sha256": "5f2ea6c259cf07ae4cd1915cad3aea3ce85c20723401b33ef4e1197a67384c32",
+  "prospective": false,
+  "primary": {
+    "seed": 307,
+    "epoch": 400,
+    "L": 8,
+    "D": 7,
+    "first_error": "11100010",
+    "prediction": 2,
+    "truth": 1,
+    "verified_words": 510,
+    "errors_by_length": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "min_gap_lower": 0.7143607988184016
+  },
+  "secondary": {
+    "seed": 307,
+    "epoch": 800,
+    "L": 9,
+    "D": 8,
+    "first_error": "110100010",
+    "prediction": 2,
+    "truth": 1,
+    "verified_words": 1022,
+    "errors_by_length": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "min_gap_lower": 1.647569148192685
+  },
+  "combinatorial": {
+    "classifiers": 729,
+    "quotient_violations": 216,
+    "violations_with_perfect_labels": 0
+  },
+  "criterion": "PASS 2/2 retrospective equalities",
+  "claim": "No additional sound certificate from finite output-only quotient beyond finite task correctness"
+}
