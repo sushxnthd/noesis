@@ -1,0 +1,13 @@
+seed,epoch,train_loss,l12_pass,random128_pass,tail0_first_fail,tail1_first_fail,tail101000_first_fail,tail101001_first_fail,primary_positive
+157,0,0.7067761073,8,0,none,1,1,1,0
+157,300,0.0075114466,4035,106,none,none,none,none,0
+157,600,0.0025640253,4036,108,none,none,none,none,0
+163,0,0.6953362241,1,0,1,none,3,3,0
+163,300,0.0503271156,3120,2,181,none,none,none,0
+163,600,0.0452153791,3120,0,none,none,none,none,0
+167,0,0.6976042892,0,0,1,3,4,4,0
+167,300,0.0015517423,4096,128,none,none,none,none,0
+167,600,0.000541117,4096,128,none,none,none,none,0
+173,0,0.7127268824,0,0,1,1,1,1,0
+173,300,0.0093018371,3326,0,12,none,none,7,0
+173,600,0.001999525,3929,27,none,none,none,none,0

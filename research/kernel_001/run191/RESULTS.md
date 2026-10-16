@@ -1,0 +1,13 @@
+# NOESIS Run 191 — Frozen zero-tail test and independently verified infinite failure
+
+**Primary result: NEGATIVE.** Four previously unused gradient-training seeds (157,163,167,173), two trained checkpoints each. Only seed167 epoch300/600 passed all 4096 length12 words at every prefix. Neither failed the four frozen zero-tail families through 512 appended zeros. Frozen primary scalar 0 distinct seeds; target >=1. Do not claim successful prediction or algorithm acquisition.
+
+**Decisive secondary exact theorem (post-hoc proof on frozen evaluated seed163):** Width8 tanh RNN seed163 epoch300, using exact-real evaluation of stored float64 parameters, outputs **negative** on 0^k for every 1<=k<=180 and **positive** for every k>=181. True parity of 0^k is even, so every k>=181 is misclassified. This is a new independently checked *restricted unary-language* infinite failure theorem, not an unrestricted parity-learning law. Two-box invariant for the stable period-2 zero-input attractor; 201 direct prefix checks and 32 closure inequalities. Independent 100-digit mpmath.iv and 90-digit outward Decimal/Fraction checkers passed locally. Remote checker verifies the minimal reduced witness.
+
+**Learning observation:** Seed163 training loss 0.0503271156 at epoch300 and 0.0452153791 at epoch600; exhaustive length12 passing sequence count remained 3120/4096. At epoch300, 0^181 is wrong (certified output +0.90542234), while epoch600 gives -8.95933623 on 0^181 (independently interval-checked). BUT random length128 performance declined from 2/128 to 0/128. Thus repair of this particular tail does NOT demonstrate global algorithm acquisition.
+
+**Controls:** Seed167 epoch300/600 passed all 4096 length12 words and all 128 random length128 words; k6 and k8 interval-box candidate searches for seed167 epoch300 FAILED (box blowup; cannot infer incorrectness).
+
+**Claim limits:** Four seeds only, same task and architecture; unary input 0^k is trivial finite-state language; selected infinite witness after frozen evaluations; no certificate of epoch600 correctness on all 0^k; no all-length parity certificate for seed167; no novel general mechanism claimed.
+
+**Reproducibility:** Local full package contains frozen protocol, all 12 checkpoint weights, raw EVAL.json, scripts, interval traces, candidate failures, two independent checkers, and ledgers. Remote branch contains frozen pre-training protocol, reduced exact witness, independent proof checker, and derived checkpoint outcomes. Raw full local training JSON is not yet uploaded; remote training workflow must be checked before any independent-reproduction claim.
