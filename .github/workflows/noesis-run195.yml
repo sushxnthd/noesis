@@ -1,0 +1,32 @@
+name: NOESIS Run 195 frozen holdout
+on:
+  push:
+    branches: [research/kernel-001-run195-stutter-holdout]
+    paths:
+      - 'runs/run195/**'
+      - '.github/workflows/noesis-run195.yml'
+  workflow_dispatch:
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned dependencies
+        run: python -m pip install numpy==2.3.5 torch==2.10.0 mpmath==1.3.0
+      - name: Train untouched seeds
+        run: OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python runs/run195/run195.py train runs/run195/TRAINED.json unused
+      - name: Evaluate frozen grammar, beam and random
+        run: OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python runs/run195/run195.py eval runs/run195/TRAINED.json runs/run195/RESULTS.json
+      - name: Verify shortest separator independently
+        run: OPENBLAS_NUM_THREADS=1 python runs/run195/exact_check.py runs/run195/TRAINED.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: noesis-run195-raw-training-and-holdout
+          path: |
+            runs/run195/TRAINED.json
+            runs/run195/RESULTS.json

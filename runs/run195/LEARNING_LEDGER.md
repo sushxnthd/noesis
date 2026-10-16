@@ -1,0 +1,3 @@
+# LEARNING ledger — Run 195
+
+Eight unseen independently initialized width-8 tanh RNNs were trained with Adam on all 64 length-six parity traces through 600 steps; epochs 300 and 600 evaluated. Eligible full-length-12 pairs: seeds 223 and 233. Neither changed classification in any frozen search. Seed 199 had lower training loss at epoch 600, yet its prediction on the unique observed length-14 separator changed from positive to negative. The finite-horizon training trajectory does not imply acquired all-length algorithmicity. Retire this heuristic and reformulate the kernel around proof obligations on trained checkpoints.
