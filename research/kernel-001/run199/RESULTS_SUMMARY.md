@@ -1,0 +1,1 @@
+Prospective median ratio: 1.832167832167832 (threshold 1.5; PASS). GitHub Actions run 38894405432 independently reproduced all eight trained checkpoints and paired counts. Raw checkpoint and query artifacts: workflow artifact 12043032970. Finite adversarial test only; not an all-length certificate.
