@@ -1,0 +1,11 @@
+name: noesis-run193
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install mpmath sympy
+      - run: python research/kernel_001/run193/independent_witness.py
+      - run: python research/kernel_001/run193/verify_minimal.py
