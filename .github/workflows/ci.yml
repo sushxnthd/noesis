@@ -12,7 +12,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install pytest numpy mpmath torch
+      - run: python -m pip install pytest numpy mpmath
+      - run: python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
       - run: python -m pytest -q
       - run: python research/kernel_001/finite_horizon_spoof.py > kernel_001_results.json
       - uses: actions/upload-artifact@v4
