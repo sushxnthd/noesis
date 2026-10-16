@@ -158,7 +158,7 @@
       [
         0.31293748902469265,
         -0.6330884972388363,
-        1.9649114498350209
+        0.1783321427508058
       ],
       -6.735488855855384,
       -0.2760621184938227
@@ -196,6 +196,5 @@
       -0.4602221576585728
     ]
   ],
-  "source": "assistant-runtime frozen Run 209, exact binary64 float repr; full checkpoint snapshots in evidence archive",
-  "warning": "Seed 727 w2 must be checked against archived full checkpoint before use."
+  "source": "assistant-runtime frozen Run 209, exact binary64 float repr; full checkpoint snapshots in evidence archive"
 }
