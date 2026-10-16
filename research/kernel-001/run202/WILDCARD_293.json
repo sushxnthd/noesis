@@ -1,0 +1,14 @@
+{
+  "status": "NUMERICAL_EXPLORATORY_NOT_CERTIFIED",
+  "seed": 293,
+  "epoch": 800,
+  "lengths": 100000,
+  "class_counts": [
+    100000,
+    0,
+    0
+  ],
+  "first_wrong": null,
+  "min_numerical_margin": 6.102885081626981,
+  "included_in_frozen_score": false
+}
