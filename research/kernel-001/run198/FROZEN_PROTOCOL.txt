@@ -1,0 +1,1 @@
+Run198: frozen seeds 269,271,277,281; fixed length-15 three-one probe; success enrichment >=3x.
