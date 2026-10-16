@@ -1,0 +1,3 @@
+# Run 189: all-length algorithm loss
+
+Seed 111 epoch 300: independently verified all-length parity. Epoch 600: training loss lower, but for every k >= 9, the unchanged network incorrectly classifies 0^k1. Exact interval invariant plus independent mpmath.iv verification establish the infinite counterexample family. Seed 127 epoch 600 independently certified all-length parity, transferring the method to a new initialization. Primary literature collision: van Rossem and Saxe (ICML 2025) already established parity infinite generalization; this work must focus on certified algorithm loss and predictive diagnostics. Full evidence remains in the local reproducibility package; remote preregistration and CI were blocked.
