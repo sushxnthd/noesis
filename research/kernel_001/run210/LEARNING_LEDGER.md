@@ -1,0 +1,3 @@
+# Run 210 LEARNING ledger
+
+Frozen eight new seeds: 751,757,761,769,773,787,797,809. Coupled two-dimensional input-gated tanh RNN, resettable parity, all 729 length-six training words, Adam lr 0.03, 800 steps. All eight reached 100% training accuracy. No numeric errors were found among words through length ten. Frozen signature-transfer criterion requires at least three rigorously verified failing models, so outcome is INCONCLUSIVE. Six local all-length positive certificates extend verification to a distinct trained architecture. This does not prove a universal acquisition law or predict acquisition epochs.
