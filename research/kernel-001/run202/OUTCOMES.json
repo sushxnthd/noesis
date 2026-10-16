@@ -1,0 +1,63 @@
+{
+  "source_sha256": "5f2ea6c259cf07ae4cd1915cad3aea3ce85c20723401b33ef4e1197a67384c32",
+  "frozen_primary_pass": false,
+  "certified_count": 5,
+  "certified_eventual_class_transition_count": 0,
+  "checkpoints": [
+    {
+      "seed": 293,
+      "epoch": 400,
+      "numerical_gate": true,
+      "certified": true,
+      "eventual_class": 1,
+      "shortest_zero_only_error": 27,
+      "independent_decimal": "PASS"
+    },
+    {
+      "seed": 293,
+      "epoch": 800,
+      "numerical_gate": false,
+      "gate_delta14": 0.7240246428673796,
+      "numerical_class_at_320": 0,
+      "certified": false,
+      "independent_decimal": "NOT_RUN"
+    },
+    {
+      "seed": 307,
+      "epoch": 400,
+      "numerical_gate": true,
+      "certified": true,
+      "eventual_class": 0,
+      "shortest_zero_only_error": null,
+      "independent_decimal": "PASS"
+    },
+    {
+      "seed": 307,
+      "epoch": 800,
+      "numerical_gate": true,
+      "certified": true,
+      "eventual_class": 0,
+      "shortest_zero_only_error": null,
+      "independent_decimal": "PASS"
+    },
+    {
+      "seed": 311,
+      "epoch": 400,
+      "numerical_gate": true,
+      "certified": true,
+      "eventual_class": 1,
+      "shortest_zero_only_error": 10,
+      "independent_decimal": "PASS"
+    },
+    {
+      "seed": 311,
+      "epoch": 800,
+      "numerical_gate": true,
+      "certified": true,
+      "eventual_class": 1,
+      "shortest_zero_only_error": 11,
+      "independent_decimal": "PASS"
+    }
+  ],
+  "interpretation": "Model-specific all-length zero-only theorems; frozen criterion failed; no global algorithm-acquisition certificate."
+}

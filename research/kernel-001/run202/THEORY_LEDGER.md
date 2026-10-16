@@ -1,0 +1,3 @@
+# THEORY LEDGER — Run 202
+
+Exact parameter model: 12-unit tanh RNN, binary64 weights treated as rationals. For zero-only inputs 0^k, independent interval proofs show: seed293 epoch400 class 0 for k<=26, class 1 for k>=27; seed307 epochs400/800 class 0 for all k>=1; seed311 epoch400 class 0 for k<=9 and class 1 for k>=10; seed311 epoch800 class 0 for k<=10 and class 1 for k>=11. All proofs use a rational 14-step inductive invariant after 240 exact interval-evaluated prefixes, verified independently by Decimal. Seed293 epoch800 is ABSTAIN: numerical class 0 at k=320 is not a theorem. Frozen criterion FAIL due no certified change in eventual class. This does not certify general algorithmicity.

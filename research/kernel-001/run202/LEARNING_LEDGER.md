@@ -1,0 +1,3 @@
+# LEARNING LEDGER — Run 202
+
+Held-out seed293,307,311 checkpoints are gradient-trained on streaming count-mod-3, all with 100% training accuracy. Certified seed311 training progression repairs the all-zero word of length 10 while leaving infinitely many zero-only errors at every k>=11. Seed307 retains all-length correctness on the zero-only sublanguage at both checkpoints; seeds293 epoch400 and 311 both checkpoints fail eventually. Frozen all-length transfer succeeded for five of six models, but primary transition criterion failed. Zero-only success/failure does not imply acquisition or loss of a reusable algorithm on all binary strings. Next kernel must test task-state quotient invariants rather than hidden-state fixed-point contraction.

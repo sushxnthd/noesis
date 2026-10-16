@@ -1,0 +1,17 @@
+name: NOESIS Run202 verification
+on: push
+permissions: {contents: read, actions: read}
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install numpy mpmath
+      - name: Retrieve checkpoints
+        env: {GH_TOKEN: ${{ github.token }}}
+        run: gh run download 38894405432 --repo sushxnthd/noesis -n noesis-run199-evidence -D evidence
+      - run: cp evidence/CHECKPOINTS.json CHECKPOINTS.json
+      - run: python research/kernel-001/run202/verify.py CHECKPOINTS.json PROOF_RESULTS.json
+      - run: python research/kernel-001/run202/verify_decimal.py CHECKPOINTS.json PROOF_RESULTS.json INDEPENDENT_RESULTS.json
