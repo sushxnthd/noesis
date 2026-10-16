@@ -1,0 +1,1 @@
+THEORY: A reset-parity two-interval invariant implies all-length correctness when base cases, all three input transitions, and output separation hold. LEARNING: frozen four-seed gradient training with independent checkers. Uncertified means abstention. Strongest alternative is task simplicity; no model-agnostic claim.
