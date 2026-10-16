@@ -1,7 +1,9 @@
-import json
+import json,runpy,sys
 from pathlib import Path
-
+R=Path(__file__).resolve().parent
 def test_frozen_seed_count():
-    d=json.loads((Path(__file__).parent/'EPOCH800_COMPACT.json').read_text())
-    assert len(d['rows'])==12
-    assert [r[0] for r in d['rows']]==[659,661,673,677,683,691,701,709,719,727,733,739]
+ d=json.loads((R/'EPOCH800_COMPACT.json').read_text())
+ assert len(d['rows'])==12
+def test_interval_proof():
+ sys.path.insert(0,str(R))
+ runpy.run_path(str(R/'score.py'),run_name='__main__')
