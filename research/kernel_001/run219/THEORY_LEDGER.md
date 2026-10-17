@@ -1,0 +1,3 @@
+# THEORY ledger — Run 219
+A sign-only paired suffix score is invariant under strictly sign-preserving output transforms, unlike logit-margin scores in Runs 216–218. Finite probes still cannot certify all-length correctness; a finite-horizon spoof remains possible. No new universal theorem is claimed.
+Primary priority collision: Weiss, Goldberg & Yahav, ICML 2018, https://proceedings.mlr.press/v80/weiss18a.html and Machine Learning 2024, https://doi.org/10.1007/s10994-022-06163-2 ; Michalenko et al., ICLR 2019, https://arxiv.org/abs/1902.10297 . Neural DFA extraction and distinguishing suffixes are established.
