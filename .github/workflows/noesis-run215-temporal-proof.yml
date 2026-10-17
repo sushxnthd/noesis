@@ -15,6 +15,14 @@ jobs:
       - run: python -m pip install numpy==2.3.5 torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
       - run: python -m pip install mpmath
       - run: cd research/run214 && python train_minimal.py
-      - run: python research/kernel001/run215/verify_remote.py
+      - run: python research/kernel001/run215/verify_remote.py | tee research/kernel001/run215/REMOTE_INTERVAL_LOG.txt
       - run: python research/run214/evaluate_remote.py
-      - run: python research/kernel001/run215/evaluate_temporal_remote.py
+      - run: python research/kernel001/run215/evaluate_temporal_remote.py | tee research/kernel001/run215/REMOTE_TEMPORAL_LOG.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: noesis-run215-remotely-reproduced
+          path: |
+            research/run214/RUN214_CHECKPOINTS.json
+            research/run214/RUN214_REMOTE_EVALUATION.json
+            research/kernel001/run215/REMOTE_INTERVAL_LOG.txt
+            research/kernel001/run215/REMOTE_TEMPORAL_LOG.txt
