@@ -1,0 +1,1 @@
+Run230: independently checked 4D seed1747 epoch0 incorrect on token 0; epoch100 certified all-length correct. Retrospective trained transition; epoch50 unresolved. Complete reproducibility package remains external pending upload.
