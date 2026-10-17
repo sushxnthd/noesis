@@ -1,0 +1,67 @@
+{
+  "seed": 1429,
+  "epoch": 200,
+  "checkpoint_sha256": "4cc24de3636fa8aaf98bbd96470d8e9f3509b2c16b7fcce021cd6d681b542dd8",
+  "verified_by": [
+    "mpmath.iv 45 dps",
+    "directed Decimal 70 digits"
+  ],
+  "counts": [
+    {
+      "length": 1,
+      "correct": 3,
+      "wrong": 0
+    },
+    {
+      "length": 2,
+      "correct": 9,
+      "wrong": 0
+    },
+    {
+      "length": 3,
+      "correct": 27,
+      "wrong": 0
+    },
+    {
+      "length": 4,
+      "correct": 81,
+      "wrong": 0
+    },
+    {
+      "length": 5,
+      "correct": 243,
+      "wrong": 0
+    },
+    {
+      "length": 6,
+      "correct": 729,
+      "wrong": 0
+    },
+    {
+      "length": 7,
+      "correct": 2187,
+      "wrong": 0
+    },
+    {
+      "length": 8,
+      "correct": 6559,
+      "wrong": 2
+    }
+  ],
+  "wrong_words": [
+    "20011100",
+    "20011101"
+  ],
+  "beam": {
+    "width256": [
+      "20011100",
+      "20011101"
+    ],
+    "width384": [],
+    "width512": [
+      "20011100",
+      "20011101"
+    ],
+    "width384_first_pruned_prefix": "200111"
+  }
+}

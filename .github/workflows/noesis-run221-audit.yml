@@ -1,0 +1,18 @@
+name: NOESIS Run221 independent finite audit
+on:
+  push:
+    branches:
+      - research/kernel-001-run221-3d-proof-replay
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check mpmath numpy
+      - run: python research/run221/verify_mpmath.py
+      - run: python research/run221/verify_decimal.py
+      - run: python research/run221/verify_beam.py
