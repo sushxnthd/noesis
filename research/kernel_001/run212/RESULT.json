@@ -1,0 +1,44 @@
+{
+  "frozen_primary": {
+    "status": "NO_COUNTEREXAMPLE_IN_BEAM",
+    "seed": 787,
+    "epoch": 800,
+    "max_depth": 256,
+    "width": 2048,
+    "interpretation": "Not a proof of correctness"
+  },
+  "secondary_certificate": {
+    "status": "CERTIFIED",
+    "seed": 787,
+    "epoch": 800,
+    "base_depth": 120,
+    "task_context_cells": 5,
+    "closure_edges": 15,
+    "primary_checker": "mpmath.iv 90 decimal digits",
+    "independent_checker": "directed Decimal 90 decimal digits",
+    "min_prefix_margin": 5.724301856899349,
+    "min_base_slack": 0.0000010000999999530578,
+    "min_closure_slack": 9.958506731478929e-9,
+    "min_invariant_output_margin": 5.7627547166545545,
+    "local_proofs": "passed independently",
+    "remote_proof_run": 38985594876,
+    "remote_conclusion": "success",
+    "exact_real_binary64_parameters": true
+  },
+  "cohort": {
+    "certified_correct": [
+      751,
+      757,
+      761,
+      769,
+      787,
+      797,
+      809
+    ],
+    "certified_wrong": [
+      773
+    ],
+    "unresolved": []
+  },
+  "claim_limit": "Model-specific all-length certificate; not a general law or a prospective acquisition predictor."
+}
