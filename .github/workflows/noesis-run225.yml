@@ -1,4 +1,4 @@
-name: Run225 verification
+name: NOESIS Run225 exact verification
 on: [push, pull_request]
 jobs:
   verify:
@@ -9,4 +9,4 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install mpmath
-      - run: python research/run225/verify.py
+      - run: python research/run225/verify_rigorous.py
