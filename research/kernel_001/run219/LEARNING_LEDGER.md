@@ -1,0 +1,2 @@
+# LEARNING ledger — Run219
+Retrospective, fixed-probe evaluation of 12 gradient-trained 2D RNNs, with four previously verified acquisitions and eight persistent failures. The local independent checker reproduced 1,152 word-level signs. Challenge AUROC 0.8125; strongest control 0.59375; delta 0.21875. No new training, no prospective unseen-architecture evidence, and no causal algorithm-acquisition mechanism. Exploratory disaggregation: long-zero pair alone AUROC 0.75; periodic pair alone AUROC 0.5625. The proposed mechanism remains unverified.
