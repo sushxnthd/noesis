@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "baseline_auc": 0.75,
+  "min_auc": 0.46875,
+  "max_auc": 0.84375,
+  "span": 0.375,
+  "threshold": 0.1,
+  "n_models": 12,
+  "n_trials": 32,
+  "source_sha256": "69d5abe0ce328f85d26aeec9d729a3f12457193974d29c31290727e279c9898e"
+}
