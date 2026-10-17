@@ -1,0 +1,81 @@
+{
+  "seed": 1301,
+  "epoch": 100,
+  "checkpoint_source_sha256": "f6b5d843fef0629b4022290fc38b0069a15609011714ae63c4da82569f38a341",
+  "counts": [
+    {
+      "length": 1,
+      "checked": 3,
+      "incorrect": 0,
+      "minimum_signed_margin": 2.8056606841551064
+    },
+    {
+      "length": 2,
+      "checked": 9,
+      "incorrect": 0,
+      "minimum_signed_margin": 3.3136615545440558
+    },
+    {
+      "length": 3,
+      "checked": 27,
+      "incorrect": 0,
+      "minimum_signed_margin": 3.380641517667992
+    },
+    {
+      "length": 4,
+      "checked": 81,
+      "incorrect": 0,
+      "minimum_signed_margin": 3.387610133649276
+    },
+    {
+      "length": 5,
+      "checked": 243,
+      "incorrect": 0,
+      "minimum_signed_margin": 3.3882690753182603
+    },
+    {
+      "length": 6,
+      "checked": 729,
+      "incorrect": 0,
+      "minimum_signed_margin": 3.388330700768277
+    },
+    {
+      "length": 7,
+      "checked": 2187,
+      "incorrect": 0,
+      "minimum_signed_margin": 3.388336457188948
+    },
+    {
+      "length": 8,
+      "checked": 6561,
+      "incorrect": 0,
+      "minimum_signed_margin": 3.3883369948236766
+    },
+    {
+      "length": 9,
+      "checked": 19683,
+      "incorrect": 0,
+      "minimum_signed_margin": 3.38833704503661
+    },
+    {
+      "length": 10,
+      "checked": 59049,
+      "incorrect": 0,
+      "minimum_signed_margin": 3.388337049726289
+    },
+    {
+      "length": 11,
+      "checked": 177147,
+      "incorrect": 0,
+      "minimum_signed_margin": 3.388337050164285
+    },
+    {
+      "length": 12,
+      "checked": 531441,
+      "incorrect": 0,
+      "minimum_signed_margin": 3.388337050205193
+    }
+  ],
+  "first_candidate": null,
+  "proof_status": "UNVERIFIED_NUMERIC"
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "k": 4,
+    "eps": 0,
+    "status": "NO_CLOSED",
+    "gap": 0.0036702124200611932
+  },
+  {
+    "k": 4,
+    "eps": 0.003,
+    "status": "NO_CLOSED",
+    "gap": 0.0036588315000028876
+  },
+  {
+    "k": 4,
+    "eps": 0,
+    "status": "LIFTED_CERTIFIED",
+    "cells": 135,
+    "obligations": 1215
+  },
+  {
+    "k": 5,
+    "eps": 0,
+    "status": "NO_CLOSED",
+    "gap": 0.0036704800747059466
+  },
+  {
+    "k": 5,
+    "eps": 0.003,
+    "status": "NO_CLOSED",
+    "gap": 0.003659247932656734
+  },
+  {
+    "k": 5,
+    "eps": 0,
+    "status": "LIFTED_CERTIFIED",
+    "cells": 405,
+    "obligations": 3645
+  }
+]
