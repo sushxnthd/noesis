@@ -1,0 +1,19 @@
+name: noesis-run212-independent-all-length
+on:
+  push:
+    branches:
+      - research/kernel-001-run212-second-2d-abstention
+  workflow_dispatch:
+jobs:
+  prove:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install mpmath
+      - name: Primary outward interval checker
+        run: python research/kernel_001/run212/verify_primary.py
+      - name: Independent directed-Decimal checker
+        run: python research/kernel_001/run212/verify_independent.py
