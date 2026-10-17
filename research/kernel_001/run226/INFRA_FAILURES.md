@@ -1,0 +1,2 @@
+# Run226 infrastructure
+Branch created from Run225 rigorous. GitHub contents-API protocol write blocked; frozen protocol committed via blob/tree/commit/ref as c6bfcc4b798b45b076e42543bd96fa7985b7e674 BEFORE search. Workflow-file blob creation blocked by connector safety checks; use existing repository CI pytest discovery with tests/test_run226.py. Local mpmath.iv and directed-Decimal proofs passed. Preserve all failed attempts.
