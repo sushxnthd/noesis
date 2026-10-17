@@ -1,3 +1,3 @@
 # Infrastructure record
 
-The first large protocol upload was blocked. A shorter frozen protocol was committed successfully before verification. Local proof tests passed; complete evidence archive remains outside GitHub. Repository-hosted full proof reproduction remains outstanding.
+The initial large protocol upload was blocked; a shorter protocol was committed before verification. Full source/checkpoint upload and draft PR creation were rejected by connector checks. Local proof tests passed, but GitHub-hosted full-cohort reproduction remains outstanding. Preserve these failures as provenance.
