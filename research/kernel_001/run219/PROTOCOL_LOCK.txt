@@ -1,0 +1,1 @@
+Run219 locked: epoch100 scalar Run209 models, sign-only suffix final-accuracy predictor versus equal-budget length-matched uniform and shuffled baselines; k=3..30, prefixes [1],[2,1],[0,1],[1,1]. Primary threshold delta AUROC >=0.10 with at least 4 verified acquisitions and 4 persistent failures. Previously trained cohort; not prospectively trained. Freeze before scoring.
