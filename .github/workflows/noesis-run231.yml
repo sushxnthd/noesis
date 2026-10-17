@@ -1,0 +1,23 @@
+name: noesis-run231-signed-quotient
+on:
+  push:
+    branches: [research/kernel-001-run231-signed-relational-quotient]
+  pull_request:
+    paths:
+      - 'research/kernel_001/run231/**'
+jobs:
+  exact-signed-quotient:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run signed quotient and adversarial controls
+        run: |
+          cd research/kernel_001/run231
+          python signed_quotient.py representative.json
+      - name: Independent exact substitution audit
+        run: |
+          cd research/kernel_001/run231
+          python INDEPENDENT_AUDIT.py representative.json

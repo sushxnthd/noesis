@@ -1,0 +1,3 @@
+# Infrastructure and evidence provenance
+Branch and pre-execution frozen protocol committed successfully (e02f431f). Two direct contents-API writes for full code/results were blocked by connector safety checks. Git-object blob/tree/commit/ref write-through was used for a minimal remote reproducer and result notes.
+Full local cohort consists of 12 source checkpoint/certificate records and 24 transformed networks; only one representative source checkpoint and its transformation checker are presently committed remotely. Do not represent the partial remote CI as full-cohort verification. Keep blocked attempts in provenance.
