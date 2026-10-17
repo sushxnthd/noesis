@@ -1,0 +1,2 @@
+# Infrastructure provenance
+First long frozen-protocol create_file attempt was blocked. Short version committed b41d6194dde9e2ad451a33eed36cf3581a83cddb; exact detailed freeze committed a4328ddea8ddbb419069a69fd1b68006998176bc before execution. Local independent checker passed. GitHub-hosted source/checkpoint reproduction pending; do not claim remote success without successful workflow.
