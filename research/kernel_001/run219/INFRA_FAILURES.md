@@ -1,2 +1,2 @@
-# Infrastructure provenance
-First long frozen-protocol create_file attempt was blocked. Short version committed b41d6194dde9e2ad451a33eed36cf3581a83cddb; exact detailed freeze committed a4328ddea8ddbb419069a69fd1b68006998176bc before execution. Local independent checker passed. GitHub-hosted source/checkpoint reproduction pending; do not claim remote success without successful workflow.
+# Infrastructure provenance — Run219
+First long protocol write blocked; exact protocol committed before experiment at a4328ddea8ddbb419069a69fd1b68006998176bc. GitHub workflow YAML uploads were blocked, including minimal workflow. Two draft-PR creation attempts and a comment on existing PR #1 were blocked. Primary and independent checks passed locally only. A proposed workflow is included in the downloadable reproducibility package; it was not installed remotely. No Run219 GitHub-hosted verification is claimed.
