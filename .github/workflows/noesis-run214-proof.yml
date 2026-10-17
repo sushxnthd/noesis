@@ -1,0 +1,17 @@
+name: noesis-run214-proof
+on:
+  push:
+    branches: [research/kernel-001-run214]
+    paths: [research/run214/verify_remote.py, .github/workflows/noesis-run214-proof.yml]
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install numpy==2.3.5 torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+      - run: python -m pip install mpmath
+      - run: cd research/run214 && python train_minimal.py
+      - run: python research/run214/verify_remote.py
