@@ -1,0 +1,28 @@
+{
+  "run": 225,
+  "classification": "retrospective exact architecture-gauge spoof, not prospective acquisition predictor",
+  "cohort": "11 previously gradient-trained and robustly certified checkpoints from Run223",
+  "source_checkpoint_sha256": "4cc24de3636fa8aaf98bbd96470d8e9f3509b2c16b7fcce021cd6d681b542dd8",
+  "K": 16777216,
+  "delta": 9.5367431640625e-7,
+  "word": [
+    0
+  ],
+  "target": 0,
+  "base_negative": 11,
+  "attack_positive": 11,
+  "control_K_zero_negative": 11,
+  "independent_checkers": [
+    "explicit 4D mpmath.iv",
+    "3D+analytic dormant directed Decimal"
+  ],
+  "local_tests": "2/2 PASS",
+  "max_base_logit_upper": -3.388721770180502,
+  "min_attacked_logit_lower": 9.677229528654951,
+  "remote_evidence": "one representative checkpoint staged; full cohort archive local only",
+  "limitations": [
+    "not a new acquisition transition",
+    "original 3D robustness certificates remain valid",
+    "architecture-parameterization dependence already known in broader literature"
+  ]
+}
