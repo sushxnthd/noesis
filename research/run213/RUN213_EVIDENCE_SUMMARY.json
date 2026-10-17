@@ -1,0 +1,173 @@
+{
+  "frozen_protocol_commit": "8666fdb4c2d01dc93702dfcfe241f42d755674ed",
+  "local_full_checkpoint_sha256": "1e01ef5b13dbcf78df6bc3def7f2d2e68e18ff607963dfb4ae279657ee8622b3",
+  "counts": {
+    "correct": 14,
+    "incorrect": 4,
+    "unresolved": 2
+  },
+  "frozen_auroc": {
+    "retention": 0.875,
+    "negative_training_loss": 0.5535714285714286,
+    "heldout_accuracy": 0.5357142857142857
+  },
+  "frozen_delta": 0.3214285714285714,
+  "pass": true,
+  "posthoc": {
+    "random_minimum_margin_auroc": 0.9107142857142857,
+    "random_accuracy_auroc": 0.8571428571428571,
+    "bootstrap_delta_95_percent": [
+      -0.14285714,
+      0.45558036
+    ]
+  },
+  "witnesses": {
+    "839": "1000000000001",
+    "857": "1000000000",
+    "883": "120010000",
+    "937": "100000000"
+  },
+  "rows_rounded_3dp": [
+    [
+      821,
+      "CORRECT",
+      4.263,
+      0.0138,
+      0
+    ],
+    [
+      823,
+      "CORRECT",
+      3.518,
+      0.0244,
+      0
+    ],
+    [
+      827,
+      "CORRECT",
+      4.499,
+      0.0114,
+      0
+    ],
+    [
+      829,
+      "CORRECT",
+      3.866,
+      0.0261,
+      0
+    ],
+    [
+      839,
+      "INCORRECT",
+      -2.958,
+      0.0642,
+      0
+    ],
+    [
+      853,
+      "CORRECT",
+      3.916,
+      0.1126,
+      28
+    ],
+    [
+      857,
+      "INCORRECT",
+      -2.874,
+      0.0457,
+      0
+    ],
+    [
+      859,
+      "CORRECT",
+      2.125,
+      0.1835,
+      672
+    ],
+    [
+      863,
+      "CORRECT",
+      4.469,
+      0.0145,
+      0
+    ],
+    [
+      877,
+      "CORRECT",
+      2.242,
+      0.0952,
+      0
+    ],
+    [
+      881,
+      "CORRECT",
+      5.318,
+      0.0035,
+      0
+    ],
+    [
+      883,
+      "INCORRECT",
+      4.035,
+      0.0096,
+      1
+    ],
+    [
+      887,
+      "CORRECT",
+      4.793,
+      0.015,
+      0
+    ],
+    [
+      907,
+      "UNRESOLVED",
+      -1.213,
+      0.3666,
+      1462
+    ],
+    [
+      911,
+      "CORRECT",
+      2.968,
+      0.0712,
+      0
+    ],
+    [
+      919,
+      "CORRECT",
+      2.882,
+      0.035,
+      0
+    ],
+    [
+      929,
+      "CORRECT",
+      4.285,
+      0.0128,
+      0
+    ],
+    [
+      937,
+      "INCORRECT",
+      -3.065,
+      0.0458,
+      0
+    ],
+    [
+      941,
+      "CORRECT",
+      4.904,
+      0.0116,
+      0
+    ],
+    [
+      947,
+      "UNRESOLVED",
+      -0.3,
+      0.329,
+      1583
+    ]
+  ],
+  "warning": "The score rows are rounded for browsing; exact values and exact binary64 checkpoints are in local evidence archive. Posthoc baseline is not part of frozen criterion."
+}
