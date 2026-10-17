@@ -1,0 +1,13 @@
+{
+  "workflow_run_id": 39024521820,
+  "job_id": 117372768505,
+  "conclusion": "success",
+  "executed": [
+    "verify_mpmath.py",
+    "verify_decimal.py",
+    "verify_beam.py"
+  ],
+  "commit": "5b2bd97cc34a9971cc66c34b5023c1381296ed15",
+  "ci_run_id": 39024521772,
+  "ci_conclusion": "success"
+}
