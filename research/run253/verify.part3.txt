@@ -1,0 +1,10 @@
+def step(h,s):
+ return [max(F(0),bb[i]+EE[s][i]+sum(AA[i][j]*h[j] for j in range(4))) for i in range(4)]
+count=checks=0
+for n in range(6):
+ for word in itertools.product(range(3),repeat=n):
+  h=[F(0)]*4
+  q=0
+  for s in word:
+   h=step(h,s)
+   q=0 if s==2 else q^(s==1)
