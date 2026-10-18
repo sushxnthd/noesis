@@ -1,0 +1,23 @@
+name: NOESIS Run239
+on: [push, workflow_dispatch]
+jobs:
+  reproduce:
+    if: github.ref == 'refs/heads/research/kernel-001-run239-mechanism-falsification'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+      - name: Frozen training and exact evaluation
+        working-directory: research/run239
+        run: |
+          python train.py
+          python evaluate.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: run239-evidence
+          path: research/run239/*.json
