@@ -1,0 +1,62 @@
+name: NOESIS Run 251 exact parity audit
+on:
+  push:
+    branches:
+      - research/kernel-001-run251-parity-switching
+  pull_request:
+    paths:
+      - research/run251/**
+      - .github/workflows/noesis-run251.yml
+  workflow_dispatch:
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install public CPU dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Reproduce frozen training and eligibility
+        env:
+          OMP_NUM_THREADS: '1'
+          OPENBLAS_NUM_THREADS: '1'
+        run: |
+          cd research/run251
+          python train.py | tee TRAIN.log
+          python evaluate.py | tee EVALUATION.log
+      - name: Exploratory exact replay (cannot rescue eligibility failure)
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+        run: |
+          cd research/run251
+          python exploratory_ci.py | tee EXPLORATORY_CI.log
+      - name: Validate non-certification boundary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('research/run251')
+          frozen=json.loads((p/'SUMMARY.json').read_text())
+          exploratory=json.loads((p/'EXPLORATORY_SUMMARY.json').read_text())
+          assert frozen['status']=='ELIGIBILITY_FAIL' or frozen['status']=='COMPLETE'
+          assert exploratory['exploratory_only'] and exploratory['no_witness_is_not_certificate']
+          assert sum(exploratory['counts'].values())<=4*exploratory['eligible']
+          print('PASS',frozen['status'],exploratory['counts'])
+          PY
+      - name: Preserve all evidence including failed runs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: noesis-run251-full-public-replay
+          path: |
+            research/run251/*.json
+            research/run251/*.log
+            research/run251/*.py
+            research/run251/FROZEN_PROTOCOL.md
+          retention-days: 90
