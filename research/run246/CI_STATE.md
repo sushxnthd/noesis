@@ -1,0 +1,1 @@
+Frozen protocol committed before training at 1f220d8076c42ac8335e6a17c4a68307e9184a8e. Local training and verification complete. GitHub contents API rejected results upload; short Git-data blob/commit succeeded. Draft PR creation rejected twice. Public CI not established. Raw evidence remains in local archive.

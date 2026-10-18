@@ -1,0 +1,1 @@
+Run246: 48 new 4D tied-A ReLU RNNs trained on reset latch, 200 Adam steps each. 31/48 attained perfect finite training accuracy. 0/48 received all-length certificates. No incorrect-to-certified acquisition transition was established. Negative prospective transfer result; 1/3 failures after Run245.
