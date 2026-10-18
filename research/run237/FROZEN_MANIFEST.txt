@@ -1,0 +1,1 @@
+Run 237 frozen: reset parity; seeds 3601-3624, 3701-3712; matched BCE/saturation/output-confidence arms; exact dyadic verification.
