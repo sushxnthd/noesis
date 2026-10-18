@@ -1,0 +1,23 @@
+seed,e0,e50,e100,e200
+2501,I,U,U,U
+2502,I,U,U,U
+2503,I,I,U,U
+2504,I,U,U,U
+2505,I,I,I,U
+2506,I,U,C,C
+2507,I,I,I,I
+2508,I,I,I,I
+2509,I,I,U,U
+2510,I,U,U,U
+2511,I,I,U,U
+2512,I,I,U,C
+2513,I,U,U,C
+2514,I,U,U,U
+2515,I,U,C,U
+2516,I,U,U,U
+2601,I,I,I,I
+2602,I,I,I,I
+2603,I,I,I,I
+2604,I,I,I,I
+
+C=independently all-length certified; I=independently verified strict incorrectness witness; U=unresolved/abstain.
