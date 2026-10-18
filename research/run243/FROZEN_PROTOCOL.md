@@ -1,0 +1,2 @@
+# Run 243 frozen protocol
+Evaluate exact dyadic interval boxes partitioned by task state and last two symbols, outward rounding to 2^-10, max 256 passes. Target 21 previously unresolved trained models from Run 242. Primary success is 3 new all-length sound certificates, no false positives on 17 known-incorrect models, independent checker agreement and adversarial controls. Failure if fewer than 3. No post-hoc tuning. Retain theory and learning ledgers.

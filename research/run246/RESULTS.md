@@ -1,0 +1,1 @@
+Run246 frozen ReLU transfer failed: 48 trained, 0 all-length certificates, 31 perfect finite training accuracy. All raw evidence archived locally. Do not merge until full CI reproduction.

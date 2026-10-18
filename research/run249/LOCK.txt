@@ -1,0 +1,1 @@
+Run 249 prospective lock. Seeds 11001..11048. Evaluate first 24 networks with perfect training accuracy. Compare 256 hold-tail probes against 256 uniform and 256 hold-biased random probes per network. Primary: exact-witness discovery fraction advantage >= 0.25 over both controls. Do not tune after outcomes.

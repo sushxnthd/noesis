@@ -1,0 +1,16 @@
+import json,itertools,hashlib
+from fractions import Fraction as F
+from pathlib import Path
+import sympy as S
+raw=Path(__file__).with_name('SEED13037.json').read_text().strip()
+assert hashlib.sha256(raw.encode()).hexdigest()=='37a20cd176513bb5aa5c332d2273f667d9bc3cc0d5f97310dfe71b4190ce8ace'
+p=json.loads(raw)
+Q=lambda x:S.Rational(*float(x).as_integer_ratio())
+A=S.Matrix([[Q(x) for x in r] for r in p['A']])
+E=[S.Matrix([Q(x) for x in r]) for r in p['E']]
+b=S.Matrix([Q(x) for x in p['b']])
+v=S.Matrix([[Q(x) for x in p['v']]])
+c=Q(p['c'])
+z=E[0]+b
+R=S.Rational(1,50)
+fixed={}

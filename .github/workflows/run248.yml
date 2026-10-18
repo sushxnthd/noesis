@@ -1,0 +1,35 @@
+name: NOESIS Run248 exact long-horizon replay
+on:
+  push:
+    branches: [research/kernel-001-run248-long-horizon-spoof-audit]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install numpy==2.3.5
+      - name: Restore immutable Run246 training artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 39136800432 -R sushxnthd/noesis -n noesis-run246-relu-evidence -D research/run246
+      - name: Deterministic search and three exact rational replays
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+        run: python -m research.run248.replay
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: noesis-run248-evidence
+          path: |
+            research/run248/OUTCOMES.json
+            research/run248/WITNESSES.csv
+            research/run248/FROZEN_PROTOCOL.md
+          retention-days: 30

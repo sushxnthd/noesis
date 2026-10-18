@@ -1,0 +1,8 @@
+  for t in range(9):
+   assert int(cc+sum(vv[i]*h[i] for i in range(4))>0)==q
+   checks+=1
+   if t<8:h=step(h,0)
+  assert max(abs(h[i]-fixed[q][i]) for i in range(4))<F(1,50)
+  count+=1
+assert count==364 and checks==3276
+print(json.dumps({'exact_all_hold_tail_certificate':'PASS','prefixes':count,'finite_checks':checks,'claim':'w0^n |w|<=5 n>=0; not full parity'}))

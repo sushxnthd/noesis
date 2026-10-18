@@ -1,0 +1,1 @@
+Run 243: Four additional trained-model all-length certificates (8111, 8128, 8130, 8143). Eleven certificates independently checked. Seventeen known incorrect models and a finite-range spoof not certified. Full local archive and CI replay pending.

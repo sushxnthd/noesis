@@ -1,0 +1,2 @@
+# LEARNING ledger Run254
+Same gradient-trained seed13037 trajectory: epoch0 is wrong on [1]; epoch50 wrong on [1,0,0]; epoch100 wrong on [1,0,1,1]. These are exact rational witnesses. Unmodified epoch200 is now all-length certified. Hence an actual incorrect-to-correct acquisition transition occurred between epochs100 and 200, though its precise time and mechanism remain unknown. Thirteen other trained controls have exact-rational incorrectness witnesses; none was certified. This is retrospective, not a prospectively predicted transition.

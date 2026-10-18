@@ -1,0 +1,2 @@
+# LEARNING ledger — Run253
+Seed13037 was gradient-trained and had perfect finite training accuracy; Run252 left it unresolved after bounded searches. Run253 now proves correctness on an infinite hold-tail sublanguage. It remains unresolved on the full reset-parity language. Against 13 other previously trained, known-incorrect checkpoints, nine have exact counterexamples in the same hold-tail family; four do not within the tested horizon. No new training transition or causal intervention was established. Full-algorithm certificate primary criterion FAILED (not achieved).

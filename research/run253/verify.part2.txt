@@ -1,0 +1,19 @@
+for q,mask in [(0,5),(1,10)]:
+ D=S.diag(*[(mask>>i)&1 for i in range(4)])
+ J=D*A
+ x=(S.eye(4)-J).inv()*D*z
+ for k in range(5):
+  M=J**k
+  pre=A*x+z
+  W=A*M
+  for i in range(4):
+   assert (pre[i] if (mask>>i)&1 else -pre[i])>R*sum(abs(W[i,j]) for j in range(4))
+  out=(v*x)[0]+c
+  assert (out if q else -out)>R*sum(abs((v*M)[j]) for j in range(4))
+ assert max(sum(abs((J**5)[i,j]) for j in range(4)) for i in range(4))<1
+ fixed[q]=[F(str(t)) for t in x]
+AA=[[F.from_float(float(x)) for x in row] for row in p['A']]
+EE=[[F.from_float(float(x)) for x in row] for row in p['E']]
+bb=[F.from_float(float(x)) for x in p['b']]
+vv=[F.from_float(float(x)) for x in p['v']]
+cc=F.from_float(float(p['c']))

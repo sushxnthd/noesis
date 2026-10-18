@@ -1,0 +1,18 @@
+# NOESIS Run 246 — frozen ReLU architecture transfer
+Status: FROZEN BEFORE TRAINING. Branch: research/kernel-001-run246-relu-transfer. Inherits Run245 and earlier negative results without modifying them.
+
+## Exactly one active kernel: K001 task-conditioned inductive certification of gradient-trained algorithms
+1. **Precise question:** Can a sound interval abstraction certify all-length reset-latch correctness of gradient-trained *unbounded ReLU* recurrent networks with shared transition A, beyond a fixed-budget exact-state checker, while detecting genuine incorrect-to-certified learning transitions?
+2. **Primary-literature frontier:** neural finite-state representation learning (Van Rossem & Saxe, ICML 2025, https://proceedings.mlr.press/v267/van-rossem25a.html), saturation/state regularization (Oliva & Lago-Fernandez, 2020, https://arxiv.org/abs/2006.10828), and recurrent reachability/abstract interpretation already exist. This is a prospective empirical verifier-transfer test, NOT a novel general theorem.
+3. **Single scalar primary success:** at least TWO epoch-200 ReLU checkpoints certified by fixed task-conditioned boxes where budgeted exact-state enumeration ABSTAINS. Soundness gates: independent exact-dyadic certificate replay on all accepted certificates and zero certificates for known incorrect endpoints/adversarial finite-horizon spoofs.
+4. **Strongest competing explanation:** Run243–245 worked only because hardtanh clamps hidden states to a compact domain; unbounded ReLU interval propagation diverges or is too coarse, so no useful certificates transfer.
+5. **Cheapest decisive falsification:** train 48 seeds 10001..10048, single baseline arm, 4D shared-A ReLU RNN with three token embeddings and recurrent bias, 243 length-five ternary strings, Adam lr=.03 for 200 updates, BCE over all prefixes. Initialize A=N(0,1)*.25, E=N(0,1)*.3, b=0, v=N(0,1)*.3, c=0, h0=0. Snapshots epochs 0,50,100,200. No hyperparameter or partition tuning after freeze. Exact enumeration budget 2500 states/depth 15. Sound ReLU boxes S=1024, task-state+last-two-token partition, 256*26*3 transitions, outward rounding, return ABSTAIN if scaled bound exceeds 2^20. Independently recheck every certificate using original exact dyadic parameters and a separately written rational transfer. Preserve unresolved endpoints.
+6. **Publishable threshold:** >=2 beyond-exact certificates, independent checker, adversarial finite-horizon ReLU spoof rejected, and >=1 provable infinite reachable-state certified network; plus priority audit and public CI replay.
+7. **Learning relevance threshold:** >=1 epoch-50 provably INCORRECT network becomes epoch-200 all-length CERTIFIED; exclude early already-certified networks from acquisition claims.
+8. **Kill condition:** any false accepted certificate, or three prospective transfer failures after Run245. Count 0/3 at freeze.
+
+**Training protocol:** torch.double deterministic single-thread CPU; torch.manual_seed(seed) per network; no personal compute or paid APIs. Task q starts 0; token 2 resets to 0, token 1 sets to 1, token 0 preserves. Readout predicts state after every token. No activation clipping or hardtanh-conjugate reparameterization. Do not treat finite accuracy as all-length correctness.
+
+**THEORY ledger:** certification requires a checked inductive invariant over actual ReLU dynamics; abstention is not incorrectness. **LEARNING ledger:** count strict incorrect->certified transitions separately from certificate-only gains. No saturation mechanism claim.
+
+Inactive backups (max 2): relational invariant transport; invariant-margin training intervention.

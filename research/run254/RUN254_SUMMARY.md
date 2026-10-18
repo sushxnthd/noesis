@@ -1,0 +1,2 @@
+# Run254 exact certificate
+Original Run251 gradient-trained ReLU seed13037 epoch200 has an independently exact-checked all-length reset-parity certificate: eight rational polyhedral cells, 352 Farkas infeasibility obligations, 686 facet dual obligations, eight output duals, and thirteen base words. The same training trajectory was incorrect at epochs 0, 50, and 100. This is one trained-model result, not a model-agnostic law. Full source and proof are preserved in the Run254 local archive; public CI pending.

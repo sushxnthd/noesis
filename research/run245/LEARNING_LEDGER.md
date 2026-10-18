@@ -1,0 +1,2 @@
+# LEARNING — Run245
+32 gradient-trained tied-transition RNNs, 16 all-length certified final checkpoints, 13 provably incorrect at epoch 50 then certified at epoch 200. Baseline 6/16 certified; saturation 10/16. Paired gains 4, losses 0; one-sided sign p=0.0625 (exploratory, not causal). 27/32 reached perfect finite training accuracy. Seven certificates beyond finite-checker budget are diagnostic improvements, not additional acquisition transitions.

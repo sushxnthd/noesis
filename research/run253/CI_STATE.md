@@ -1,0 +1,1 @@
+Run253 provenance: protocol committed before evaluation. Git data write path used. Source is split into four ordered parts and assembled in CI. The full original checkpoint and independent replay are retained in the research archive; remote replay uses the exact seed-13037 parameters.

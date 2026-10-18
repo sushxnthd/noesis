@@ -1,0 +1,1 @@
+Run245: frozen protocol and local tests passed. Draft PR #5 opened. Full source upload and public CI remain pending. Local archive preserves exact evidence.

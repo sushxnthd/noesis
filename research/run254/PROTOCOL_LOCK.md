@@ -1,0 +1,2 @@
+# Run254 frozen protocol
+Before execution: periodic words length 1..8, repeat <=512 periods or 2048 symbols, prefixes empty and four hold-basin variants. Original Run251 seed13037 epoch200 binary64 parameters. Primary outcome: 1 exact-rational counterexample or 0. A zero is inconclusive. Two independent rational checkers required. No changes to checkpoints. THEORY/LEARNING ledgers and negative results must be retained. If no decisive result, continue full-certificate search; after three failed attempts, retire hypothesis.

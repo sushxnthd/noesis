@@ -1,0 +1,56 @@
+name: NOESIS Run247 exact witness replay
+on:
+  push:
+    branches: [research/kernel-001-run247-relu-adversarial-audit]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install numpy==2.3.5
+      - name: Download immutable Run246 independently reproduced checkpoints
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download 39136800432 -R sushxnthd/noesis -n noesis-run246-relu-evidence -D research/run246
+      - name: Replay finite exhaustive search and independent exact witnesses
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+        run: python research/run247/replay.py
+      - name: Compare to frozen expected results
+        run: |
+          python - <<'PY'
+          import csv,json
+          from pathlib import Path
+          p=Path('research/run247')
+          got={x['seed']:x for x in json.loads((p/'OUTCOMES.json').read_text())}
+          expected=list(csv.DictReader((p/'WITNESSES.csv').open()))
+          assert len(expected)==18==len(got)
+          for e in expected:
+              r=got[int(e['seed'])]
+              assert r['status']==e['status'],e
+              if e['witness']:
+                  assert ''.join(map(str,r['witness']))==e['witness'],e
+                  assert str(r['exact_target'])==e['target'],e
+                  assert str(r['exact_prediction'])==e['prediction'],e
+          s=json.loads((p/'SUMMARY.json').read_text())
+          assert s['primary_pass'] and s['new_exact_incorrect_count']==11
+          print('PASS: 11 exact witnessed incorrect, 7 nonfinds, all 18 match frozen manifest')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: noesis-run247-evidence
+          path: |
+            research/run247/OUTCOMES.json
+            research/run247/SUMMARY.json
+            research/run247/WITNESSES.csv
+          retention-days: 30

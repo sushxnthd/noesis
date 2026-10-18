@@ -1,0 +1,9 @@
+name: NOESIS 253
+on: [push, workflow_dispatch]
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install sympy==1.14.0
+      - run: cat research/run253/verify.part*.txt > research/run253/ci_verify.py && python research/run253/ci_verify.py

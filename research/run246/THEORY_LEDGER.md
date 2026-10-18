@@ -1,0 +1,1 @@
+Run246: the fixed hardtanh interval method did not transfer to unbounded ReLU. At epoch200, 18 exact-state searches abstained and 30 produced explicit incorrect witnesses; none were certified. An exact tied-ReLU 1D heuristic passes all strings through length 8 but fails at length 9. No new general theorem is claimed.

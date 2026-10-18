@@ -1,0 +1,8 @@
+name: noesis-run255
+on: [push]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m compileall research/run255
