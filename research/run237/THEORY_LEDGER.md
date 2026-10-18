@@ -1,0 +1,2 @@
+# THEORY — Run237
+KNOWN: Exact dyadic finite reachable-state closure with strict readout inequalities suffices for all-length correctness under exact-real hardtanh semantics. Two independent checkers agreed 216/216 endpoint cases. Four readout-corruption controls rejected. Trained seed 3709 (4D baseline) fits all length-six prefixes but has length-ten error. ABSTAIN is unknown. FALSIFIED (frozen experiment): unseen reset-parity saturation mechanism-transfer primary criterion. No model-agnostic law or novelty established.

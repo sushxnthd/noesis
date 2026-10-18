@@ -1,0 +1,2 @@
+# Infrastructure — Run237
+Initial GitHub create_file calls rejected by connector safety checks. Frozen manifest was committed via Git object API before training (6e57c6db76f6473de6e11d021ec09361d6112fad) and the branch research/kernel-001-run237-frozen-evidence created. Initial update_ref rejected. Complete local archive preserves raw checkpoint JSON, source, both exact checkers, tests, outcomes and failures. GitHub CI status must be checked before any remote reproduction claim.

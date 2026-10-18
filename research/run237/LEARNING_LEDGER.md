@@ -1,0 +1,2 @@
+# LEARNING ledger, Run237
+36 matched triplets (108 trained networks), 432 checkpoints. 3D certified baseline 7/24, saturation 9/24, confidence 5/24. 4D certified baseline 4/12, saturation 7/12, confidence 3/12. Frozen primary failed: only one 3D baseline-incorrect to saturation-certified rescue, with baseline training accuracy 86.67 percent. No 4D rescues. Mechanism-transfer attempt one of three failed.
