@@ -1,0 +1,2 @@
+# THEORY — Run250
+Frozen superiority over random probes passed; model-specific superiority failed against nonadaptive fixed-tail probes (24/24 versus 23/24). A local fixed-mask Jacobian can miss delayed ReLU-state drift; seed 12018 stays correct on set-and-hold through length 92 and becomes incorrect at 93, checked by independent exact rational replays. This is an evaluation failure mode, not a universal theorem or learning certificate. No breakthrough claim.

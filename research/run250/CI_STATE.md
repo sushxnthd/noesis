@@ -1,0 +1,1 @@
+Run250: local reproducibility archive includes full checkpoints and independent exact checks. Remote CI workflow is added separately. Direct contents writes were blocked, Git tree commit route worked.

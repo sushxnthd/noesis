@@ -1,0 +1,2 @@
+# LEARNING — Run250
+48 newly gradient-trained tied-transition ReLU networks; 34 perfect length-five training accuracy. First 24 eligible evaluated prospectively, all 24 proven incorrect by longer exact witnesses. Sixteen queries per arm: Jacobian 23, hold-biased random 15, uniform random 4, fixed-tail 24. No newly acquired algorithm or causal intervention demonstrated. Mechanistic specificity failure count 1/3. Next test must beat fixed-tail.

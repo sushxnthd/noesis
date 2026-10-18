@@ -1,0 +1,35 @@
+name: NOESIS Run250 independent prospective replay
+on:
+  push:
+    branches:
+      - research/kernel-001-run250-model-conditioned-drift
+  workflow_dispatch:
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned CPU framework
+        run: |
+          python -m pip install numpy==2.3.5
+          python -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+      - name: Reproduce training and exact adversarial comparison
+        run: |
+          python research/run250/train.py
+          PYTHONPATH=. python research/run250/eval_run.py
+      - name: Verify mechanism ablation
+        run: |
+          python -c "import json; s=json.load(open('research/run250/CI_SUMMARY.json')); assert s['counts']=={'jacobian':23,'hold_biased':15,'uniform':4,'fixed_tail':24}; assert s['pass_random_control'] and not s['beats_fixed_tail']"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: noesis-run250-exact-evidence
+          path: |
+            research/run250/CHECKPOINTS.json
+            research/run250/CI_OUTCOMES.json
+            research/run250/CI_SUMMARY.json
+          retention-days: 30
