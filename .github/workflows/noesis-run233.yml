@@ -1,16 +1,18 @@
 name: NOESIS Run233
-on: [pull_request, workflow_dispatch]
+on: [push, pull_request, workflow_dispatch]
 jobs:
   reproduce:
+    if: github.ref == 'refs/heads/research/kernel-001-run233-reset-latch-transfer' || github.event_name == 'pull_request'
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install numpy mpmath
+      - run: pip install numpy==2.2.6 mpmath==1.3.0
       - run: pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
-      - name: Reproduce
+      - name: Reproduce frozen cohort
         working-directory: research/kernel-001/run233
         run: |
           python train.py
@@ -24,4 +26,6 @@ jobs:
         if: always()
         with:
           name: run233-evidence
-          path: research/kernel-001/run233/*.json
+          path: |
+            research/kernel-001/run233/*.json
+            research/kernel-001/run233/*.log
