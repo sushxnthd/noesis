@@ -1,0 +1,2 @@
+# Tied-A finite-horizon adversary
+Constructed hardtanh Elman network with shared A=diag(1,1,0,0), token embeddings (0,1/8,0,0), (2,1/8,0,0), (-2,1/8,0,0), initial h=(1/2,-1/2,1/4,1/8), readout v=(1,-2/5,0,0), c=-39/50. Exact enumeration: all 9,840 nonempty ternary strings of lengths 1..8 correct; witness [1,0,0,0,0,0,0,0,0] at length 9 has wrong logit -3/100. Fixed box verifier ABSTAINS. Finite accuracy alone is not a sufficient certificate.
