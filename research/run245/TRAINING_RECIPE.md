@@ -1,0 +1,2 @@
+# Reproduction recipe
+Shared A (4x4), E (3x4), b (4), v (4), c scalar; hardtanh h=clip(Ah+E[token]+b,-1,1), h0=(0.5,-0.5,0.25,0.125). All 243 ternary strings of length five; prefix reset-latch BCE. Seeds 9001..9016; matched baseline and BCE+0.1*(1-mean|h|) arms; deterministic PyTorch double Adam lr 0.03 for 201 epochs. Save 0,50,100,200. Frozen exact checker: 2500 states/depth15. Frozen box: grid1024, suffix2, budget256 passes. Training snapshot SHA256: 9d3e6415daa6338948fa9694981c2e6470487584314c575ac31f5b4c562ea964.
