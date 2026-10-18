@@ -1,0 +1,1 @@
+Arms: (1) BCE baseline; (2) BCE + 0.1*(1-mean(abs(hidden))); (3) BCE + 0.1*mean(softplus(-abs(logit))). Match torch.manual_seed(seed) initialization. Task: 0 holds, 1 sets state one, 2 resets state zero. Initial hidden: [0.5,-0.5,0.25] or add [0.125] in 4D.
