@@ -1,0 +1,1 @@
+Primary pass: at least two 3D matched baseline-incorrect to saturation-certified rescues with perfect finite training accuracy in both arms; saturation must exceed confidence rescues by at least two. Two exact checkers agree; four corrupted controls rejected. Otherwise primary fails. Four-dimensional results are secondary.
