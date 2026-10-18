@@ -1,0 +1,3 @@
+# CI provenance — Run 233
+
+Failed run 39082820690: source-port UnboundLocalError in candidate generator after successful training. Preserved with partial artifact. Fixed in commit 3b33a1b1bf0ed183a9ceabd9fd1e2d9d8f1256b1. Independent GitHub Actions reproduction run 39082927386: PASS, including 20 model trainings, five all-length certificates, 44 wrong-sign witnesses, five corrupt controls, and exhaustive shortest-error audits for seeds 2507 and 2508. Artifact 12120030988 contains all regenerated raw checkpoints, candidates, witnesses, proofs and controls. Main untouched; draft PR #3 remains open.
