@@ -1,0 +1,1 @@
+Run239 CI run 39103614462 PASSED; independent 192/192 exact classifications; frozen primary FAILED. Artifact 12127013048 preserves raw checkpoints, exact outcomes and analysis. Draft PR and raw branch write-through blocked by connector.
