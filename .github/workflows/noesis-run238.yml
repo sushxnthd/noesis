@@ -1,0 +1,27 @@
+name: NOESIS Run238 reproduction
+on:
+  push:
+    branches:
+      - research/kernel-001-run238-horizon-shift
+  pull_request:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+      - run: python research/run238/tests.py
+      - run: python research/run238/train.py
+      - run: python research/run238/verify.py
+      - run: python research/run238/independent.py
+      - run: python research/run238/analyze.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: run238-evidence
+          path: research/run238/*.json
