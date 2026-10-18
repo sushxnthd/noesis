@@ -2,7 +2,7 @@ import json,sys,hashlib
 from pathlib import Path
 sys.path.insert(0,"research/run244")
 from box_latch_reimplementation import run
-from independent_latch_reimplementation import check
+from checker_latch import check
 def find(name,sha):
  matches=[p for p in Path("incoming").rglob(name) if hashlib.sha256(p.read_bytes()).hexdigest()==sha]
  assert len(matches)==1
