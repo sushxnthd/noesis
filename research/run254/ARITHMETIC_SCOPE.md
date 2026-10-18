@@ -1,0 +1,2 @@
+# Arithmetic semantics limitation
+Run254 certifies the ideal real-arithmetic recurrence whose coefficients are the exact dyadic rationals encoded by the original PyTorch float64 checkpoint. It does not prove that every IEEE-754 floating-point execution at arbitrary length has the same classification. Training used torch.double. Any finite-precision execution claim requires separate rounding-error analysis. The proof was discovered post-hoc; it is not a frozen prospective transfer result.
