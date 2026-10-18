@@ -6,4 +6,4 @@ Prespecified random-control advantage (23-15)/24=0.33333 passes the >=0.25 thres
 
 Seed 12018: surrogate chose lengths [10,8,12,16,6,20,24,32] and missed its long-horizon error. Independent exact arithmetic: input 1+0^91 is correct; input 1+0^92 is incorrect. Fixed-tail discovers a witness at length 128. This is a boundary within one word family, not a globally minimal counterexample.
 
-Local archive SHA256 c6889e0efbab1ec63e010345de84512b207edd2b371cb454d48fb9f42d95f926. No all-length certificates or acquisition transitions established.
+Local archive SHA256 f0bfddda187a48f1d2336bfd79ea09e91aaf1a70b27f23ed862353140523300f. No all-length certificates or acquisition transitions established.
