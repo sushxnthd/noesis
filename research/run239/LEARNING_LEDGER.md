@@ -1,2 +1,2 @@
-# LEARNING — at freeze
-Runs 237 and 238 failed their primary strengthening criteria. Run238 produced two secondary strict 4D rescues but zero 3D primary rescues. Run239 tests 24 new matched 4D quadruplets. Abstention is never incorrectness. Frozen holdout pending.
+# LEARNING — Run239
+24 matched quadruplets, 96 trained 4D RNNs. Epoch200 baseline/saturation/confidence/anti-saturation certified 2/12/2/0; strictly incorrect 9/11/8/9; abstain 13/1/14/15. One strict four-arm perfect-training-fit rescue: seed 4121. Required >=2, therefore FAILED. Independent exact agreement 192/192; corruption controls 4/4 rejected; manipulation 24/24. Do not treat abstention as error. Saturation-specific intervention hypothesis retired after third primary failure.

@@ -1,2 +1,2 @@
-# THEORY — at freeze
-Exact finite reachable-state closure with strict correct outputs suffices for all-length correctness under exact dyadic hardtanh recurrence. Finite-horizon correctness does not. No model-agnostic necessary condition established. Run239 tests saturation specificity, not universal certificate necessity. Frozen holdout pending.
+# THEORY — Run239
+Exact finite reachable-state closure with strict correct signs suffices for all-length correctness of fixed dyadic-parameter hardtanh RNNs; it is not necessary. Ten saturation certification gains include nine baseline abstentions, not ten verified rescues. Only seed 4121 proves a strict matched-control rescue. No model-agnostic law or saturation mediation theorem established. Frozen primary FAILED; retire saturation-specific mechanism after Runs237/238/239.
