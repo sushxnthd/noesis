@@ -1,0 +1,2 @@
+# LEARNING — at freeze
+Runs 237 and 238 failed their primary strengthening criteria. Run238 produced two secondary strict 4D rescues but zero 3D primary rescues. Run239 tests 24 new matched 4D quadruplets. Abstention is never incorrectness. Frozen holdout pending.
