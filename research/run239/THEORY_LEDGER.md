@@ -1,0 +1,2 @@
+# THEORY — at freeze
+Exact finite reachable-state closure with strict correct outputs suffices for all-length correctness under exact dyadic hardtanh recurrence. Finite-horizon correctness does not. No model-agnostic necessary condition established. Run239 tests saturation specificity, not universal certificate necessity. Frozen holdout pending.
