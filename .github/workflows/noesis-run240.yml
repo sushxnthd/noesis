@@ -21,6 +21,7 @@ jobs:
           python evaluate.py
           OPENBLAS_NUM_THREADS=1 python score.py
           python analyze.py
+          python negative_controls.py
       - name: Preserve complete evidence, including failures
         uses: actions/upload-artifact@v4
         if: always()

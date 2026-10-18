@@ -1,0 +1,4 @@
+# THEORY ledger — Run240
+Exact graph reachability remains a sound sufficient all-length certificate for finite reachable hardtanh recurrent networks under dyadic-exact parameters, not a necessary criterion. Two independent arithmetic representations agreed on all 96 endpoints. A finite-horizon early functional-margin plus state-growth score was prospectively evaluated, but its >=70% resolution and +0.15 training-accuracy baseline margin criteria FAILED.
+All 17 unresolved endpoints are abstentions, not negatives. Exact 2^17 completion audit gives possible full-cohort AUC interval [0.7196428571,0.9709618875]. A small reachable graph by itself does not certify correctness: seed 6202 baseline is strictly wrong at length 9 despite excellent early score.
+No new universal theorem, no causal saturation law, and no priority claim. Preserve Run239 saturation-mechanism retirement.
