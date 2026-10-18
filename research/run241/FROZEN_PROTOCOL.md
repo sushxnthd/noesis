@@ -1,0 +1,3 @@
+# Run 241 frozen protocol
+
+This is a preregistered experiment on 48 fresh 3D hardtanh RNNs (seeds 7101..7148) trained for 200 Adam steps on ternary reset latch, with checkpoints at 0, 50 and 200. The sole active question is whether the previously specified Run240 score predicts subsequent all-length correctness among epoch-50 checkpoints independently proven incorrect. Primary success requires >=8 acquisitions, >=8 persistent errors, >=70% endpoint resolution, AUC >=.80 and >=.10 above both training accuracy and confidence, independent checker agreement and four rejected corrupted controls. No post-hoc changes. Complete local frozen protocol SHA256: 3da1f9a7688ebf6540fba180a188e85a71e0393f16c878050cf300fe0918fa16.
