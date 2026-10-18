@@ -1,0 +1,1 @@
+Training: all 243 ternary length-five words; prefix labels. Hardtanh RNN. Adam 200 updates at learning rate 0.03. Float64 deterministic CPU. Seeds 3801-3824 (3D), 3901-3912 (4D). Save epochs 0,50,100,200.
