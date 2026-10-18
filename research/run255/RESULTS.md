@@ -1,0 +1,2 @@
+# Run255 result
+New cohort: eight parity and eight latch ReLU RNNs. Eight networks reached perfect finite training accuracy. Exact rational witnesses establish that all sixteen are incorrect on some unseen word. The frozen adversarial search discovered fifteen failures; an exploratory model-conditioned search discovered the final failure in parity seed 14003 at length twelve. The prospective all-length certificate transfer objective failed. No positive acquisition certificate was obtained.
