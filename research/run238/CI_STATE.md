@@ -1,0 +1,2 @@
+# CI state
+Public GitHub Actions Run 39099667998: SUCCESS. Workflow reran training, Fraction exact verification, independent integer-dyadic verification, controls, and analysis on public CPU. Raw JSON files were uploaded as the run238-evidence Actions artifact. Source code is committed to the isolated research branch. No result-dependent changes were made to the frozen protocol.

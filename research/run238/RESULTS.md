@@ -1,0 +1,4 @@
+# Run238 outcome
+Frozen 3D primary FAILED: zero baseline-incorrect to saturation-certified rescues. 24 3D matched triplets: baseline certified/wrong/unknown 9/4/11, saturation 14/6/4, confidence 10/5/9. Certification gains/losses 8/3, one-sided paired p=0.11328125.
+Secondary 4D: baseline 2/4/6, saturation 6/3/3, confidence 2/5/5. Seeds 3903 and 3905: baseline wrong, saturation all-length certified, confidence wrong, all arms 100% finite train fit. 4D paired gains/losses 4/0, p=0.0625.
+216/216 exact endpoint agreement, four corrupted controls rejected. GitHub Actions run 39099667998 passed. This is failed strengthening attempt 2/3, not a field-level breakthrough.

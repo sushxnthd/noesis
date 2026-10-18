@@ -1,0 +1,2 @@
+# LEARNING ledger — Run 238
+All 108 networks were gradient-trained on length-five reset latch with matched initializations. Three arms: baseline, saturation, output confidence. In 3D, no baseline provably wrong -> saturation certified rescue. In 4D, seeds 3903 and 3905 meet that strict condition with 100% finite training accuracy in every arm. Independent checkers and public CI reproduced results. Secondary effect is task/horizon/width dependent and does not rescue failed primary. Previous Run237 reset-parity transfer also failed.
