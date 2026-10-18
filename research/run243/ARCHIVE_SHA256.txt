@@ -1,0 +1,3 @@
+NOESIS_kernel001_run243_task_box_negative.tar.gz
+68418d4d2df0ddcabe6adf1d32d55df3d511cf45080370fe45b154c44f6cf21a
+Local archive contains source, 48 checkpoints, raw 576 trials, two exact checkers, controls, both ledgers, and infrastructure failure log.
