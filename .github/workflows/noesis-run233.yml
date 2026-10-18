@@ -1,0 +1,27 @@
+name: NOESIS Run233
+on: [pull_request, workflow_dispatch]
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install numpy mpmath
+      - run: pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+      - name: Reproduce
+        working-directory: research/kernel-001/run233
+        run: |
+          python train.py
+          python discover.py
+          python find_witnesses.py
+          python proof_check.py
+          python controls.py
+          python finite_horizon_audit.py
+          python assert_run.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: run233-evidence
+          path: research/kernel-001/run233/*.json
