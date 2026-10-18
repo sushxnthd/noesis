@@ -35,6 +35,7 @@ def candidate(row,k=1,maxiter=500):
   if any(np.max(hi-lo)>2.01 for lo,hi in boxes.values()):return {'status':'diverged','iterations':iteration+1}
   if diff<1e-12:break
  else:return {'status':'no_convergence','iterations':maxiter}
+ gap=float('nan')
  for eps in (1e-10,1e-9,1e-8,1e-7,1e-6,1e-5,1e-4,1e-3,1e-2):
   inv={key:(np.maximum(-1,lo-eps),np.minimum(1,hi+eps)) for key,(lo,hi) in boxes.items()}
   min_margin=1e9
