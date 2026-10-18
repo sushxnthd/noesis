@@ -1,0 +1,31 @@
+name: NOESIS Run240
+on: [push, workflow_dispatch]
+jobs:
+  reproduce:
+    if: github.ref == 'refs/heads/research/kernel-001-run240-functional-predictor'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install public CPU dependencies
+        run: |
+          pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install numpy scipy scikit-learn
+      - name: Frozen training and independent exact verification
+        working-directory: research/run240
+        run: |
+          python train.py
+          python evaluate.py
+          OPENBLAS_NUM_THREADS=1 python score.py
+          python analyze.py
+      - name: Preserve complete evidence, including failures
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: run240-complete-evidence
+          path: |
+            research/run240/*.json
+            research/run240/*.md
