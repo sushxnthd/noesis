@@ -1,0 +1,5 @@
+# Run240 additional independent early-checkpoint audit
+Both exact checkers evaluated all 48 epoch100 checkpoints, not just final endpoints.
+Transition table (epoch100 -> epoch200): INCORRECT->INCORRECT 19; INCORRECT->ABSTAIN 5; INCORRECT->CERTIFIED 1; ABSTAIN->ABSTAIN 12; ABSTAIN->CERTIFIED 4; CERTIFIED->CERTIFIED 7. Thus **7 of 12** eventual certified networks were ALREADY all-length certified at epoch100. The high prospective AUC is largely contemporaneous algorithm-state recognition, not established prediction of future acquisition.
+Among 24 resolved final endpoints that were not certified at epoch100 (5 positive/19 negative), score AUC=0.9473684 vs early finite training accuracy AUC=0.8947368. Among epoch100 strictly incorrect models with resolved final outcomes (1 positive/19 negative), score AUC=0.9473684; a single positive transition cannot establish a reliable prospective law.
+Preserve the original FAILED primary. Do not reinterpret score AUC=0.9605 as prediction of acquisition before it happens. Next frozen design must restrict primary to early provably incorrect checkpoints and verify adequate positive transition count prospectively.
