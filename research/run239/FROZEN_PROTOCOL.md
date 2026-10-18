@@ -1,0 +1,11 @@
+# NOESIS Run 239 — final prospective saturation-specific mechanism test
+
+Status at freeze: NOT RUN. Branch: research/kernel-001-run239-mechanism-falsification. Scripts, seeds, threshold and analysis are committed before holdout training; do not alter after seeing outcomes.
+
+Task: reset latch (0=hold, 1=set, 2=reset), exhaustive 243 ternary length-five words, BCE at all five prefixes. Architecture: 4-dimensional hardtanh RNN, same initial state and training dynamics as Run 238. New unseen seeds 4101–4124, 24 matched quadruplets. 200 Adam updates, lr=0.03, float64 deterministic CPU. Arms: baseline BCE, saturation BCE + 0.1*(1-mean abs hidden), confidence BCE + 0.1*softplus(-abs(logit)), anti_saturation BCE + 0.1*mean abs hidden. Matched initialization per seed. Checkpoints epochs 0, 50, 100, 200.
+
+Exact-real semantics: stored binary64 weights treated as exact dyadic rationals; independent Fraction and integer-dyad verifiers enumerate up to 2500 reachable states / depth 15. CERTIFIED means finite closure with strict correct signs, INCORRECT means strict wrong-sign witness, ABSTAIN means unknown. Check all 192 endpoints independently. Four corrupted-readout controls must be rejected.
+
+Frozen PRIMARY: ALL of (a) >=2 seeds with saturation CERTIFIED and baseline, confidence, anti_saturation all INCORRECT at epoch 200, and all four arms perfect on every finite training prefix; (b) saturation vs baseline paired certification gain/loss one-sided exact sign p<=0.05; (c) saturation epoch-200 mean abs hidden exceeds anti_saturation in >=18/24 seeds; (d) 192/192 independent classifications agree; (e) four corrupted controls rejected.
+
+Passing supports task-specific intervention effects beyond generic output confidence; it does NOT prove causal mediation or a model-agnostic law. Failure is third substantive failure of saturation-specific strengthening (Runs 237 and 238 were failures); retire/reformulate the saturation hypothesis. All secondary results descriptive. No retrospective threshold/seed changes. No personal spend; public CI/sandbox only.
