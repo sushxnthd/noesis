@@ -1,0 +1,1 @@
+Run247 freeze: exact search through ternary length 12 on 18 unresolved ReLU-trained checkpoints; exact independent replay; success >=8 new incorrect networks; no false witnesses; preserve all negative outcomes.
