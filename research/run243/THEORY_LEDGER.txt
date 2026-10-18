@@ -1,0 +1,1 @@
+Axis-aligned suffix-conditioned box abstraction failed: 0/21 new proofs. Independent exact checker rejected all candidates. Positive toy accepted, corrupted controls rejected. Attempt 1/3; test relational abstraction next.
