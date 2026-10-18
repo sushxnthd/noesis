@@ -1,0 +1,3 @@
+# Infrastructure and negative evidence
+Initial contents-API protocol commits failed; Git data write-through succeeded and protocol was frozen before evaluation. Dedicated draft-PR creation attempts failed. Public CI for the exact hold-tail theorem passed. Complete checkpoint cohort and exploratory search files are in the local research archive, not all on GitHub.
+Exploratory q-only and suffix-conditioned convex template attempts failed to close a safe all-length invariant. Early prototype used an incorrect ReLU mask inequality sign; corrected before interpreting any outcomes. Finite mixture probes found no counterexample, which is not a proof. No all-length certificate was obtained.
