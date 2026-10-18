@@ -1,0 +1,19 @@
+# NOESIS Run 242 — prospective functional-congruence prediction (FROZEN before training)
+Sole active Kernel 001. Third prospective test after Runs 240 and 241 failed (2/3). Do not tune thresholds after holdout outcomes.
+
+1. **Question:** Among gradient-trained hardtanh RNNs provably incorrect at epoch 50, does early *functional continuation congruence* predict later exact all-length algorithm acquisition on a new task (reset parity), beyond finite accuracy and confidence?
+2. **Primary frontier:** Wang & Niepert, ICML 2019 (state regularization); Oliva & Lago-Fernández 2020 (RNN automata); van Rossem & Saxe, ICML 2025 (algorithm development and infinite generalization). No claim that finite automata extraction, state merging, or infinite generalization is new.
+3. **One frozen success criterion:** Among early-INCORRECT networks with resolved epoch-200 statuses, ROC-AUC of congruence score >=0.80 AND >=0.08 above BOTH epoch-50 training accuracy and epoch-50 training confidence; >=4 INCORRECT-to-CERTIFIED transitions; >=8 INCORRECT-to-INCORRECT; >=60% final status resolution among early-INCORRECT; 100% independent exact checker agreement; 4/4 corrupted-readout controls rejected. All conditions required. AUC ties count 0.5. Inability to resolve labels counts against coverage, never as an error.
+4. **Strongest competitor:** Quotient score merely proxies ordinary finite-horizon generalization, output confidence, or optimization progress; report additional length-seven accuracy as a diagnostic competitor without changing frozen primary.
+5. **Cheapest falsification:** Train 48 new reset-parity networks, freeze epoch-50 scores before exact endpoint evaluation, then exact-classify early and final checkpoints. Primary threshold failure falsifies this strong prediction hypothesis.
+6. **Publishable threshold:** Independent CI reproduction, replication on unseen tasks/architectures, explicit finite-horizon spoof tests, prospective gains over stronger validation baselines, and priority audit.
+7. **Learning relevance:** 48 float64 Adam-trained fully coupled 4D hardtanh RNNs, ternary symbols 0=hold, 1=toggle, 2=reset; all 3^5 length-five training words and all prefixes, 200 optimizer steps, lr=0.03, seeds 8101..8148, epoch 0/50/200. Exact-real dyadic semantics for verification.
+8. **Kill:** If frozen primary fails, retire/reformulate acquisition-prediction hypothesis (third failure). Preserve results without post-hoc rescoring.
+
+**Frozen mechanism score:** Enumerate all 27 length-three prefixes and 39 suffixes of lengths 1,2,3. For each prefix u compute q(u) under reset parity, and for each suffix v evaluate final logit z(uv) at epoch50. Let A = mean absolute z(uv) over all pairs plus 0.01. Set signature f_u(v)=tanh(z(uv)/A). Let W be mean over unordered prefix pairs with same q of the mean squared signature difference across v, and B similarly over pairs with different q. Score S=log((B+0.01)/(W+0.01)). Higher S predicts acquisition. This is a *finite functional-congruence heuristic*, never a correctness certificate. Also report train accuracy, mean abs train logit, and length-seven heldout accuracy; no training labels beyond frozen task definition.
+
+**Verification:** Independently exact BFS on (target parity state, rational hidden state), stored binary64 weights as exact dyadic rationals. Strict wrong-sign witness=INCORRECT; fully closed reachable graph=CERTIFIED; 2500 state/15 depth caps=ABSTAIN. A second checker using integer dyadics (not Fraction) must agree for all checkpoints. Negate readout of four certified final models and require incorrect witnesses; if fewer than four certified, primary fails. Keep all raw data, failed controls, infrastructure errors, and SHA256 locks.
+
+**Wildcard:** At most 10% cheap effort: signed-permutation gauge on one checkpoint; must not affect frozen primary.
+
+No universal law or breakthrough claim follows from one experiment.
