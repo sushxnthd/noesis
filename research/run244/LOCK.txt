@@ -1,0 +1,3 @@
+Run244 frozen protocol SHA256: 8fa6b843093f4fb4eff78b3dcbfb8ff84f4d04625c78c847dfb796ecfae68ff7
+Run239 checkpoint SHA256: 28c294606e4bd1f68e3f8d06caaa890736037095304d9eba7e3a897e48af50dd
+Primary success: at least three newly certified among 43 abstentions, zero false positives among 37 known incorrect, independent checker agreement.
