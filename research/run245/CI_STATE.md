@@ -1,2 +1,1 @@
-# Run245 infrastructure provenance
-Frozen protocol committed before training at c8ebd4ac1490b9a7e776271123e8f41d45cb57e8. Local hosted CPU experiment and clean tests passed. GitHub create_file rejected source and result uploads via safety checks. Short result blob committed at 0eeec9b1b3ea2e1eacb914e8603e8eeedaed7d10. Longer source blob also rejected. Full source, raw weights, outcomes and independent checkers remain in local archive. Public CI reproduction is NOT established.
+Run245: frozen protocol and local tests passed. Draft PR #5 opened. Full source upload and public CI remain pending. Local archive preserves exact evidence.
