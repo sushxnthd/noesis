@@ -1,0 +1,1 @@
+Run 258: 64 independently initialized networks; 21 finite-perfect; 20 exact counterexamples; one unresolved. No all-length certificate. Original invariant geometry failed on all 21.
