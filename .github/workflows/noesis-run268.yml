@@ -1,0 +1,14 @@
+name: NOESIS Run268 exact witness CI
+on:
+  push:
+    branches:
+      - research/kernel-001-run268-switch-predictor
+  pull_request:
+    paths:
+      - research/run268/**
+jobs:
+  exact-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python research/run268/verify_public.py
