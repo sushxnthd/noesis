@@ -16,3 +16,4 @@ jobs:
         with:
           python-version: '3.11'
       - run: python research/run264/verify_frozen_transition.py
+      - run: python research/run264/verify_prefix_spoof.py

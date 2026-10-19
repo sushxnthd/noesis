@@ -1,0 +1,20 @@
+{
+  "seed": 18453,
+  "epoch": 100,
+  "input_encoding": {
+    "prefix": [
+      1
+    ],
+    "repeat_symbol": 0,
+    "repeat_count": 2873
+  },
+  "first_exact_error_position": 2874,
+  "expected": 1,
+  "predicted": 0,
+  "global_minimality_claim": false,
+  "verified_by": [
+    "independent exact dyadic scale 2^55",
+    "independent exact dyadic scale 2^60"
+  ],
+  "status": "post-freeze exploratory falsification of sublanguage sufficiency"
+}
