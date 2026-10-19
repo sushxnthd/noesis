@@ -1,0 +1,31 @@
+{
+  "run": 258,
+  "checked_on": "2026-10-19",
+  "scope": "local immutable Run257 archive",
+  "model_seeds": [
+    16003,
+    16005,
+    16006,
+    16007,
+    16008
+  ],
+  "primary_exact_pass": 5,
+  "independent_exact_pass": 5,
+  "corrupt_support_rejected_by_both": true,
+  "public_ci": "not_run",
+  "claim": "independent local replay only; not independent algorithm acquisition",
+  "model_sha256": [
+    "8ba1be505e75a730de725f0e28d6ab75e0e4103f6ee9580e0fba80d58c61720e",
+    "9b337c19bde21e3060c147a7dfdddc54efd13378c736566c38d1b0a952f06071",
+    "553af7107b3a695b2b332124066668b65dd5ce5ccc3e6c77720c54cc006e2df4",
+    "48e1b8e692f20781bb5991cdfda3e7c6793a26435ea9c7a47a89d0f4009f9830",
+    "a9ac1824b5b903d05d9d35a4a049cd63bae04c6f11227a1761d9e70148e273d7"
+  ],
+  "certificate_sha256": [
+    "d1afb4dba06fc2cd149db8be78ea00ccc639c0af6c689a33ff9b65ee93c895f3",
+    "2fe14f03e57dda8b2bb48952c68d969030f54148a9fe0154fe24835f4df210d3",
+    "11aa482edf660b8efe5ad3332d77eaf577e35ec3d9a557a6c7fa257a54195b5c",
+    "2684844252eb68da558cccead250678133f55703235c09187d4b9e977bfb613f",
+    "d941def2f052be5424d2f57daef4f604520435a39328b5c808072d93ff78f263"
+  ]
+}
