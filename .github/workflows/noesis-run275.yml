@@ -1,0 +1,28 @@
+name: NOESIS Run275 exact acquisition audit
+on:
+  push:
+    branches:
+      - research/kernel-001-run275-natural-acquisition
+  workflow_dispatch:
+jobs:
+  independent-exact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python research/run275/verify.py
+      - run: pip install sympy==1.14.0 && python research/run275/independent_sympy.py
+  reproduce-training:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+      - run: python research/run275/train.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: noesis-run275-128-checkpoints
+          path: research/run275/checkpoints_phase1.json
