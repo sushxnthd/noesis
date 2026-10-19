@@ -1,0 +1,67 @@
+{
+  "seeds": "18401..18464",
+  "epochs": {
+    "100": {
+      "correct": [
+        18405,
+        18409,
+        18453
+      ],
+      "wrong": [],
+      "abstain": [
+        18454
+      ]
+    },
+    "300": {
+      "correct": [
+        18405,
+        18409,
+        18425,
+        18440
+      ],
+      "wrong": [
+        18413,
+        18420,
+        18424,
+        18436,
+        18446,
+        18450,
+        18453,
+        18455,
+        18457,
+        18458,
+        18462
+      ],
+      "abstain": [
+        18454
+      ]
+    },
+    "600": {
+      "correct": [
+        18405,
+        18409,
+        18425,
+        18440
+      ],
+      "wrong": [
+        18413,
+        18419,
+        18420,
+        18424,
+        18436,
+        18446,
+        18450,
+        18453,
+        18455,
+        18457,
+        18458,
+        18462
+      ],
+      "abstain": [
+        18454
+      ]
+    }
+  },
+  "interpretation": "all other seeds finite-imperfect at given epoch; abstain means finite-perfect but no invariant certified",
+  "source_sha256": "0aaa912cbe3d42d3425d64c48024d612ea8f4cb9c0b305d4d523f1c8b7c804d2"
+}
