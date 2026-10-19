@@ -1,0 +1,1 @@
+Run262: six models reached finite-perfect training accuracy; four had prospectively predicted and exactly replayed delayed hold errors. Seed18203 was missed and failed at length1432. Seed18211 remains unresolved. No unrestricted positive correctness certificate was obtained.
