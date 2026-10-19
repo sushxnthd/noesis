@@ -1,0 +1,1 @@
+Run263 frozen pre-outcome manifest. Cohort 18301 to 18332. No incremental finite-perfect asymmetric predictions. Full SHA256 manifest retained in archive.
