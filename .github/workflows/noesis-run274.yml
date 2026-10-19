@@ -1,0 +1,9 @@
+name: NOESIS Run274
+on: [push, workflow_dispatch]
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python research/run274/verify_exact.py
+      - run: pip install sympy==1.14.0 && python research/run274/independent_sympy.py
