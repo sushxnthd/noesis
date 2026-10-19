@@ -1,0 +1,1 @@
+Run 258: 64 independently initialized ReLU RNNs trained; 21 attained perfect finite training accuracy. Exact rational counterexamples independently checked for 20. One unresolved. All 21 failed the necessary length-2 membership check for the prior invariant geometry. No all-length transfer certificate. Detailed reproducibility archive retained locally pending repository upload.
