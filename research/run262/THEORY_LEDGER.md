@@ -1,0 +1,1 @@
+Run262: A forward-invariant region within a single activation mask, together with a stable affine hold transition and a wrong-label attracting fixed point, certifies eventual hold-only error. The result applies to ideal-real recurrence using exact stored coefficients. The diagnostic can abstain and cannot certify unrestricted algorithmic correctness.
