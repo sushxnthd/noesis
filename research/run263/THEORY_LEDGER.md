@@ -1,0 +1,2 @@
+# THEORY
+Exact rational invariant wrong-attractor diagnostic reproduced prospectively; 7/7 finite-perfect networks proved incorrect on all-hold family. Asymmetric-only improvement in this subgroup = 0. No general algorithmicity law. Prior art: Jacoby/Barrett/Katz 2020 invariant inference; Ryou et al CAV 2021 polyhedral RNN verification; Van Rossem/Saxe ICML 2025 parity acquisition.

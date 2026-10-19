@@ -1,0 +1,2 @@
+# LEARNING
+32 scratch-trained 2D float64 ReLU latch RNNs, seeds 18301..18332, 600 Adam updates, finite length 20. Seven finite-perfect. Exact first pure-hold errors: 48,45,72,399,400,39,45. 10 other models had no observed pure-hold failure through 4096, NOT correctness. No independently certified acquisition this run.
