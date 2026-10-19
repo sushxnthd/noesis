@@ -1,0 +1,1 @@
+Public exact CI not yet run. Workflow and draft PR writes blocked. Local independent rational replay passed 20 of 20. Full evidence is in the run archive.
