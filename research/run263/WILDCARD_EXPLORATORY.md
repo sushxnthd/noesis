@@ -1,0 +1,2 @@
+# Run263 isolated wildcard (post-hoc, not primary)
+Seed 18321: finite training accuracy 100% at epochs 100, 300, 600. Exact first hold-only failure epoch100=212, epoch300=none through 800, epoch600=400. Exact certified stable hold fixed-point logit changes from -0.557483 at epoch300 to +5.583425 at epoch600. This is an exploratory within-trajectory attractor-sign reversal under continued gradient training, NOT proof of unrestricted correctness at epoch300. Prospectively test sign reversal on unseen trajectories before any law claim.
