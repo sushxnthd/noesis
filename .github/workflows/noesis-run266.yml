@@ -1,0 +1,25 @@
+name: NOESIS Run266 full-alphabet exact witness audit
+on:
+  push:
+    branches:
+      - research/kernel-001-run266-results
+  pull_request:
+    paths:
+      - 'research/run266/**'
+      - '.github/workflows/noesis-run266.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python research/run266/remote_verify.py
+      - run: python -m pip install numpy
+      - run: python research/run266/remote_enumerate.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: run266-frozen-enumeration
+          path: research/run266/REPRODUCED_FLOAT64.json
