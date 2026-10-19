@@ -1,0 +1,27 @@
+{
+  "note": "Exact necessary length-2 membership checks against frozen Run254 invariant; original geometry in local evidence archive",
+  "passed_base_words": {
+    "17002": 0,
+    "17005": 0,
+    "17007": 0,
+    "17010": 1,
+    "17013": 0,
+    "17014": 0,
+    "17015": 0,
+    "17016": 0,
+    "17024": 0,
+    "17027": 0,
+    "17035": 0,
+    "17036": 0,
+    "17038": 0,
+    "17040": 0,
+    "17046": 0,
+    "17047": 0,
+    "17048": 0,
+    "17052": 0,
+    "17054": 0,
+    "17056": 1,
+    "17062": 0
+  },
+  "base_words_per_model": 9
+}
