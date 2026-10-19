@@ -1,0 +1,2 @@
+# THEORY — Run258
+Exact replay passed for five repaired certificates using two rational checkers. The result adds no new theorem beyond Run257; public independent reproduction remains outstanding. The eight-cell invariant is not a universal certificate template. The current target remains prospective transfer to independent gradient-trained acquisitions across two tasks.

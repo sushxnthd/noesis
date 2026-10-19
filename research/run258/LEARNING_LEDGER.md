@@ -1,0 +1,2 @@
+# LEARNING — Run258
+Seeds 16003, 16005, 16006, 16007 and 16008 are gradient-updated descendants, not independent acquisitions. Local checker agreement 10/10; deliberate invalid support rejected 2/2. No new training or unseen task-family evidence. Full original artifacts retained in local Run258 archive; GitHub mirror incomplete.
