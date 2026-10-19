@@ -1,0 +1,1 @@
+Run 263 frozen protocol: seeds 18301..18332, 2D ReLU latch, Adam 0.03 600 epochs, prospective asymmetric exact attractor check before hold replay. Criterion one incremental finite-perfect delayed failure, zero invalid certificates.
