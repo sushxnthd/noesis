@@ -1,0 +1,22 @@
+name: NOESIS Run269 Exact Neural Counterexample
+on:
+  push:
+    branches:
+      - research/kernel-001-run269-reachable-switch-audit
+  workflow_dispatch:
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Boost headers
+        run: sudo apt-get update -qq && sudo apt-get install -y libboost-dev
+      - name: Exhaustive exact enumeration
+        run: |
+          g++ -O2 -std=c++17 research/run269/exact_enumerate.cpp -o /tmp/noesis-run269
+          /tmp/noesis-run269 research/run269/coefficients.txt | tee /tmp/noesis-run269.log
+          grep -q 'depth 13 visited 1594323 errors 0' /tmp/noesis-run269.log
+          grep -q 'depth 14 visited 4782969 errors 3' /tmp/noesis-run269.log
+          grep -q 'first_error 14 word 11111111112000' /tmp/noesis-run269.log
+      - name: Independent Fraction checker
+        run: python research/run269/verify.py
