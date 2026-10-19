@@ -1,0 +1,3 @@
+# THEORY ledger — Run275
+Full-alphabet sufficient inductive certificate: L=max(0,b_RESET), U=b_SET; R0=[0,L], R1=[U,infinity). Check v>0, U>L, vL+c<0<vU+c, a_HOLD>=0, a_HOLD*L+b_HOLD<=L, a_HOLD*U+b_HOLD>=U, a_SET>=0, b_SET>=U, a_RESET<=0, b_RESET<=L. Then all task-symbol transitions preserve the correct abstract latch state, for every word length.
+For four earlier sampled-perfect checkpoints, exact dyadic rollout of RESET HOLD^n or SET HOLD^n establishes first family failures n=57,51,76,34 respectively; monotonic hold dynamics prove all subsequent n in those families fail. This is not a necessary condition, a novel generic theorem, or a model-agnostic law.

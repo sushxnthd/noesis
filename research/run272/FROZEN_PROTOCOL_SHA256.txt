@@ -1,0 +1,1 @@
+NOESIS Run272 frozen before training. Protocol SHA256 f900d2dfc30435cfd1f11faaae95f623318b776c33988d16cdd419848684e920. Seeds 19300-19323. Primary: finite-perfect uncertified model with exact witness and positive certified comparator.

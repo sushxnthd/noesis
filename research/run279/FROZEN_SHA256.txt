@@ -1,0 +1,2 @@
+Run279 protocol SHA256: e367d635b0b364af9291640163c7fa389518059041402a3a7617ba2f4b3d1c96
+Frozen before analysis 2026-10-20. See complete protocol in accompanying evidence archive.

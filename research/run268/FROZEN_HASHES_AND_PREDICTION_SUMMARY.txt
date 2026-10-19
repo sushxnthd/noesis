@@ -1,0 +1,5 @@
+Run268 frozen BEFORE long-horizon evaluation.
+FROZEN_PREDICTIONS.json sha256 a52aa3776bc6721c95248c6936acd2a9e37e2ffbf1f9a6118bfeee06538fd94b
+CHECKPOINTS_dim2.json sha256 27cce2082daa498136716be2c9b3c9ea6c398510a283c7ef92e0482ff9d88abf
+CHECKPOINTS_dim3.json sha256 e03147140e3c9a10afe936feed62463911ef0d873704fa068d757f9a0fe3c777
+32 independent seeds (16 2D + 16 3D), final epoch 600. 13/32 finite-perfect (5 2D, 8 3D). The local switch extrapolator predicts delayed errors for finite-perfect seeds 18612 and 18616; spectral baseline flags the same two. 11 finite-perfect seeds predicted negative by both. All outcomes still unobserved. Note: exact frozen prediction bytes retained in local evidence archive, not yet mirrored remotely.

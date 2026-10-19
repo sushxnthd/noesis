@@ -1,0 +1,3 @@
+# LEARNING ledger — Run 278
+
+Fixed 11 Run277 checkpoints trained by ordinary BCE/Adam, length 12, 283 sampled sequences per seed, no regularizer. Each was sampled-perfect but exact-witness-wrong. Exact certificate-directed post-training parameter edits repaired 11/11 with 8 single-coordinate and 3 two-coordinate repairs; sampled sequence-position accuracy remained 3396/3396 for original, repaired rational, and repaired float64 networks for every seed. 24/352 random-coordinate controls and 125/352 same-coordinate random-sign controls also passed certificates. Retrospective intervention, not a natural gradient transition and not a prospective prediction.

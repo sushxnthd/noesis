@@ -1,0 +1,23 @@
+name: NOESIS Run278 exact post-training repair
+on:
+  push:
+    branches: [research/kernel-001-run278-causal-repair]
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install sympy==1.14.0
+      - run: python research/run278/audit.py
+      - run: python research/run278/independent.py
+      - run: pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+      - run: python research/run278/sampled.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: noesis-run278-exact-repairs-and-controls
+          path: research/run278/derived_results.json

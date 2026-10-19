@@ -1,0 +1,1 @@
+{"run":277,"seed_start":19884,"seed_stop_exclusive":20140,"train_length":12,"snapshots":[0,10,20,30,40,50,60,75,85,100,125],"epochs":125,"samples_per_seed":283,"lr":0.03,"dtype":"float64","regularizer":"none"}

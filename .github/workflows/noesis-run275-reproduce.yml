@@ -1,0 +1,20 @@
+name: NOESIS Run275 full-cohort reproduction
+on:
+  push:
+    branches: [research/kernel-001-run275-natural-acquisition]
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+      - run: python research/run275/train.py
+      - run: python research/run275/replay_audit.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: run275-128-raw-checkpoints
+          path: research/run275/checkpoints_phase1.json

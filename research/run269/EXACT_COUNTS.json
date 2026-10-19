@@ -1,0 +1,46 @@
+{
+  "seed": 18605,
+  "epoch": 600,
+  "source_sha256": "e03147140e3c9a10afe936feed62463911ef0d873704fa068d757f9a0fe3c777",
+  "coefficients_sha256": "e47ecd6bc0a4553203ffaa10846a4c97d7f25a9524a0a3289f0dc72c72fa77d1",
+  "counts": [
+    3,
+    9,
+    27,
+    81,
+    243,
+    729,
+    2187,
+    6561,
+    19683,
+    59049,
+    177147,
+    531441,
+    1594323,
+    4782969
+  ],
+  "errors": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3
+  ],
+  "witnesses": [
+    "11111111112000",
+    "11111111120000",
+    "11111111200000"
+  ],
+  "method": "exact integer enumeration of dyadic float64 parameters; independent Fraction witness replay",
+  "frozen_generator": "247 prefixes, n=0..4096 HOLD, terminal SET/RESET: no errors",
+  "exploratory_search": true
+}
