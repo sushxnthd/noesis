@@ -1,0 +1,2 @@
+b69c0db0ee4bfa7c01b633285a8b7e13773f662b4f65c5822945e12e7cc58856  FROZEN_PREFIX_PREDICTIONS.json
+74 predictions (37 finite-perfect checkpoints x prefixes 1/2). 21 wrong-attractor predictions, 19 correct-attractor predictions, 34 abstentions. Hash committed before any long-horizon replay. Exact certificate manifest preserved in run265 evidence archive.
