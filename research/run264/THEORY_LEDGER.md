@@ -1,0 +1,1 @@
+Run264: 34/34 independent SymPy attractor proofs; six mutated proofs rejected. Seed18453 exact invariant polygon at epoch100 proves all-length pure-hold correctness; epoch300 exact invariant wrong stable attractor and exact first failure at n=968. This does not prove full latch correctness or a model-agnostic law. Literature: Ryou et al CAV 2021, Van Rossem & Saxe ICML 2025.

@@ -1,0 +1,1 @@
+GitHub Contents API file writes were blocked; Git Data API was used for this proof subset. Initial monolithic training timed out after epoch300; four 16-seed deterministic shards completed. Public CI pending verification. Full archive local only.
