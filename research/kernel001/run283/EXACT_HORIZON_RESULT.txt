@@ -1,0 +1,1 @@
+K001 Run283: exact exhaustive length <=10 passed in six gradient-trained width-two models (seeds 20605,20651,20678,20633,20694,20697); each has a longer exact failure. Two additional models fail at length 10. Independent checker confirmed.
