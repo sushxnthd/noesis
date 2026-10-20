@@ -1,0 +1,8 @@
+name: noesis-295-check
+on: push
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash research/kernel_001/run295/reproduce.sh
