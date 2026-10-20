@@ -1,0 +1,1 @@
+NOESIS Run282 protocol: neutral versus biased initialization; 96 heldout seeds; exact two-state quotient audit; negative results retained.
