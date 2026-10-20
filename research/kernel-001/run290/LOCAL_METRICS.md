@@ -1,0 +1,1 @@
+Run290 local metrics: n=256, exact positives=49, exact negatives=132, unresolved=75. Fixed diagnostic AUC=0.911874, BCE AUC=0.562461. Full local evidence archived separately. Public CI remains pending.

@@ -1,0 +1,1 @@
+Run283 independently verified eight exact long-horizon counterexamples in ordinary gradient-trained width-two ReLU recurrent networks.
