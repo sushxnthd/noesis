@@ -1,0 +1,18 @@
+{
+  "run": 296,
+  "exact_reductions": 548,
+  "old_stable": 242,
+  "old_divergent": 242,
+  "new_switched": 64,
+  "new_spoof_score_changed": 53,
+  "new_spoof_score_unchanged": 11,
+  "negative_mutation_controls_rejected": 4,
+  "primary_pass": true,
+  "learning_relevance_pass": true,
+  "independent_rational_checks": 548,
+  "checkpoint_sha256": "860b9f3856b7bfa8a22fcf7cbebc1cbb65403fdea9691546e2faf5b728f195c6",
+  "local_source_sha256": "c0ea9e7ccfccf55d411369f1d3ae0ff090282c7ba8fab6ced46bd42f32e6c9e9",
+  "local_independent_sha256": "de4cbb8e070fd9be8f5f568ae2bf78405e7626476934590f8a4f15a30ab7d08d",
+  "public_full_reproduction": false,
+  "notes": "Engineered post-training augmentations; exact-real semantics; prior checkpoints from Run291; no natural acquisition transitions."
+}
