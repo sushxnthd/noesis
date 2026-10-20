@@ -1,0 +1,1 @@
+LEARNING: New 256-network neutral-start Adam/BCE cohort. Seeds 21236 and 21372 achieved perfect sampled accuracy but exact counterexamples at epoch20 (lengths 22 and 20), then exact unrestricted certificates by epoch40. The fixed diagnostic predicted epoch80 independently resolved correctness better than BCE. No cross-architecture transfer is established.
