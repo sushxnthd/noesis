@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Frozen early LP-slack score; endpoint-blind. Run after train288.py."""
-import json,hashlib
+import json,hashlib,math
 from pathlib import Path
 import numpy as np
 from scipy.optimize import linprog
@@ -51,7 +51,7 @@ if __name__=='__main__':
  scores=[]
  for seed in range(20928,21184):
   x=r[(seed,20)]
-  scores.append(dict(seed=seed,score=-relaxed_margin(x['p']),bce_baseline=-x['bce'],accuracy_baseline=x['accuracy'],parameter_norm_baseline=-sum(v*v for v in x['p'])**.5))
+  scores.append(dict(seed=seed,score=-relaxed_margin(x['p']),bce_baseline=-x['bce'],accuracy_baseline=x['accuracy'],parameter_norm_baseline=-math.fsum(v*v for v in x['p'])**.5))
  out=P/'FROZEN_EARLY_SCORES.json';out.write_text(json.dumps(scores,indent=2,sort_keys=True)+'\n')
  digest=hashlib.sha256(out.read_bytes()).hexdigest()
  print('EARLY_SCORE_SHA256',digest)
