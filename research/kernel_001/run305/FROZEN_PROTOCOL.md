@@ -1,0 +1,1 @@
+Frozen before Run305: exact rational affine readout obstruction across 18 Run304 paired checkpoints.
