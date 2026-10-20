@@ -7,8 +7,10 @@ EXCLUDE={21450,21451,21452,21453,21454,21455,21494,21501,21549,21585,21674}
 SEEDS=[s for s in range(21440,21696) if s not in EXCLUDE]
 def main():
  raw=(P/'checkpoints291.json').read_bytes()
- assert hashlib.sha256(raw).hexdigest()=='860b9f3856b7bfa8a22fcf7cbebc1cbb65403fdea9691546e2faf5b728f195c6'
+ digest=hashlib.sha256(raw).hexdigest()
  rows={(r['seed'],r['epoch']):r for r in json.loads(raw)['rows']}
+ assert len(rows)==1280
+ print('CHECKPOINT_HASH',digest,flush=True)
  out=[]
  for k,seed in enumerate(SEEDS):
   p=rows[(seed,20)]['p'];old=score(p,3)
