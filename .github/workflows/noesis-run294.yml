@@ -1,0 +1,32 @@
+name: noesis-run294-reproduction
+on:
+  push:
+    branches: [research/kernel-001-run294-observability-clock]
+  workflow_dispatch:
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install numpy scipy==1.17.0 torch==2.10.0
+      - name: Regenerate exact Run291 gradient-trained cohort
+        run: python research/kernel_001/run294/train291.py | tee run294_training.log
+      - name: Frozen diagnostic attack on 245 untouched checkpoints
+        run: python research/kernel_001/run294/evaluate294.py | tee run294_evaluation.log
+      - name: Summarize outcomes and compare frozen expected result
+        run: python research/kernel_001/run294/finalize294.py | tee run294_summary.log
+      - name: Independent all-word structural checker
+        run: python research/kernel_001/run294/independent294.py | tee run294_independent.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: noesis-run294-full-raw-evidence
+          path: |
+            research/kernel_001/run294/checkpoints291.json
+            research/kernel_001/run294/rows294.json
+            research/kernel_001/run294/results294.json
+            run294_*.log

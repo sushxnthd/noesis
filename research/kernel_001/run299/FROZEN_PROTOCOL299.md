@@ -1,0 +1,19 @@
+# NOESIS K001 / Run299 — frozen scalar-cone certificate protocol
+Date: 2026-10-20. Parent: Run298. Branch: research/kernel-001-run299-latch-reachable-cert.
+
+**Pilot disclosure:** Before this protocol was committed, seeds 21832 and 21926 were inspected numerically and appeared compatible with the scalar-cone conditions. Therefore these two are *discovery examples*, not blind held-out validations. The remaining cohort and all exact rational checks are performed after this protocol.
+
+1. **Precise question.** Can a task-conditioned, inductive scalar lower-bound certificate prove unrestricted persistent-latch correctness for gradient-trained width-three ReLU RNNs previously unresolved by Run297/298?
+2. **Primary-literature frontier.** Jacoby, Barrett & Katz, *Verifying Recurrent Neural Networks Using Invariant Inference*, ATVA 2020 (https://theory.stanford.edu/~barrett/pubs/JBK20-abstract.html); Khmelnitsky et al., *Property-Directed Verification of Recurrent Neural Networks*, 2020 (https://arxiv.org/abs/2009.10610); Butoi et al., *Training Neural Networks as Recognizers of Formal Languages*, ICLR 2025 (https://proceedings.iclr.cc/paper_files/paper/2025/hash/7256b2c07b6980aca382eb41606501c2-Abstract-Conference.html). Invariant inference and formal-language training are **prior art**; a simple inductive cone is not a novelty claim.
+3. **One exact success criterion.** At least TWO of the 54 Run298-unresolved, sampled-perfect, actually gradient-trained epoch-80 latch networks receive independently verified, exact-dyadic all-word certificates. Report the number excluding the two disclosed pilot seeds separately.
+4. **Strongest competing explanation.** Success is an architecture/task-specific monotone-growth regime selected by training, not a model-agnostic signature of reusable algorithms. Certifier selection bias may dominate.
+5. **Cheapest decisive falsification.** Independently recompute each inequality with Python Fraction.from_float; reject on one failed premise. Apply verifier to known incorrect trained checkpoints and mutated certificate controls.
+6. **Publishable threshold.** At least ten exact trained-model certificates, verified independently and paired with a prospectively frozen transfer prediction on an unseen architecture/task. This run alone is not sufficient.
+7. **Learning-system relevance threshold.** At least one unmodified gradient-trained network certified for all finite input lengths. Explicitly distinguish training correctness from output-equivalent engineered constructions.
+8. **Kill condition.** Kill scalar-cone sufficiency as a useful diagnostic if no new certificate is found outside the two disclosed pilots, or if any accepted certificate fails independent exact checking; retain counterexamples and negative evidence. After three substantive unsuccessful extensions, kill or reformulate K001.
+
+**Frozen search.** Use the 54 Run298-unresolved seeds only. Interpret stored binary64 parameters as exact dyadic rationals. Require h(0)=0; b_0 <= 0 componentwise; readout offset c < 0; v >= 0 componentwise; and h(1)=ReLU(b_1). Let w=v, B_x=w^T b_x and q_{xj}=(w^T A_x)_j. Set mu_x=min(q_{xj}/w_j for w_j>0), rejecting any j with w_j=0 and q_{xj}<0. Search T=k/4 for integer k=1,...,64. Accept iff for x=0,1: mu_x>=0, (mu_x-1)T+B_x>=0, w^T h(1)>=T, and T+c>0. The inductive region for latch=1 is {h>=0, w^T h>=T}. No float tolerance in acceptance.
+
+**Claim boundary.** The certificate proves exact-real sign correctness for every finite binary sequence under the stored dyadic parameter model. It does not prove finite-precision runtime correctness, explain how gradient descent acquired the behavior, generalize to other tasks, or establish novelty of invariant inference.
+
+**Provenance.** Source checkpoint SHA256: 620d1852010a2889338752b8568689c709b22ba928b674a44c0b559d7b7fc473. Run298 source cohort: 54 unresolved. Keep two ledgers THEORY and LEARNING. No mutation of main.

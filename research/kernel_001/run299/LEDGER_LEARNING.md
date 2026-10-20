@@ -1,0 +1,4 @@
+# LEARNING ledger — Run299
+Three unmodified gradient-trained Run297 epoch-80 latch RNN checkpoints are exactly certified all-word correct: seeds 21832, 21903, 21926. All had sampled training accuracy 1.0 and were previously unresolved by the box verifier; 21903 was not among the two numerically inspected pilot seeds. Cohort: 54; remaining unresolved: 51. This is the first nonzero exact-positive latch cohort after Run297.
+No new training, intervention, or transition was performed. Do not infer when or why gradient descent acquired the behavior. Architecture-specific monotone-growth selection remains the strongest alternative to a general algorithmicity mechanism.
+Public full-cohort CI currently blocked by artifact filename mismatch; exact witness weights and standalone rational checker are committed and generic pytest is used for independent public proof regression.
