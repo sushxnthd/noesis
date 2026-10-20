@@ -28,3 +28,5 @@ data=dict(config=dict(seeds=S,length=T,random_sequences=160,enumerated_prefixes=
 blob=json.dumps(data,sort_keys=True,separators=(',',':'))+'\n'
 Path('checkpoints288.json').write_text(blob)
 print(hashlib.sha256(blob.encode()).hexdigest())
+
+torch.save({'optimizer':o.state_dict(),'parameters':p.detach().clone(),'config':data['config']},Path('optimizer288.pt'))
