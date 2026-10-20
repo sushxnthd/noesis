@@ -1,0 +1,1 @@
+NOESIS K001 Run286 frozen experiment protocol: 128 new seeds, epoch20 cycle-margin predictor, epoch80 exact positive-vs-negative endpoint, AUC gain threshold 0.10.
