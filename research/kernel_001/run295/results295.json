@@ -1,0 +1,16 @@
+{
+  "run": 295,
+  "frozen_primary_pass": false,
+  "n": 242,
+  "divergent_changed": 191,
+  "stable_unchanged": 193,
+  "stable_changed": 49,
+  "exact_induction_verified": 484,
+  "structural_cone_keeps_all_six": 484,
+  "mutation_controls_rejected": 3,
+  "threshold": 140,
+  "checkpoint_sha256": "860b9f3856b7fba8a22fcf7cbebc1cbb65403fdea9691546e2faf5b728f195c6",
+  "diagnostic_sha256": "0b88cd7cf9ca282b6346a0d833329a4b59d3b25df5bc6923a1ec7a54208b5333",
+  "minimized_trained_witness": {"seed":21447,"epoch":20,"original_score":-0.3262598085739013,"stable_score":-0.32930701085084485,"divergent_score":-1.0},
+  "scientific_claim": "Reachable-zero output gates can change the existing box-LP diagnostic even when their recurrent clocks are bounded and the original gradient-trained model's all-length function is exactly unchanged. Backward structural observability pruning retains the irrelevant subnetwork. This is a negative robustness result; the frozen primary success criterion failed because the stable control also changed 49 scores."
+}
