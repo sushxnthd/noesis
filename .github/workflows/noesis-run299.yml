@@ -1,0 +1,44 @@
+name: NOESIS Run299 exact all-word latch certificates
+on:
+  push:
+    branches:
+      - research/kernel-001-run299-latch-reachable-cert
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  exact-certificate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve immutable Run297 public trained checkpoints
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/noesis297
+          gh run download 39448639820 --repo sushxnthd/noesis --name noesis-run297-evidence --dir /tmp/noesis297
+          find /tmp/noesis297 -type f | sort
+          CK=$(find /tmp/noesis297 -name checkpoints297.json -type f -print -quit)
+          ROW=$(find /tmp/noesis297 -name rows297.json -type f -print -quit)
+          test -n "$CK" && test -n "$ROW"
+          cp "$CK" research/kernel_001/run299/checkpoints297.json
+          cp "$ROW" research/kernel_001/run299/rows297.json
+      - name: Run exact-dyadic cohort scan and independent checks
+        run: |
+          set -euo pipefail
+          python3 research/kernel_001/run299/run299_public.py research/kernel_001/run299/checkpoints297.json research/kernel_001/run299/rows297.json
+      - name: Persist all raw/derived results and certified model parameters
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: noesis-run299-exact-latch-certificates
+          path: |
+            research/kernel_001/run299/rows299_public.json
+            research/kernel_001/run299/results299_public.json
+            research/kernel_001/run299/certified_checkpoints299.json
+            research/kernel_001/run299/checkpoints297.json
+            research/kernel_001/run299/rows297.json
+          retention-days: 90

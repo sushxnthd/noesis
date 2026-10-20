@@ -1,0 +1,33 @@
+name: NOESIS Run300 public full-cohort reproduction
+on:
+  push:
+    branches: [research/kernel-001-run300-latch-predictive-audit]
+  workflow_dispatch:
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install numpy==2.3.5 scipy==1.17.0 scikit-learn==1.8.0
+      - run: python -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+      - name: Reproduce 384 trained networks and independently exact-check endpoints
+        run: python research/kernel_001/run300/reproduce300_public.py
+      - name: Preserve raw trained-model evidence even after failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: noesis-run300-complete-evidence
+          if-no-files-found: warn
+          path: |
+            research/kernel_001/run300/checkpoints300_repro.json
+            research/kernel_001/run300/early_scores300_public.json
+            research/kernel_001/run300/rows300_public.json
+            research/kernel_001/run300/results300_public.json

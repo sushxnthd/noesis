@@ -1,0 +1,1 @@
+Run 39464281123 failed because Run297 artifact has rows297_compact.json rather than rows297.json. Exact proof not executed. Failure preserved; workflow fix pending.

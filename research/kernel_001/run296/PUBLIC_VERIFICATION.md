@@ -1,0 +1,12 @@
+# NOESIS Run296 final public verification (2026-10-20)
+- Research branch: research/kernel-001-run296-reachable-silent-quotient.
+- Frozen protocol SHA: e1eefd26119fb43bc1ed8d1049631f0ec9b0b2b1, committed before evaluation.
+- Full public training, exact quotient evaluation, **independent full-cohort rational checker**, four activated-gate mutation checks, and artifact upload: https://github.com/sushxnthd/noesis/actions/runs/39437303028 — SUCCESS.
+- Public independent checker printed: INDEPENDENT_PASS 548 exact all-word dominance checks.
+- Public evaluation printed: old_recovered 484, new_recovered 64, new_changed 53, four mutants rejected.
+- Raw per-seed public results and regenerated 256-network checkpoints: https://github.com/sushxnthd/noesis/actions/runs/39437303028/artifacts/12272291851.
+- Public regenerated checkpoint digest 56834b0bd62400b72accdfb3794bb3a9fca99e55974fd25eedeed9da20177938; local digest 860b9f3856b7fba8a22fcf7cbebc1cbb65403fdea9691546e2faf5b728f195c6. Counts reproduce, bytes differ by environment.
+- Public pytest CI for trained witness: https://github.com/sushxnthd/noesis/actions/runs/39437115921 — SUCCESS.
+- Run295's frozen stable-control failure is preserved, not rewritten.
+- Draft PR creation blocked by connector safety checks; no merge.
+- Scope: restricted reachable-silent gate theorem/repair on engineered augmentations of genuinely gradient-trained networks. No new acquisition transition, cross-task transfer, or field-level breakthrough.

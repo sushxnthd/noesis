@@ -1,0 +1,9 @@
+{
+  "superseded": true,
+  "reason": "Earlier status string was truncated to 379 characters; retained as provenance only.",
+  "replacement": "COHORT_STATUS_CORRECTED.json",
+  "total": 384,
+  "correct": 18,
+  "incorrect": 181,
+  "unresolved": 185
+}

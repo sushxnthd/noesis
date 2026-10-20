@@ -1,0 +1,1 @@
+Run303 exact proof is retrospective. Cohort source is the Run300 archive. Early and late trained checkpoints for seed 22438 are committed in this branch. The standalone checker is pending branch write access.

@@ -1,0 +1,290 @@
+[
+  {
+    "seed": 21802,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21805,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21807,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21808,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21809,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21810,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21812,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21813,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21816,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21817,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21818,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21820,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21827,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21830,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21831,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21832,
+    "status": "certified",
+    "simple_witness": {
+      "T": "9/4",
+      "mu": [
+        "21/16",
+        "7/5"
+      ]
+    }
+  },
+  {
+    "seed": 21834,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21837,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21843,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21844,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21845,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21846,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21847,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21848,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21850,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21851,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21852,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21853,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21854,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21858,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21859,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21868,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21869,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21875,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21876,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21877,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21880,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21882,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21884,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21888,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21896,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21897,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21898,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21899,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21901,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21902,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21903,
+    "status": "certified",
+    "simple_witness": {
+      "T": "1",
+      "mu": [
+        "9/5",
+        "1/2"
+      ]
+    }
+  },
+  {
+    "seed": 21909,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21916,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21917,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21919,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21921,
+    "status": "unresolved",
+    "simple_witness": null
+  },
+  {
+    "seed": 21926,
+    "status": "certified",
+    "simple_witness": {
+      "T": "5/4",
+      "mu": [
+        "3/2",
+        "6/5"
+      ]
+    }
+  },
+  {
+    "seed": 21927,
+    "status": "unresolved",
+    "simple_witness": null
+  }
+]

@@ -1,0 +1,36 @@
+name: NOESIS Run301 missing-label exact audit
+on:
+  push:
+    branches: [research/kernel-001-run301-endpoint-identifiability]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve independent Run300 public raw outcomes
+        uses: actions/download-artifact@v4
+        with:
+          name: noesis-run300-complete-evidence
+          run-id: 39472272413
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: research/kernel_001/run301/input
+      - name: Exact pairwise and independent rank-sum checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          python research/kernel_001/run301/audit301.py research/kernel_001/run301/input/rows300_public.json research/kernel_001/run301/results301_public.json
+          python research/kernel_001/run301/independent301.py research/kernel_001/run301/input/rows300_public.json research/kernel_001/run301/results301_public.json
+      - name: Preserve raw and derived outcomes on failure or success
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: noesis-run301-selection-audit
+          if-no-files-found: warn
+          path: |
+            research/kernel_001/run301/input/rows300_public.json
+            research/kernel_001/run301/results301_public.json

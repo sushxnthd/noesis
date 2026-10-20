@@ -1,0 +1,11 @@
+# Run296 verification and infrastructure
+- Frozen protocol commit: e1eefd26119fb43bc1ed8d1049631f0ec9b0b2b1, before local experiment.
+- Local exact evaluation: 548/548 parameter-exact reductions; 53/64 new raw LP scores changed; four activated mutants rejected; independent checker 548/548 passed.
+- Full public training and evaluation: https://github.com/sushxnthd/noesis/actions/runs/39436958430 (SUCCESS). Public counts reproduced exactly.
+- Public evidence artifact: https://github.com/sushxnthd/noesis/actions/runs/39436958430/artifacts/12273395628 (checkpoint, all per-seed outcomes, aggregate results).
+- Public regenerated checkpoint SHA256 56834b0bd62400b72accdfb3794bb3a9fca99e55974fd25eedeed9da20177938; local SHA256 860b9f3856b7fba8a22fcf7cbebc1cbb65403fdea9691546e2faf5b728f195c6. Aggregate counts identical, bytes differ by environment.
+- Public exact witness CI: https://github.com/sushxnthd/noesis/actions/runs/39436958611 (SUCCESS); generic pytest CI: https://github.com/sushxnthd/noesis/actions/runs/39436958406 (SUCCESS).
+- The original Run295 failed frozen stable control remains documented and unchanged. No hidden rerun reclassifies it.
+- Draft PR creation was blocked by connector safety checks. Research branch unmerged.
+- Exact-real rational semantics for stored floats; not a floating-point infinite-time execution guarantee.
+- No cross-task training or novel algorithm-acquisition transition in Run296.

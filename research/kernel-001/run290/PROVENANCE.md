@@ -1,0 +1,1 @@
+Local Run290 evaluation completed after the protocol and early-score commitments. Full evidence is retained in a separate archive. GitHub upload of executable source was blocked; do not claim public reproduction.
