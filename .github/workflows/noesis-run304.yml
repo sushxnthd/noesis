@@ -1,0 +1,43 @@
+name: NOESIS K001 Run304 exact paired training transitions
+on:
+  push:
+    branches: [research/kernel-001-run304-exact-training-transitions]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned public CPU dependencies
+        run: |
+          set -euo pipefail
+          python -m pip install numpy==2.3.5 scipy==1.17.0 scikit-learn==1.8.0
+          python -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+      - name: Regenerate 384 trained trajectories and original Run300 checks
+        run: python research/kernel_001/run300/reproduce300_public.py
+      - name: Frozen exact paired-transition evaluation
+        run: python research/kernel_001/run304/reproduce304_public.py
+      - name: Independent exact checker and mutation controls
+        run: python research/kernel_001/run304/independent304_public.py
+      - name: Preserve all raw checkpoints and outcomes, including failed executions
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: noesis-run304-raw-checkpoints-and-exact-results
+          if-no-files-found: warn
+          path: |
+            research/kernel_001/run300/checkpoints300_repro.json
+            research/kernel_001/run300/early_scores300_public.json
+            research/kernel_001/run300/rows300_public.json
+            research/kernel_001/run304/selected_checkpoints304.json
+            research/kernel_001/run304/results304.json

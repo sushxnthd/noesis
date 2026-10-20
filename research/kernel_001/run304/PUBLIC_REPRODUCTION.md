@@ -1,0 +1,1 @@
+NOESIS Run304 public CI PASSED. Run 39508014453, artifact 12303488724. Reproduced 18/18 exact paired transitions, 72/72 independent mutation rejections, and 12/18 finite-prefix bias-only rescues. Frozen primary criterion passed. Retrospective and readout-confounded; not a model-agnostic acquisition law.
