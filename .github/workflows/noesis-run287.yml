@@ -1,12 +1,13 @@
-name: NOESIS Run287 exact proof
+name: NOESIS Run287 exact checks
 on:
   push:
     branches:
       - research/kernel-001-run287-certified-loss-adversarial-audit
   workflow_dispatch:
 jobs:
-  verify-exact:
+  exact-checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: python3 research/kernel_001/run287/exact_transition_20833.py
+      - run: python3 research/kernel_001/run287/exact_exhaustive287.py
