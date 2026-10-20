@@ -19,6 +19,7 @@ jobs:
         env:
           OPENBLAS_NUM_THREADS: '1'
           OMP_NUM_THREADS: '1'
+      - run: python research/kernel_001/run296/independent296_public.py
       - run: python research/kernel_001/run296/test_reachability296.py
       - uses: actions/upload-artifact@v4
         if: always()
