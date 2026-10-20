@@ -1,0 +1,18 @@
+{
+  "start_seed": 22200,
+  "end_seed": 22583,
+  "total": 384,
+  "exact_correct": 18,
+  "exact_incorrect": 181,
+  "unresolved": 185,
+  "new_correct_seed": 22438,
+  "run302_new_incorrect": [
+    22271,
+    22370,
+    22455,
+    22459,
+    22517,
+    22539
+  ],
+  "warning": "cohort_status303.json has a malformed 379-character draft encoding; do not use it. This file supersedes it. Full per-seed rows in local archive."
+}
