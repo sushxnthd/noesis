@@ -1,0 +1,4 @@
+# THEORY ledger — Run299
+Exact proof: for a trained ReLU RNN h'=ReLU(A_x h+b_x), output sign(v^T h+c), latch target q'=q OR x, the zero state is invariant under x=0 when b_0<=0, and a positive cone {h>=0, v^T h>=T} is invariant under either symbol if v>=0, mu_x>=0, v^T A_x>=mu_x v^T, mu_x T+v^T b_x>=T, and v^T ReLU(b_1)>=T. With c<0<T+c this establishes all-finite-word correctness. Three trained checkpoint parameter sets satisfy these exact dyadic inequalities.
+Scope: a sufficient invariant for specific trained models, not a necessary criterion, model-agnostic law, new proof theory, or algorithm-acquisition mechanism. Prior art: Jacoby, Barrett, Katz, ATVA 2020 invariant inference.
+Negative controls: 74 known incorrect trained networks rejected; five premise-breaking mutations rejected. No certificate means unresolved, not wrong.
