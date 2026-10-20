@@ -1,0 +1,19 @@
+name: NOESIS Run296 exact reachable-silent gate witness
+on:
+  push:
+    branches:
+      - research/kernel-001-run296-reachable-silent-quotient
+  workflow_dispatch:
+jobs:
+  exact-proof-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check exact rational proof and negative controls
+        run: |
+          set -euo pipefail
+          python -B research/kernel_001/run296/test_reachability296.py

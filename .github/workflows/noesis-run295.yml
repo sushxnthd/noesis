@@ -1,0 +1,53 @@
+name: NOESIS K001 Run295 exact reachable-gate reproduction
+on:
+  push:
+    branches: [research/kernel-001-run295-frozen-reachability]
+  workflow_dispatch:
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned CPU dependencies
+        run: |
+          set -euo pipefail
+          python -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install numpy scipy==1.17.0
+      - name: Reproduce original gradient-trained Run291 checkpoints
+        run: |
+          set -euo pipefail
+          python research/kernel_001/run294/train291.py | tee run295_train.log
+          cp research/kernel_001/run294/checkpoints291.json research/kernel_001/run295/checkpoints291.json
+      - name: Frozen attack evaluation (three deterministic chunks)
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+          OMP_NUM_THREADS: '1'
+        run: |
+          set -euo pipefail
+          cd research/kernel_001/run295
+          RUN295_START=0 RUN295_STOP=80 python evaluate295.py | tee ../../../run295_chunk0.log
+          RUN295_START=80 RUN295_STOP=160 python evaluate295.py | tee ../../../run295_chunk80.log
+          RUN295_START=160 RUN295_STOP=242 python evaluate295.py | tee ../../../run295_chunk160.log
+          python evaluate295.py --finalize | tee ../../../run295_final.log
+      - name: Independent exact-rational all-word proof check
+        run: |
+          set -euo pipefail
+          python research/kernel_001/run295/independent295.py | tee run295_exact.log
+      - name: Upload raw trained checkpoints, per-seed results and logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: noesis-run295-full-evidence
+          path: |
+            research/kernel_001/run295/checkpoints291.json
+            research/kernel_001/run295/partial_*.json
+            research/kernel_001/run295/rows295.json
+            research/kernel_001/run295/results295.json
+            run295_*.log

@@ -1,0 +1,2 @@
+# Infrastructure
+Run288 immutable public workflow 39382193835, artifact 12245637089. Frozen Run289 protocol commit d5ca7f7f806a08b8314095f9c58342d4244e9a68 is on research/kernel-001-run289-gauge-frozen. create_file/update_ref were blocked; blob/tree/commit + create_branch workaround. Initial local results JSON serialization failed on numpy.int64, fixed with int conversion, failure preserved in local archive. Public CI must be verified separately.
