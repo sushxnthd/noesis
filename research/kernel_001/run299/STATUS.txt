@@ -1,0 +1,1 @@
+Run299: 3 exact all-word certificates on trained latch networks; independent checks passed. Public reproducibility pending.
