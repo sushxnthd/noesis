@@ -1,0 +1,23 @@
+name: Run315 exact reproduction
+on:
+  push:
+    branches: [research/kernel-001-run315-frozen-retention-predictor]
+  workflow_dispatch:
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install numpy==2.3.5
+      - run: pip install torch==2.10.0+cpu --index-url https://download.pytorch.org/whl/cpu
+      - run: python research/kernel001/run315/train315.py
+      - run: python research/kernel001/run315/reproduce315.py
+      - run: python research/kernel001/run315/independent315.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: run315-raw
+          path: research/kernel001/run315/*.json
