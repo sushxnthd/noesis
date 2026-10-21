@@ -1,0 +1,2 @@
+# THEORY ledger — Run 320
+Exact positive-diagonal/permutation gauge invariance of an automatically readout-canonicalized trained checkpoint was checked 24/24. The canonicalizer requires nonzero output weights, 2 positive and 1 negative coefficients, and unequal first-positive-token readout contributions. It transports a seed-specific inductive cone; no new model-agnostic law. This is a sufficient certificate only when all cone inequalities pass. Rejection never proves algorithmic failure.

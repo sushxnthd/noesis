@@ -1,0 +1,2 @@
+# LEARNING ledger — Run 320
+Run319 trained seed22242 epoch80: 24/24 reparameterizations certified without oracle gauge labels. Run316 gradient-trained delayed seed22642 rejected, but trivially by sign signature. Run315 development-only 96 trained checkpoints: zero accepted, including four independently certified positives. The template has zero measured recall on this cohort. Kill this fixed-cone canonicalizer as a cross-seed acquisition diagnostic. No training or intervention occurred.
