@@ -1,10 +1,10 @@
-name: Run315 cross-CPU exact replay
+name: Run315 portable exact replay
 on:
   push:
     branches: [research/kernel-001-run315-frozen-retention-predictor]
   workflow_dispatch:
 jobs:
-  reproduce:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -14,9 +14,9 @@ jobs:
       - run: pip install numpy==2.3.5
       - run: pip install torch==2.10.0+cpu --index-url https://download.pytorch.org/whl/cpu
       - run: python research/kernel001/run315/train315.py
-      - run: python research/kernel001/run315/crosscpu315.py
+      - run: python research/kernel001/run315/portable315.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: run315-crosscpu-evidence
+          name: run315-portable-evidence
           path: research/kernel001/run315/*.json
