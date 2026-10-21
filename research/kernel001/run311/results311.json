@@ -1,0 +1,22 @@
+{
+  "run": 311,
+  "protocol_commit": "8bfb2cf95148f60a40650f04e9502a29cbae4eac",
+  "source_sha256": "71f384d19e4e5ae95198b6bce2ec35f29f547b166ba293ffae60fe8a2d2d6f8d",
+  "candidate_seeds": [
+    22242,
+    22287,
+    22361,
+    22573
+  ],
+  "words_per_seed": 7122,
+  "model_word_evaluations": 28488,
+  "exact_witnesses": [],
+  "primary_pass": false,
+  "independent_exact_spot_checks": 24,
+  "delayed_error_positive_control": {
+    "seed": 22370,
+    "length": 197,
+    "verified": true
+  },
+  "status": "FROZEN FALSIFICATION FAILED; UNRESTRICTED CORRECTNESS UNRESOLVED"
+}

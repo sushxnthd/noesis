@@ -1,0 +1,2 @@
+# LEARNING
+Four genuine, unmodified epoch-80 Adam-trained width-3 ReLU latch checkpoints were screened. All were sampled-perfect and had lost an observed epoch-20 equal-length collision. No longer-horizon error was found in 28,488 float64 evaluations; this is neither unrestricted correctness nor a new acquisition transition. Future priority: sound reachability proof or exact falsification on these four.
