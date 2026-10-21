@@ -1,0 +1,1 @@
+Frozen score: h=(0,0,0); for x in [1,0,0,0], h_i=max(0,sum_j p[9*x+3*i+j]*h_j + p[18+3*x+i]); score=sum_i p[24+i]*h_i+p[27]. Baseline=-epoch20 BCE. This uses original float64 checkpoint parameters. See PROTOCOL.txt for source hashes and evaluation gates.
