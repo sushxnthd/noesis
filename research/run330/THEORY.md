@@ -1,0 +1,1 @@
+THEORY ledger Run330. The epoch20 memory-margin diagnostic is not a correctness certificate. Conditional heldout AUROC difference is -33/1196. Exact full-cohort unknown-label bounds overlap the +0.05 threshold: [-0.2384152, 0.1822145]. No new law established.
