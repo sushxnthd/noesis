@@ -1,0 +1,20 @@
+name: NOESIS Run317 exact recurrent repair
+on:
+  push:
+    branches:
+      - research/kernel-001-run317-single-weight-repair
+  pull_request:
+    paths:
+      - research/run317/**
+      - .github/workflows/run317.yml
+  workflow_dispatch:
+jobs:
+  exact-proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install sympy==1.13.3
+      - run: python research/run317/test317.py

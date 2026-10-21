@@ -1,0 +1,20 @@
+{
+  "run": 317,
+  "seed": 22642,
+  "epoch": 80,
+  "protocol_commit": "326b491dee5d4b13cfc650d1c0a843f4dd5f2957",
+  "intervention": {
+    "A0[0,0]": "11/10",
+    "output_bias": "-1/100"
+  },
+  "certificate": "h1=0, h0>=1, 0<=h2<=3*h0",
+  "all_length_exact": true,
+  "independent_sympy": "PASS local",
+  "bias_only_collision": [
+    "00000000000",
+    "10000000000"
+  ],
+  "positive_margin_lower_bound": "136336125846799/109951162777600",
+  "classification": "exploratory post-training repair; not naturally learned or prospectively validated",
+  "public_CI": "pending"
+}
