@@ -1,15 +1,9 @@
-name: NOESIS Run317 exact recurrent repair
+name: NOESIS Run317 proof
 on:
   push:
-    branches:
-      - research/kernel-001-run317-single-weight-repair
-  pull_request:
-    paths:
-      - research/run317/**
-      - .github/workflows/run317.yml
-  workflow_dispatch:
+    branches: [research/kernel-001-run317-public-repro]
 jobs:
-  exact-proof:
+  proof:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
