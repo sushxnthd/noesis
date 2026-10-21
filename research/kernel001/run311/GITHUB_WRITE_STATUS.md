@@ -1,0 +1,2 @@
+# GitHub provenance
+Frozen protocol commit: 8bfb2cf95148f60a40650f04e9502a29cbae4eac. Core branch head: 06f83831833389c44861386fb5551e114f1ccc72. A separate workflow commit 501979ca1dd264ad8e68a1094661f1c3c1da1ed0 was created but branch-ref update was blocked by connector safety checks; it is not reachable from the active branch. Draft PR creation also blocked. Public CI not verified. Do not merge.

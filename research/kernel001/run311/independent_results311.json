@@ -1,0 +1,6 @@
+{
+  "exact_probe_checks": 24,
+  "known_negative_control": 22370,
+  "control_length": 197,
+  "passed": true
+}

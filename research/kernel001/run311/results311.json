@@ -2,21 +2,75 @@
   "run": 311,
   "protocol_commit": "8bfb2cf95148f60a40650f04e9502a29cbae4eac",
   "source_sha256": "71f384d19e4e5ae95198b6bce2ec35f29f547b166ba293ffae60fe8a2d2d6f8d",
-  "candidate_seeds": [
-    22242,
-    22287,
-    22361,
-    22573
+  "rows": [
+    {
+      "seed": 22242,
+      "epoch": 80,
+      "accuracy": 1,
+      "first": null,
+      "evaluated_by_family": {
+        "zero-run": 506,
+        "one-then-zeros": 506,
+        "prefix-one-suffix": 2292,
+        "alternating-01": 506,
+        "alternating-10": 506,
+        "ones-then-zeros": 2038,
+        "seeded-random": 768
+      }
+    },
+    {
+      "seed": 22287,
+      "epoch": 80,
+      "accuracy": 1,
+      "first": null,
+      "evaluated_by_family": {
+        "zero-run": 506,
+        "one-then-zeros": 506,
+        "prefix-one-suffix": 2292,
+        "alternating-01": 506,
+        "alternating-10": 506,
+        "ones-then-zeros": 2038,
+        "seeded-random": 768
+      }
+    },
+    {
+      "seed": 22361,
+      "epoch": 80,
+      "accuracy": 1,
+      "first": null,
+      "evaluated_by_family": {
+        "zero-run": 506,
+        "one-then-zeros": 506,
+        "prefix-one-suffix": 2292,
+        "alternating-01": 506,
+        "alternating-10": 506,
+        "ones-then-zeros": 2038,
+        "seeded-random": 768
+      }
+    },
+    {
+      "seed": 22573,
+      "epoch": 80,
+      "accuracy": 1,
+      "first": null,
+      "evaluated_by_family": {
+        "zero-run": 506,
+        "one-then-zeros": 506,
+        "prefix-one-suffix": 2292,
+        "alternating-01": 506,
+        "alternating-10": 506,
+        "ones-then-zeros": 2038,
+        "seeded-random": 768
+      }
+    }
   ],
-  "words_per_seed": 7122,
-  "model_word_evaluations": 28488,
-  "exact_witnesses": [],
-  "primary_pass": false,
+  "total_float64_evaluations": 28488,
   "independent_exact_spot_checks": 24,
-  "delayed_error_positive_control": {
+  "positive_control": {
     "seed": 22370,
-    "length": 197,
-    "verified": true
+    "word": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "exact_incorrect": true
   },
-  "status": "FROZEN FALSIFICATION FAILED; UNRESTRICTED CORRECTNESS UNRESOLVED"
+  "primary_pass": false,
+  "smallest_claim": "No counterexample detected within frozen bounded search; unrestricted correctness of four models remains unresolved."
 }
