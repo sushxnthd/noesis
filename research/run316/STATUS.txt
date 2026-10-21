@@ -1,1 +1,1 @@
-Local exact checks passed. Full archive pending write-through.
+Run316: 6/96 trained trajectories clear exact short collisions yet remain incorrect. Seed 22642 has epoch20 collision at length 2 and epoch80 collision at length 11. Bias-adjusted late core is correct through length 10 only. Local independent checker passed; public Run316 CI unverified. Full evidence archive pending repository write-through.
