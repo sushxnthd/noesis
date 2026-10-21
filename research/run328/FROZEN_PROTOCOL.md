@@ -1,0 +1,12 @@
+# NOESIS Run 328 — frozen tail-adjudication protocol
+Date: 2026-10-22. Active kernel: K001-R. This run does not fit or evaluate a new predictor.
+
+Input: the 384 original epoch-80 float64 parameter vectors and Run326 outcome labels, SHA256 checkpoints326.json = 628493d45ba6468144e4a771a8d73c01786333eca26fa8afaf25336da480fe1e; results326.json = afd8553d78c0fd472dd1f5016077ca8e34c3c54ea87f521a72b3897da8c2c36f.
+
+Question: how many of the 189 unresolved trained persistent-latch networks admit new exact failure witnesses under a fixed, low-cost tail-language search?
+
+Search ONLY unresolved networks; do not inspect early predictor scores to choose words or stopping rules. Ordered candidates: all-0 and all-1 words of lengths 1..128; 1 followed by k zeros, 0 followed by k ones, 0^k1, 1^k0 for k=0..127; 0^a 1 0^b for a,b=0..32; 1 0^a 1 0^b for a,b=0..24; periodic words (01)^k,(10)^k,(001)^k,(011)^k for k=1..42. Deduplicate in listed order. On any predicted failure, verify the exact IEEE-754 input parameters as rational numbers; accept only exact counterexamples on ORIGINAL epoch-80 output head. Minimize witnesses by deleting contiguous substrings and then individual symbols, retaining exact failure. Stop on first verified witness per network. All others remain unresolved. No certificate can be inferred from absence of witnesses.
+
+Primary scalar: number of NEW exactly witnessed incorrect networks, with exact independent reproduction; report full-cohort AUROC sensitivity envelope after relabeling, not merely adjudicated-subset AUROC. Success for this adjudication run: >=1 new exact witness (a negative result if 0). Scientific publication threshold unchanged (mechanistic prospective prediction and >=10 positive, >=30 negative across heldout architectures). Learning relevance: every accepted witness is from an unmodified gradient-trained checkpoint. Kill condition: if no new witnesses, stop expanding this tail family; move to stronger exact certificate construction. Competing explanation: networks may be correct or only fail on unsearched words. Cheapest falsification: exact check of any proposed witness.
+
+Provenance: keep source hashes, raw candidate outcomes, exact witness words, independent checker, original results, test output and both ledgers. This is a frozen endpoint-adjudication test, NOT a prospective predictor test. Never count it as a new success of the Run326 predictor.
