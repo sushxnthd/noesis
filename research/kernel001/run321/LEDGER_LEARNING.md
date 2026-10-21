@@ -1,0 +1,3 @@
+# LEARNING ledger — Run 321
+
+Original gradient-trained Run315 checkpoints only. At epoch20, 18/96 trajectories collide on the restricted task-opposed zero-tail path; at epoch80, 13/96. All late collisions belong to previously witnessed-incorrect checkpoints, not 49 unresolved. Delayed collisions at n=11 (seed22642) and n=12 (seed22600) are learned finite-range heuristic witnesses but do not establish a prospective predictor. The narrow endpoint-resolution probe is killed. Next attempt should target exact readout errors beyond bounded evaluation on unresolved trained networks.

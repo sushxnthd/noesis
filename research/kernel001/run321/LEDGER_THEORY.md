@@ -1,0 +1,3 @@
+# THEORY ledger — Run 321
+
+Exact collision of hidden states for equal-length opposite-label words proves impossibility of any deterministic final-state readout, including nonlinear/length-aware heads. The tested family is 0^n versus 10^(n-1), n<=64, on original binary64 rationalized trained RNNs. No collision does not imply correctness. Classical distinguishability is prior art, not a new theorem. Frozen criterion failed (0 new unresolved late obstructions).
