@@ -1,0 +1,1 @@
+NOESIS Run310 frozen before outcomes. Cohort: 19 paired trained RNNs. Primary threshold: five all-length certificates with one early exact collision. No seed exclusions. Source SHA256 run304_pairs.json: 5cb41eaefe2957f01d9b306537bf76cdf3a730ae2baf1ab3e007cad34534de71.
