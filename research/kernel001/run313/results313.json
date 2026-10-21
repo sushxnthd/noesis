@@ -1,0 +1,30 @@
+{
+  "run": 313,
+  "seed": 22242,
+  "retrospective": true,
+  "epoch20": {
+    "sampled_accuracy": 0.8333333333333334,
+    "collision": [
+      "000000",
+      "100000"
+    ],
+    "state": [
+      0,
+      0,
+      0
+    ],
+    "first_equal_length_collision": 6,
+    "all_common_suffixes_indistinguishable": true
+  },
+  "epoch80": {
+    "sampled_accuracy": 1,
+    "all_length_correctness": true,
+    "cone": "h1=0, 0<=h0<=7*h2/10, h2>=2",
+    "positive_logit_margin_lower_bound": "4783624843499999/2251799813685248"
+  },
+  "independent_rational_check": true,
+  "mutation_controls_rejected": 8,
+  "primary_tests_passed": 2,
+  "prospective": false,
+  "smallest_claim": "One gradient-trained seed changes from an irrecoverably forgetting early representation to an all-length-correct late recurrent representation; no general law is claimed."
+}
