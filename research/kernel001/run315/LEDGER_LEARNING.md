@@ -1,0 +1,3 @@
+# LEARNING ledger — Run315
+
+96 fresh gradient-trained ReLU RNNs, seeds 22600..22695. Frozen epoch20 retention predictor AUROC 0.627906976744186; frozen negative BCE AUROC 0.9011627906976745 on 4 exact-certified and 43 exact-falsified epoch80 models. Delta = -0.2732558139534884, failing preregistered +0.05 threshold. 49 unresolved excluded. This predictor is killed, not tuned. Results are about original trained checkpoints; no acquisition transition or intervention is established.
