@@ -1,0 +1,3 @@
+# Run 318: frozen fixed repair failed on unseen gradient-trained networks
+
+Protocol commit c76161bda475b44410b1173ee20679f3f6a8a108 preceded training. 48 new seeds (22700–22747), 0/48 passed unchanged Run317 exact invariant, 17/48 have exact short incorrectness witnesses after repair, and seven original-short-range-correct networks regressed after repair. Independent exact checker matched 144/144 model-condition combinations. Frozen S=0 (<3). Kill the fixed numerical repair rule; no algorithm acquisition law established. Full local archive is preserved separately; CI and full remote evidence pending.
