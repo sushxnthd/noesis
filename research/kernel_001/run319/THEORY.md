@@ -1,0 +1,1 @@
+ReLU(Su)=S ReLU(u) for positive monomial S. Thus A'=SAS^-1, b'=Sb, w'=wS^-1 preserve all logits, and inductive C transports to SC. On the trained checkpoint, fixed-coordinate cone acceptance was 1/24, transported acceptance 24/24. Elementary symmetry; no novelty claim.

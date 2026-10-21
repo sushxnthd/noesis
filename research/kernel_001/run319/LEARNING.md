@@ -1,0 +1,1 @@
+Seed 22242 epoch 80 is an actual gradient-trained recurrent checkpoint. Its exact behavior is unchanged by all 24 coordinate changes, yet the original certificate checker rejects 23. This is a trained-system diagnostic false-negative failure, not a new acquisition predictor. No new training performed.

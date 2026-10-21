@@ -1,0 +1,1 @@
+Exact audit on trained seed 22242, epoch 80. Gauge set: six permutations times scales (1,1,1), (2,1,1/2), (1/3,3,2), (5,1/5,1). Criterion: at least one fixed-template rejection while transported invariant and independent exact conjugacy pass. Baseline cone h1=0, 0<=h0<=7h2/10, h2>=2. No retraining or parameter tuning.
