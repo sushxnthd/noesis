@@ -1,0 +1,1 @@
+Local exact checks passed. Full archive pending write-through.
