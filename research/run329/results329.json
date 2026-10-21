@@ -1,0 +1,17 @@
+{
+  "run":329,
+  "seed":32924000,
+  "frozen_protocol_commit":"d3efca54f2a7ba26cd290ad8a9ec20b0be571070",
+  "checkpoint_sha256":"628493d45ba6468144e4a771a8d73c01786333eca26fa8afaf25336da480fe1e",
+  "updated_outcomes328_sha256":"a0b679ba663390e6961539cb04701df644a9458e24a6de0123965d7db1c3e785",
+  "candidate_count":1399,
+  "candidate_sha256":"d646769be6deb31db579bba1907aeeafeca5e643498ec5c2d1af2d86b2ec37a3",
+  "unresolved_before":174,
+  "new_exact_witnesses":1,
+  "unresolved_after":173,
+  "float_candidates":1,
+  "exact_rejected":0,
+  "overflow_skips":0,
+  "witnesses":{"24108":{"witness":"11101000000000111111110","candidate_index":973,"candidate_word":"0100011011000011101111101000000000100111111101001100010011110011","first_prefix_length":45,"minimized_length":23,"exact_wrong_logit_sign":"nonpositive"}},
+  "claim":"One new exact failure on original gradient-trained checkpoint; no new predictor tested."
+}
