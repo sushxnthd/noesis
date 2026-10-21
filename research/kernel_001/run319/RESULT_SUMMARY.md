@@ -1,0 +1,1 @@
+Run 319 local exact result: 24 trained-network gauge copies checked. Original fixed-coordinate cone accepted 1/24; transported cone accepted 24/24. Independent rational checker passed 24/24 and rejected two mutated controls. This demonstrates a coordinate-dependent diagnostic false-negative failure, not a new algorithm-acquisition law.
