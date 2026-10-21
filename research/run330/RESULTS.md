@@ -1,0 +1,1 @@
+Run330 result: heldout memory margin AUROC 0.864548, loss AUROC 0.892140, delta -0.027592; criterion +0.05 failed; 13 certified, 92 incorrect, 87 unresolved. Exact full-cohort bounds -0.238415 to +0.182214. Second predictor failure.
