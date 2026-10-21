@@ -1,0 +1,5 @@
+# NOESIS K001 Run309 — frozen ray-certificate protocol
+
+Exploratory pilot disclosed: inspecting late seed 22241 suggested a one-coordinate absorbing-ray invariant. No exact proof-checker has yet been run. Freeze five Run307 collision-resolving seeds: 22241, 22242, 22287, 22361, 22573. Test all three coordinate rays per seed, exact rational arithmetic, with T equal to the positive coordinate of the post-first-1 state. Verify early same-length collisions independently and late unrestricted correctness using a separate proof checker.
+
+Primary success: >=1 independently checked exact unrestricted certificate paired with an exact early same-length collision. Strongest competitor: only readout calibration changed. Cheapest falsification: exact ReLU induction and adversarial proof mutations. Publishable: >=10 transitions and independent cross-architecture prediction. Learning relevance: unmodified epoch20/80 gradient-training trajectory. Kill: no independently valid certificate; retain unresolved statuses.
