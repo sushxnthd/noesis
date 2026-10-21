@@ -1,0 +1,3 @@
+# THEORY ledger — Run 322
+
+An exact wrong-sign output on a finite task word refutes unrestricted correctness of the original recurrent network plus trained output head. It does not prove recurrent representational insufficiency; a different head might correct it. Run321 showed no new opposite-label collisions among 49 unresolved models. Run322 finds two strict readout failures at n=22,23, with exact rational interpretation of stored binary64 parameters. The observation is not a new mathematical theorem.

@@ -1,0 +1,3 @@
+# LEARNING ledger — Run 322
+
+Original, unmodified gradient-trained epoch80 networks, seeds 22601 and 22643, trained with length-6 persistent-latch sequences, pass prior bounded evaluation but predict positive on the all-zero input at lengths 22 and 23 respectively. Both failures are robust under float64 evaluation. Among 49 previously unresolved models, two are now witnessed incorrect, leaving 47 unresolved; original cohort thus 4 certified correct, 45 witnessed incorrect, 47 unresolved. Mechanistic observation: zero-run hidden-state dynamics activate previously dormant ReLU coordinates and drive the output projection positive. No prospective prediction, no generalization across architectures, and no readout-independent obstruction claimed.
