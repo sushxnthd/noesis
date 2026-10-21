@@ -1,0 +1,1 @@
+Exact state equality on opposite-label inputs defeats every deterministic final-state readout. Seed 22642 has such equality at length 11, despite a finite-correct calibrated readout through length 10. This is not a new theorem.
