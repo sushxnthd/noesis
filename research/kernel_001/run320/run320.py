@@ -26,7 +26,7 @@ def proof(m):
     for x in range(2):
         if not ge(-A[x][1][0],-A[x][1][2],-B[x][1]):return False
         if not ge(A[x][2][0],A[x][2][2],B[x][2]-T):return False
-        if not ge(K*A[x][2][0]-A[x][0][0],K*A[x][2][2]-A[x][0]):return False
+        if not ge(K*A[x][2][0]-A[x][0][0],K*A[x][2][2]-A[x][0][2],K*B[x][2]-B[x][0]):return False
     return ge(W[0],W[2],C-F(1,1000))
 
 base=canonical(a,b,w,c);assert proof(base)
