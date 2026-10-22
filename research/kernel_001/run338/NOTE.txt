@@ -1,0 +1,1 @@
+Frozen local protocol SHA256 cc8774fe43cd74bf89f9c6cdb599fa019b7be07202cc19c415c1dde8e8840c63
