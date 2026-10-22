@@ -1,0 +1,51 @@
+{
+  "run": 347,
+  "source_sha256": "2ea11f4ff112250aa6aaf1a1c8bb334518a55902112e9c16c962baf51562cf0f",
+  "frozen_probe_count": 618,
+  "selected_seeds": [
+    29034,
+    29067,
+    29091
+  ],
+  "qualifying_exact_representation_transitions": 2,
+  "models": [
+    {
+      "seed": 29034,
+      "early": 34,
+      "later_cert": 37,
+      "early_510_correct": true,
+      "early_failing_word": "111111111111",
+      "frozen_probes_affine_separable": true,
+      "separator": "h1-1/2"
+    },
+    {
+      "seed": 29067,
+      "early": 68,
+      "later_cert": 72,
+      "early_510_correct": true,
+      "early_failing_word": "100000001",
+      "early_affine_irreparable": true,
+      "exact_hull_words": [
+        "010001",
+        "1000000000000001",
+        "100000000000"
+      ],
+      "lambda_approx": 0.15784830740284592
+    },
+    {
+      "seed": 29091,
+      "early": 33,
+      "later_cert": 50,
+      "early_510_correct": true,
+      "early_failing_word": "10000000000001",
+      "early_affine_irreparable": true,
+      "exact_hull_words": [
+        "10000000000100",
+        "1000000000000010",
+        "1000000000000000"
+      ],
+      "lambda_approx": 0.27243481075720594
+    }
+  ],
+  "interpretation": "Retrospective exact representational obstruction-to-certified correctness; not a universal acquisition law or prospective prediction."
+}

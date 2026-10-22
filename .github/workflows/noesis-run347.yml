@@ -1,0 +1,21 @@
+name: NOESIS Run 347 exact learned representation transition
+on:
+  push:
+    branches:
+      - research/kernel-001-run347-representation-acquisition
+  workflow_dispatch:
+jobs:
+  exact-proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.5'
+      - run: python -m pip install sympy
+      - run: python research/run347/exact_witness347.py
+      - run: python research/run347/independent347.py
+      - run: python research/run347/verify_short347.py
+      - run: python research/run347/negative347.py
+      - run: python research/run347/verify_later347.py
