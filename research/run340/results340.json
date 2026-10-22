@@ -1,0 +1,50 @@
+{
+  "run": 340,
+  "task": "prefix parity",
+  "width": 3,
+  "source": "Run339 frozen 192 seed endpoints",
+  "source_archive_sha256": "d7bc0f8ea2041af318e603df6fa6d5d2f0e33a0d4e346e7bc3eb6b3d27a9b3b0",
+  "trajectories_sha256": "2ea11f4ff112250aa6aaf1a1c8bb334518a55902112e9c16c962baf51562cf0f",
+  "checked": 192,
+  "previous_orthant_certificates": 0,
+  "certified": 5,
+  "certified_seeds": [
+    29000,
+    29034,
+    29067,
+    29091,
+    29119
+  ],
+  "bounded_perfect_8": 99,
+  "known_wrong_seed_29177_rejected": true,
+  "independent_sympy_agreement": "192/192",
+  "controls": {
+    "positive": true,
+    "finite_cap_spoof_rejected": true
+  },
+  "transitions": [
+    {
+      "seed": 29034,
+      "early_epoch": 34,
+      "correct_through": 8,
+      "first_found_wrong_word": "111111111111",
+      "first_cert_epoch": 37
+    },
+    {
+      "seed": 29067,
+      "early_epoch": 68,
+      "correct_through": 8,
+      "first_found_wrong_word": "100000001",
+      "first_cert_epoch": 72
+    },
+    {
+      "seed": 29091,
+      "early_epoch": 33,
+      "correct_through": 8,
+      "first_found_wrong_word": "10000000000001",
+      "first_cert_epoch": 50
+    }
+  ],
+  "prospective": false,
+  "novelty": "no claim of literature-first proof method"
+}
