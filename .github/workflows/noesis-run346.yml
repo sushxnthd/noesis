@@ -19,3 +19,9 @@ jobs:
       - run: python research/run346/independent346.py
       - run: python research/run342/train342.py
       - run: python research/run346/verify_trajectory.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: noesis-run346-full-trajectories
+          path: research/run342/trajectories342.json
+          retention-days: 90
