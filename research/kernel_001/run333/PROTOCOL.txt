@@ -1,0 +1,1 @@
+Run 333 exact proof protocol. Candidate selection retrospective. Test all 384 previously trained checkpoints with two independent rational linear-program solvers. Success is three or more new all-length certificates, zero accepted known negatives.
