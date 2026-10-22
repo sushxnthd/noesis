@@ -1,0 +1,4 @@
+# THEORY ledger — Run 350
+A positive-coefficient convex equality between hidden states with opposite parity labels proves no affine readout can correctly classify the finite witness set. This is a necessary obstruction to an affine readout, not a universal certificate of nonalgorithmicity. Exact affine separators on the fixed shallow family and on the next checkpoint's 2,644-word deep prefix are finite-family results only.
+The unchanged support-cone inductive certificate proves unrestricted parity correctness for the later trained weights under exact-real inference. Convex separation and inductive RNN verification have substantial prior art; the contribution is evidence about gradient-trained trajectories, not novelty of convex geometry.
+Run 350 exact witnesses: seed 33053 at epoch 30 uses five words; seed 33068 at epoch 55 uses three. Both independently checked using SymPy and Fraction.
