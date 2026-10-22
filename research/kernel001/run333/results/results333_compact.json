@@ -1,0 +1,22 @@
+{
+  "run": 333,
+  "first_seed": 24000,
+  "seed_count": 384,
+  "prior_labels_C_I_U": "UIUIIIIIUUIUUIIIIUIIIIUCUUUIUUIIUUUIIIUIIIUCUIIIIIIIIUIIIUIUUUUUIUUIIIIUUUUIIUCUUUUIUUUIUUUUUUUUIIIIUIUIUIUUIIUUUUUUUIIUIUUUUIUUUUUIIIUUCUUUIUUUIUUUIUUIUUIUIIUIIUUCIUIUIIUUICIIIUIIUIIIIUUCIIIUIUIUIUUIUIUIIUIUIIIIUIUIIUUUUUUIUIUUUCUUIUUICIIIIUIUIIUIUUIUIUIUIIICIIUUIUUIUIUUIUIUUCUUIIIUUIIUIUUCIUIUIIIIIUIIIIICICIIIUIIIIUIUIIIIIUIUIIIIUCUIIIIUCUUUUIUIIUCUIUIIIUIUIIIIUIIUIIIIICIIUII",
+  "mask_values": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "lp_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+  "exact": null,
+  "certified": false,
+  "certificate": null,
+  "raw_json_sha256": "7fad09d02b380a3343f11b43c40a258168e598f323f3a26a297cd040d4bf8b61",
+  "notes": "Lossless compact encoding of all 3072 per-mask solver statuses and 384 original endpoint labels; no LP feasible."
+}
