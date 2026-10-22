@@ -1,0 +1,3 @@
+# THEORY — Run333
+
+For a width-3 binary-input ReLU RNN, a sound two-box certificate consists of nonnegative axis-aligned N and P satisfying: zero initial state in N; F0(N) subset N; F1(N) subset P; F0(P) and F1(P) subset P; negative output logit on all N; positive output logit on all P. Induction then proves correctness for every finite binary word under exact real arithmetic with binary64 weights interpreted as rationals. Exact Fraction checking is authoritative; the LP is only a candidate synthesizer. All 3072 LPs were infeasible, so no new theorem about a trained model was obtained. The abstraction is incomplete, especially for unbounded positive trajectories.
