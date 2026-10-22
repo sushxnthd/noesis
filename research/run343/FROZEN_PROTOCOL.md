@@ -1,0 +1,1 @@
+NOESIS Run 343 protocol frozen: test lengths 13-16 on the 88 Run342 length-12-perfect trained networks, exact-verify all counterexamples. Success >=1.
