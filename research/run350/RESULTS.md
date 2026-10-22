@@ -1,0 +1,1 @@
+Run350: frozen criterion S=1; exact single-coordinate bias-18 intervention repairs the 2644-word family, but an exact infinite counterexample remains at 101 followed by at least 23 zeros.
