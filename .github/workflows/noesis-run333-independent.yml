@@ -1,0 +1,15 @@
+name: noesis-run333-independent
+on:
+  push:
+    branches: ['research/kernel-001-run333-learned-box-invariants']
+  pull_request:
+jobs:
+  exact-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install numpy scipy
+      - run: python research/kernel001/run333/code/regression333.py
