@@ -1,0 +1,1 @@
+THEORY: In original trained network 31002, the hidden state of the even word 1 0^38 1 0^5 is an exact convex combination of the hidden states of two odd words 10 and 1 0^41. No affine readout can separate them. This obstruction persists for epochs 5 through 200. Exact proof is independently verified. No model-agnostic law is claimed.
