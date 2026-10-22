@@ -1,0 +1,1 @@
+Frozen protocol c3b191634b21daca0856cd935c1c8c92e430a562. Exact enumeration passed: 11832/11832. Full archived trajectory source c20f44b3bd56893880974c638b6202ad75a5ea253b64f72eeaa094e8d973112e.
