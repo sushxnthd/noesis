@@ -1,0 +1,1 @@
+LEARNING: The frozen Run345 replication criterion failed. No new gradient-training transition was detected. The earlier Run344 one-step representational collapse remains a single-seed observation. All 87 archived networks were evaluated without retraining or modifying weights. Next tests must search beyond length 16 and retain independent exact checks.
