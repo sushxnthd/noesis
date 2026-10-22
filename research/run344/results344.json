@@ -1,0 +1,27 @@
+{
+  "seed": 31089,
+  "epochs": {
+    "140": {
+      "original_correct_through_12": 8190,
+      "original_min_margin": 2.2492900238747042,
+      "train_bce": 0.01630776129933451,
+      "strict_five_word_repairable": true
+    },
+    "141": {
+      "original_correct_through_12": 8190,
+      "original_min_margin": 2.2547860452551696,
+      "train_bce": 0.01622239818863201,
+      "five_word_affine_repairable": false,
+      "irreducible_selected_support_size": 5
+    },
+    "200": {
+      "five_word_affine_repairable": false,
+      "irreducible_selected_support_size": 5,
+      "exact_repairable_through_14": 32766,
+      "exact_unrepairable_by_length_15": true,
+      "exact_minimum_margin_through_14": 1
+    }
+  },
+  "exact_semantics": "binary64 weights interpreted as dyadic rationals",
+  "witness_sha256": "7a1a237e5d3b886b7921718e7864df1b0359368acdb0b69435d7195af562606d"
+}

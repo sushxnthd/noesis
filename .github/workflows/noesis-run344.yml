@@ -1,0 +1,35 @@
+name: NOESIS Run 344 exact readout-horizon verification
+on:
+  push:
+    branches:
+      - 'research/kernel-001-run344-*'
+  workflow_dispatch:
+jobs:
+  exact-proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install sympy pytest numpy scipy
+      - name: Exact dyadic proof and exhaustive 32766-word check
+        run: python research/run344/run344.py
+      - name: Independent SymPy proof reimplementation
+        run: python research/run344/independent344.py
+      - name: Independent Decimal exhaustive checker
+        run: python research/run344/decimal344.py
+      - name: Numerical LP discovery provenance
+        run: python research/run344/search344.py
+      - name: Regression tests
+        run: python -m pytest -q research/run344/test_run344.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: noesis-run344-exact-rational-evidence
+          path: |
+            research/run344/model344.json
+            research/run344/witness344.json
+            research/run344/results344.json
+            research/run344/search344_results.json
+            research/run344/FROZEN_PROTOCOL.md
