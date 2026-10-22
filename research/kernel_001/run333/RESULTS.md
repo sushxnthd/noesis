@@ -1,0 +1,9 @@
+# NOESIS Run 333 — THEORY / LEARNING ledgers
+
+THEORY (EXACT-REAL SEMANTICS): For a width-3 ReLU recurrence with binary inputs and output sign(v.h+c), if c<0, b_0<=0, h_1=ReLU(b_1) lies in P={h>=0,v.h>=T}, T=-c+1/100000, and both symbol maps preserve P, the network computes the persistent OR latch for every finite input string. The invariance was checked using exact binary64-as-rational arithmetic across all 16 symbol/activation-mask cases per checkpoint. This is a sufficient, not necessary, condition; standard inductive-invariant reasoning is prior art.
+
+LEARNING (RETROSPECTIVE): From 384 original gradient-trained epoch-80 networks, the previous split was 18 certified / 193 witnessed incorrect / 173 unresolved. The new halfspace checker accepted 5 previously unresolved seeds: 24066, 24139, 24152, 24202, 24305. It accepted 2 of 18 prior positives and 0 of 193 witnessed negatives. New split: 23 certified / 193 witnessed incorrect / 168 unresolved. Both independent exact methods agreed on all 384. At epochs 0 and 20 none of the five new networks passed this particular certificate; all five passed at epoch 80. This does not identify the exact acquisition epoch or prove earlier models incorrect.
+
+ADVERSARIAL CONTROL: A hand-designed width-3 delayed-clock heuristic passes exhaustive inputs through length 6 and fails on 1 followed by 11 zeros; the certificate rejects it. Fifteen parameter-corruption controls (3 per new positive) were rejected by both checkers.
+
+CAVEATS: Candidate selection followed an exploratory numerical LP scan; no prospective prediction is claimed. The certificate covers 7/23 known positives, and is tied to the OR-latch task and width-3 ReLU architecture. No cross-architecture law, publication priority, or field-level breakthrough is established. The full 384-checkpoint reproduction remains in the accompanying local archive; the branch mirrors five newly certified checkpoints and runnable proof code.
