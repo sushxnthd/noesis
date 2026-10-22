@@ -2,23 +2,19 @@ name: NOESIS Run349 independent exact proof
 on:
   push:
     branches: ['research/kernel-001-run349-*']
-  pull_request:
-    paths:
-      - 'research/run349/**'
-      - '.github/workflows/noesis-run349.yml'
   workflow_dispatch:
 jobs:
-  exact-witness-and-horizon:
+  exact:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install verification dependencies
-        run: python -m pip install --disable-pip-version-check numpy scipy sympy
-      - name: Exact independent witnesses
-        run: python research/run349/verify_witness.py
-      - name: Exact horizon lower bounds
-        run: python research/run349/verify_horizon.py
+      - run: pip install numpy scipy sympy
+      - run: python research/run349/wordgen.py
+      - run: python research/run349/scan.py
+      - run: python research/run349/verify_witness.py
+      - run: python research/run349/verify_horizon.py
+      - run: python research/run349/verify_one_step.py
