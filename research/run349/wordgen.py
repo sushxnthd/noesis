@@ -1,5 +1,5 @@
-"""Frozen Run349 deterministic binary-word generator."""
-def generate(L=65):
+"""Frozen Run349 deterministic binary-word generator. Full family max length 72."""
+def generate(L=72):
     words={format(i,f'0{n}b') for n in range(1,min(10,L)+1) for i in range(2**n)}
     for n in range(65):
         for w in ('1'+'0'*n,'0'*n+'1'):
