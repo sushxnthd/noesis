@@ -1,0 +1,1 @@
+Run332 heldout: G64 AUROC 0.656355, BCE AUROC 0.892140, difference -0.235786. Frozen criterion failed. Independent verification passed.
