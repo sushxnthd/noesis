@@ -1,0 +1,2 @@
+# Run 347 CI provenance
+Initial public workflow 39785860836 failed at verify_later347.py with ImportError: run340/cert340.py exposes certificate/verify, not find/check. All preceding exact witness, independent SymPy, short-range and negative-control steps passed. This was a verifier import mismatch, not a failed theorem. The failed run is preserved. Follow-up commit corrects imports and reruns the same frozen checks; no research protocol or selected checkpoints changed.
