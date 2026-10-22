@@ -1,0 +1,1 @@
+Run 340: exact support-cone induction audit on frozen Run 339 checkpoints. No retraining. Exact dyadic arithmetic. Success is at least one sound unrestricted parity certificate among 99 bounded-perfect endpoints, with known failing seed 29177 rejected. Retrospective analysis; preserve negatives and all source hashes.
