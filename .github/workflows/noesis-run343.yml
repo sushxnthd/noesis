@@ -1,0 +1,19 @@
+name: NOESIS Run 343 exact counterexample
+on:
+  push:
+    branches:
+      - 'research/kernel-001-run343-*'
+  pull_request:
+    paths:
+      - 'research/run343/**'
+      - '.github/workflows/noesis-run343.yml'
+jobs:
+  exact-trained-counterexample:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Exact finite and infinite failure proof
+        run: python research/run343/verify_witness.py
