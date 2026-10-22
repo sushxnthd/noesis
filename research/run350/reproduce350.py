@@ -11,8 +11,14 @@ HERE=Path(__file__).resolve().parent
 ROOT=HERE.parent
 sys.path.insert(0,str(ROOT/'run340'))
 sys.path.insert(0,str(ROOT/'run349'))
-from cert340 import find
-from independent340 import verify as independent_certificate
+try:
+ from cert340 import find
+except ImportError:
+ from cert340 import certificate as find
+try:
+ from independent340 import verify as independent_certificate
+except ImportError:
+ from independent340 import check as independent_certificate
 from run349 import generate, exact_states
 
 CASES={
