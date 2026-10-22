@@ -1,0 +1,6 @@
+# THEORY — Run349
+Exact theorem for each positive checkpoint: if a convex combination of odd-parity hidden states equals a convex combination of even-parity hidden states, no affine readout can assign positive sign to all odd states and nonpositive sign to all even states. Proof: affine maps preserve convex combinations; strict positive weighted average cannot equal a nonpositive weighted average.
+
+Run349 proves this obstruction with exact dyadic-rational recurrent evaluation at seed 32135 epoch 81 (three states, max length 18) and epoch 82 (four states, max length 23). Independent Fraction and SymPy checkers agree. Exact affine separators exist for all frozen-generator words through length 17 and 22 respectively. The horizon statements apply only to the fixed 7,006-word generator, not all binary strings.
+
+Numerical LP also produced false collisions in the certified endpoint controls; exact arithmetic correctly rejected them. Treat float-only collisions as INVALID. A successful finite obstruction is a sound negative result about affine readout repairability, not a sufficient algorithmicity certificate or a general law. Classical convex separation is prior art.

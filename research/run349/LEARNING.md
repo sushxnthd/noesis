@@ -1,0 +1,6 @@
+# LEARNING — Run349
+Original Run348 gradient-trained width-three ReLU recurrent parity network, seed 32135, is the sole positive seed. Epoch 81 has a three-state exact readout obstruction on frozen-generator words through length 18, and epoch 82 has a four-state obstruction through length 23. The earlier Run348 fixed 618-probe audit found an exact affine separator at both checkpoints; the longer words reveal a genuine probe-family blind spot.
+
+The same trajectory's epoch 200 checkpoint satisfies an exact inductive unrestricted-parity certificate, verified independently. This supports a change from readout-impossible early representations to later certifiably correct computation. It does NOT identify the first acquisition epoch, nor show the obstruction caused the training transition.
+
+The third frozen early checkpoint (seed 32187 epoch 37) produced no exact obstruction on the Run349 generator. Three certified endpoint controls produced numerical false positives rejected by exact checking. This is a retrospective exploratory audit on original trained networks; it cannot overturn the prospective Run348 failure and is not prospective predictive validation. Preserve both positive and negative outcomes.

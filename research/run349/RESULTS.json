@@ -1,0 +1,68 @@
+{
+  "run": 349,
+  "classification": "retrospective exact trained-network obstruction; not a prospective prediction",
+  "frozen_protocol_commit": "7c6a38a8a85a9be2dd9809d5a7d4969207f0e17f",
+  "source_trajectory_sha256": "c74d2821ae8ae6ea568c1fee80fa11f704efcc62d31416b0d436fc4d1ca60403",
+  "word_generator_count": 7006,
+  "success_count": 2,
+  "success_definition": "at least one exact affine readout obstruction among three frozen Run348 early checkpoints",
+  "positive": [
+    {
+      "seed": 32135,
+      "epoch": 81,
+      "first_obstruction_length_within_generator": 18,
+      "exact_separator_length": 17,
+      "exact_separator_words": 2326,
+      "witness_words": [
+        "000000000000000010",
+        "000100000000000000",
+        "101000000000000000"
+      ]
+    },
+    {
+      "seed": 32135,
+      "epoch": 82,
+      "first_obstruction_length_within_generator": 23,
+      "exact_separator_length": 22,
+      "exact_separator_words": 2586,
+      "witness_words": [
+        "00000000000000000000010",
+        "00000000000000000000011",
+        "00000000000000000000111",
+        "10100000000000000000000"
+      ]
+    }
+  ],
+  "negative": [
+    {
+      "seed": 32187,
+      "epoch": 37,
+      "exact_collision_found": false,
+      "limitation": "no exact collision on frozen generator through length 65; numeric LP false positives rejected"
+    },
+    {
+      "seed": 32135,
+      "epoch": 200,
+      "certified_unrestricted": true
+    },
+    {
+      "seed": 32187,
+      "epoch": 200,
+      "certified_unrestricted": true
+    },
+    {
+      "seed": 32098,
+      "epoch": 200,
+      "certified_unrestricted": true
+    }
+  ],
+  "smallest_claim": "A fixed delayed-probe family reveals exact convex collisions in two consecutive checkpoints of one original gradient-trained parity network, even though both passed the earlier 618-probe affine-separability audit; the same training trajectory later satisfies an unrestricted correctness certificate.",
+  "limitations": [
+    "retrospective exploratory audit",
+    "one successful seed, two epochs",
+    "horizons minimal only within fixed generator, not all binary strings",
+    "convex obstruction excludes affine readout only",
+    "no universal law or prospective transition prediction",
+    "does not change Run348 frozen negative result"
+  ]
+}
