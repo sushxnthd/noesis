@@ -1,9 +1,10 @@
 {
   "run": 333,
-  "first_seed": 24000,
-  "seed_count": 384,
-  "prior_labels_C_I_U": "UIUIIIIIUUIUUIIIIUIIIIUCUUUIUUIIUUUIIIUIIIUCUIIIIIIIIUIIIUIUUUUUIUUIIIIUUUUIIUCUUUUIUUUIUUUUUUUUIIIIUIUIUIUUIIUUUUUUUIIUIUUUUIUUUUUIIIUUCUUUIUUUIUUUIUUIUUIUIIUIIUUCIUIUIIUUICIIIUIIUIIIIUUCIIIUIUIUIUUIUIUIIUIUIIIIUIUIIUUUUUUIUIUUUCUUIUUICIIIIUIUIIUIUUIUIUIUIIICIIUUIUUIUIUUIUIUUCUUIIIUUIIUIUUCIUIUIIIIIUIIIIICICIIIUIIIIUIUIIIIIUIUIIIIUCUIIIIUCUUUUIUIIUCUIUIIIUIUIIIIUIIUIIIIICIIUII",
-  "mask_values": [
+  "seed_range_inclusive": [
+    24000,
+    24383
+  ],
+  "all_eight_masks": [
     0,
     1,
     2,
@@ -13,10 +14,25 @@
     6,
     7
   ],
-  "lp_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
-  "exact": null,
-  "certified": false,
-  "certificate": null,
+  "all_3072_lp_statuses": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+  "all_3072_exact_checks": null,
+  "all_384_certified": false,
+  "all_384_certificates": null,
+  "prior_labels": "Derive each seed's label from immutable updated_outcomes329.json, SHA256 108d462f64cbc925b0420db3fa10f121926506623062518976d02d96c355782f.",
+  "counts": {
+    "certified": {
+      "total": 18,
+      "new": 0
+    },
+    "incorrect": {
+      "total": 193,
+      "new": 0
+    },
+    "unresolved": {
+      "total": 173,
+      "new": 0
+    }
+  },
   "raw_json_sha256": "7fad09d02b380a3343f11b43c40a258168e598f323f3a26a297cd040d4bf8b61",
-  "notes": "Lossless compact encoding of all 3072 per-mask solver statuses and 384 original endpoint labels; no LP feasible."
+  "note": "Semantically lossless encoding of all 3072 identical LP status records. Full results333.json is in the evidence archive."
 }
