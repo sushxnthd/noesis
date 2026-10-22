@@ -1,0 +1,33 @@
+{
+  "run": 350,
+  "frozen_S": 1,
+  "seed": 32135,
+  "epochs": [
+    82,
+    83
+  ],
+  "tested_single_coordinates": 24,
+  "tested_blocks": [
+    "A0",
+    "A1",
+    "b0",
+    "b1"
+  ],
+  "positive_exact_separators": [
+    "endpoint83",
+    "coord_18",
+    "block_b0"
+  ],
+  "changed_coordinate": 18,
+  "old_value": 0.11926709043401072,
+  "new_value": 0.07560443732456557,
+  "original_head_exact_correct_on_2644": {
+    "epoch82": 2556,
+    "single_bias18": 2644,
+    "epoch83": 2623
+  },
+  "extended_generator_exact_correct_through25": 2766,
+  "posthoc_float64_exhaustive_correct_through20": 2097150,
+  "infinite_exact_failure": "1010^n for every n>=23",
+  "claim": "Causal one-coordinate finite-horizon repair does not establish algorithm acquisition"
+}
