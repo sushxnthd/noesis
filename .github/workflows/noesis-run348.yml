@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - research/kernel-001-run348-prospective-representation
+  pull_request:
   workflow_dispatch:
 jobs:
   replicate:
