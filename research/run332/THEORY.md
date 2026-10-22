@@ -1,0 +1,1 @@
+THEORY: G64 is finite and does not prove correctness at arbitrary length. Exact heldout difference -141/598. Missing-label bounds include zero. No new theorem.
