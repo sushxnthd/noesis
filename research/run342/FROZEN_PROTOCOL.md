@@ -1,0 +1,2 @@
+# NOESIS Run 342 frozen protocol
+2026-10-22. Test 128 width-4 parity ReLU RNNs (seeds 31000..31127), Adam 200 steps, float64, 192 random + 4 fixed length-8 samples, lr .025. Epoch-30 Run341 proof-deficit generalized to 4 coordinates vs epoch-30 BCE. Independent outcome: epoch-200 exact parity accuracy on all binary strings lengths 1..12 (8190), cross-checked in NumPy. Success: paired AUROC improvement >=.05 with >=10 positive and >=10 negative endpoints. Retain all failures and exact counterexamples. This protocol is frozen before training.
