@@ -1,0 +1,44 @@
+{
+  "status": "FAILED",
+  "success_count": 0,
+  "cohort_size": 192,
+  "checkpoints": 38592,
+  "certified_endpoint_seeds": [
+    32098,
+    32135,
+    32158,
+    32187
+  ],
+  "first_cert_epochs": {
+    "32098": 178,
+    "32135": 121,
+    "32158": 101,
+    "32187": 172
+  },
+  "early_candidates": [
+    {
+      "seed": 32135,
+      "epoch": 81,
+      "failure": "10100000000"
+    },
+    {
+      "seed": 32135,
+      "epoch": 82,
+      "failure": "10100000000000"
+    },
+    {
+      "seed": 32187,
+      "epoch": 37,
+      "failure": "111111111111"
+    }
+  ],
+  "short_exact_count_per_candidate": 510,
+  "probe_count": 618,
+  "exact_affine_separators": 3,
+  "independent_sympy_checks": true,
+  "protocol_commit": "595dc9fe60eca55cbc534d2eab693c0229bac9a0",
+  "protocol_sha256": "98bb18c3812d3e03fb9ef3a66d63c1db6d0db6f3930a8c479839b9364b496a16",
+  "trainer_sha256": "5acbf5af2766aa4b7ef501fb17aaa648b5809cc189fdc05902d2965e92233138",
+  "raw_trajectories_sha256": "c74d2821ae8ae6ea568c1fee80fa11f704efcc62d31416b0d436fc4d1ca60403",
+  "limits": "No exact representation collision in frozen probes; no global necessity conclusion."
+}
