@@ -1,0 +1,1 @@
+LEARNING: Frozen odd-seed AUROC 0.656355, baseline 0.892140. Difference -0.235786. The tail-gap predictor did not generalize. Original trained checkpoints unchanged.
