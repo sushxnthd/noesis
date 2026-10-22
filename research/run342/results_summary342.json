@@ -1,0 +1,30 @@
+{
+  "frozen_protocol_commit": "d6ed8e1a362d3eabb7c6c8b98c359eb1131dde34",
+  "seeds": "31000..31127",
+  "architecture": "width-4 ReLU RNN",
+  "task": "prefix parity",
+  "training_epochs": 200,
+  "checkpoint_rows": 25728,
+  "torch": "2.10.0+cpu",
+  "python": "3.13.5",
+  "trajectory_sha256": "c20f44b3bd56893880974c638b6202ad75a5ea253b64f72eeaa094e8d973112e",
+  "endpoint": "all 8190 nonempty binary words length<=12",
+  "positive": 88,
+  "negative": 40,
+  "ambiguous": 0,
+  "proof_deficit_auroc": 0.6747159090909091,
+  "training_loss_auroc": 0.7934659090909091,
+  "delta": -0.11875,
+  "criterion": "FAIL",
+  "descriptive_bootstrap_95": [
+    -0.2306818181818182,
+    -0.009375000000000022
+  ],
+  "exact_failed_witness_seeds": [
+    31012,
+    31033,
+    31034,
+    31103
+  ],
+  "claim": "Run341 proof-deficit does not outperform training loss for independent bounded correctness on this unseen width-four cohort; no unrestricted claim."
+}

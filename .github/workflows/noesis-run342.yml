@@ -1,0 +1,35 @@
+name: noesis-run342-reproduce
+on:
+  push:
+    branches:
+      - research/kernel-001-run342-independent-width4
+  workflow_dispatch:
+jobs:
+  full-reproduction:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install exact experiment dependencies
+        run: python -m pip install --disable-pip-version-check numpy sympy torch
+      - name: Train all 128 frozen seeds and evaluate independent endpoint
+        run: |
+          cd research/run342
+          python train342.py
+          python endpoint342.py
+          python independent_torch342.py
+          python exact_witness342.py
+          python -m unittest tests342.py -v
+      - name: Preserve complete raw research evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: noesis-run342-raw-trajectories
+          path: |
+            research/run342/*.py
+            research/run342/*.md
+            research/run342/*.json
+          retention-days: 90
