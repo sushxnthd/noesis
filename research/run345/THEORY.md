@@ -1,0 +1,1 @@
+THEORY: On the frozen set of 136 binary words, each of 87 previously unselected gradient-trained width-four RNNs has an explicit strict affine separator: its original output readout. This follows from 11,832 exact dyadic-rational classifications. Thus no positive/negative convex-hull intersection is possible on this finite set. No claim about longer inputs or unrestricted parity.
