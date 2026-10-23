@@ -1,0 +1,17 @@
+# NOESIS R384 — prospective state-conditioned transplant / quotient audit (24 Oct 2026)
+
+**Frozen causal primary FAILED.** Same single kernel: learned DFA-state retention under full-state-neutral cycles. Protocol frozen before new training: SHA256 `2bd70cc5c2f4bc73b2e722957cb067899e786db2d34323a440ba7cf38d664891`. After training, before long-horizon evaluation, selection frozen: SHA256 `4909657c85161a2f270fc83bac34b06dc733f188341ac07b027c47011d3a2e99`.
+
+32 new models: 8 LSTMs + 8 GRUs on each of count-ones-mod3 and count-'01'-mod3; matched realized training strings, 160 Adam updates, LSTM width5/258 parameters, GRU width6/273. Two new full-state-neutral cycles per complete DFA state, three distinct ten-bit representatives per state. 864 model-prefix-cycle cases, 3,456 trajectories to n512. Frozen arms: baseline, 50% same-complete-state latent midpoint, norm-matched different-output-state direction, and norm-matched random direction; interventions at prefix end. All seeds included.
+
+**Primary task B:** cross-state minus same-state n256 oracle error +5.0347 percentage points (required >=10pp); cross minus random +2.7778pp (required >=5pp). Frozen exact 16 architecture-seed signflip p=.00390625; conservative 8 shared-training-seed block p=.03125; seed-block bootstrap 95% CI [+1.5625,+8.6806]pp. LSTM +8.3333pp, GRU +1.7361pp. **Conjunctive primary FAILED despite small p-values.** No thresholds changed.
+
+**Predefined secondary:** For every baseline n256 state, all 30 binary suffixes of lengths 1–4 were probed. On task B, 51/225 n256-correct LSTM cases and 45/232 n256-correct GRU cases failed at least one suffix (96/457 combined; clustered, not independent). Full-state signature false merges: 333/2160 LSTM cross-state pairs, 213/2160 GRU pairs, descriptive only. Exact symbolic checker proves all 15 pairs of distinct six-state task-B DFA states are distinguished by empty suffix or suffix `1`.
+
+**Post-hoc high-precision examples, NOT confirmatory:** LSTM seed69104 states (2,0) and (2,1) both correctly output 2 at n256 and both output 2 after `1`; symbolic oracle requires 0 vs 2. GRU seed69100 states (0,0) and (0,1) both correctly output 0 at n256 and both output 0 after `1`; oracle requires 1 vs 0. All four trajectories and their 30-suffix signatures agree at 120/160/220/300 decimal digits. These are model-specific counterexamples to successful complete-state acquisition, not a novel universal law.
+
+Independent NumPy vs Numba float64 agrees at 13,824/13,824 endpoint labels; 12 prespecified high-precision pairs agree at 120/160 digits on all 30 suffixes. No interval certificate or full-panel high-precision verification. 16 exploratory Jacobian/cocycle/DMD samples are NOT basin certificates. Existing Weiss et al. (ICML 2018) automata extraction and Brandoit et al. (arXiv:2609.32447) contraction/separation theory limit novelty.
+
+**Decision:** First failed test of new state-conditioned mechanism. Next: freeze out-of-sample *one-bit Nerode-witness false-merge* predictor, compare with CE, margins, state coverage, local map controls, and independently test across architectures. Do not retune on R384.
+
+**Reproducibility:** complete SHA256-verified `NOESIS_R384_Reproducibility.zip` is in the automation's local artifacts, with raw trajectories, training parameters, protocols, source, independent checkers and negative results. **Raw archive is NOT uploaded to GitHub.** This GitHub note is a summary. Do not claim publication readiness.
