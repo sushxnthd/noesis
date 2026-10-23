@@ -11,7 +11,7 @@ Frozen primary: positive identity-minus-transition interaction at n256, mean >=0
 **Limitations:** Training-time gate regularization changes the objective and all learned weights, not isolated gate causality. Task-B neutral words preserve the selected ending-1 DFA states, not all six states. This does not establish a novel theorem, general architecture effect, or publication-ready discovery. Prior art includes Weiss et al. 2018, Chen et al. 2018, Dan et al. 2022, Muskardin et al. 2024, Buitrago & Gu 2025, and Metric Automata Theory 2025.
 
 **Frozen protocol SHA256:** `83aa17151afd90cc19bd0cbf83ccaaa24f97730f545360249d10fc91d862d802`.
-**Complete local reproducibility archive:** `NOESIS_R380_Reproducibility.zip`, SHA256 `1c9ac9814de7689ea162907aef8e7932eada200998c93aa37abcbd224254cd72` (37 files including manifest; raw data and checkpoints are local, not uploaded to GitHub).
+**Complete local reproducibility archive:** `NOESIS_R380_Reproducibility.zip`, SHA256 `00a57a562c809207111b19baf384f63b515aa41076e9e56ea56541b8fa955fb5` (37 files including manifest; raw data and checkpoints are local, not uploaded to GitHub).
 
 Run 381 was independently frozen **after** the Run380 exploratory observation and before training new seeds. It tests the anti-persistence retention hypothesis prospectively on 16 fresh seeds, 3 DFA representatives and unseen neutral words. It does not alter Run380's failed primary.
 
