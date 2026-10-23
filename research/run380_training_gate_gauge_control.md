@@ -1,0 +1,20 @@
+# NOESIS Run 380 — training-time gate-offset control and gauge-equivalence falsification
+
+**Date:** 2026-10-24. **Decision:** Frozen retention primary **FAILED**; separately frozen gauge-equivalence control **PASSED**. This is not a novel law or a paper-ready discovery.
+
+## Prospective paired experiment
+Original protocol SHA256: `2b081b34bb1ae6b316629e4e926e487955b3e91e2a7e78466d963e19697a31ad`. Twelve new paired seeds (6 count-ones-mod3, 6 count-'01'-mod3), each with identical initial trainable weights, training strings, width-5 LSTM (258 parameters), Adam lr=.035, 160 updates and no seed exclusion. Treatment applied a constant +1.5 forget-gate logit offset **throughout training and inference**. Both arms achieved perfect short-training accuracy. Eighteen independently oracle-verified, full-DFA-state-preserving prefix/cycle pairs yielded 216 n256 conditions.
+
+The manipulation raised mean training-distribution forget activation in **12/12 pairs**, mean +.10095, exact paired signflip p=.000244. But the frozen retention hypothesis failed: identity-cycle correctness 29/36 control versus 26/36 treated (−8.33 pp); nontrivial-cycle correctness 68/72 versus 59/72 (−12.50 pp). Identity-minus-transition treatment interaction +4.17 pp (seed-bootstrap 95% CI [−9.72,+18.06] pp), exact paired signflip p=.3613; frozen success required identity gain >=+10 pp, interaction >=+10 pp, CI lower >0, p<.05. No thresholds changed.
+
+**Precision:** Two independent PyTorch/Numba float64 recurrences agreed on all **55,512** complete-cycle classifications. Independent mpmath agreed on **216/216 n256 outcomes at both 120 and 160 digits**; **39/39 selected cases also agreed at 220 digits**. Numerical convergence is not a formal interval certificate. First-failure horizons and CE-matched secondary comparisons remain float64-only.
+
+## Decisive gauge control
+Gauge-control protocol SHA256: `986ff1af2c93b07b704c1b2939fe8dfb3de4475be33333d94904595a6767cf6a`, frozen before control training. For a constant forget offset δ, the transformation `b_f' = b_f − δ` leaves the gate and full recurrence exactly unchanged. Under pure CE and zero weight decay, Adam is translation-equivariant in exact arithmetic with corresponding optimizer states. This is an elementary identity, **not a novel theorem**.
+
+Twelve additional compensated models used +1.5 offset but initial forget biases −1.5 relative to control. Across epochs 0–160, maximum translated parameter difference was **5.20e−14**, maximum CE difference **1.02e−15**. All **108/108** n256 float64 predictions matched the control; **12/12** prespecified 120/160-digit gauge comparisons agreed. The uncompensated offset's apparent effects therefore cannot identify an intrinsic gate-learning mechanism independently of initial effective function/optimization trajectory.
+
+## Scientific decision
+Run 379 and Run 380 are two failed mechanism-strengthening attempts. Retire constant gate offsets as the primary training-time causal intervention. The next frozen test must use a **non-gaugeable gate-learning intervention** with matched initial *functions*, identical training strings/width/parameter budget/Adam schedule, CE controls, independent intent-to-treat outcomes, and prospective unseen-cycle predictions. Do not revive Run350–362, the Run370/R372 failed predictor, or the universal +2 instability hypothesis.
+
+Full frozen protocols, source, 24 model checkpoints, 216 raw n256 outcomes, all 55,512 independent float64 comparisons, 471 high-precision records, exact statistics, gauge-control models, negative findings and vector figures are preserved in the conversation archive `NOESIS_R380_Reproducibility.zip` (not uploaded to GitHub). No third architecture or interval certificate in this run; novelty audit remains incomplete. Do not merge draft PR #21.
