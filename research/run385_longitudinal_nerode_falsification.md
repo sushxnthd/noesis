@@ -1,0 +1,15 @@
+# NOESIS R385 — Longitudinal one-bit Nerode falsification (2026-10-24)
+
+**Frozen primary: FAILED.** The protocol `FROZEN_RUN385.json` (SHA256 `fc5443956ef4b6700e137e18daac43fbdab7213e0db6d9fb703866d22ba6f971`) was fixed before training and outcome evaluation. Fresh 32-model panel: 8 LSTM and 8 GRU per task, 160 matched Adam updates, no excluded seeds. Full-state-neutral 12-bit transition-rich words vs 12-bit degenerate neutral words; 1,728 trajectories, n0 through n512, immediate and one-bit Nerode suffix probes.
+
+Task B (count '01' modulo 3): new suffix-'1' errors at n256, conditional on correct n0 one-bit prediction, were **75/576** rich vs **254/576** degenerate repeated-slot cases. The paired rich-minus-degenerate effect was **−31.0764 pp**, contrary to the frozen required **+10 pp**. LSTM −18.0556 pp, GRU −44.0972 pp. Frozen positive-direction exact sign-flip p=0.99972534 (16 architecture-seed units) and p=0.99609375 (8 shared-seed blocks). The conjunctive primary failed; reverse-direction statistics are exploratory, not confirmatory. On task A, rich 0/288 new errors vs degenerate 78/288.
+
+**Temporal diagnostic:** task B already had 24/576 n0 suffix-one errors. Of 87 task-B rich trajectories ever newly incorrect by n512, 86 first failed by n2; of 260 degenerate, 166 first failed by n2 and all by n32. Across all 1,728 cases, only three suffix-one classifications changed from n32 to n256 and none from n256 to n512. The dominant pattern is early response change, not established delayed forgetting.
+
+**Verification:** independent vectorized NumPy and Numba agree on 57,024/57,024 immediate/suffix0/suffix1 classifications at 11 horizons. Prespecified 24 task-B cases recomputed at 120/160 decimal digits; four explicitly post-hoc witnesses at 160/220/300 through n512. All 1,836 sampled high-precision label comparisons agree. No full-panel high-precision or formal interval certification. Exact DFA neutrality checked in all 1,728 rows. Exploratory Jacobian/cocycle/DMD on 72 cases is not a contraction theorem.
+
+**Decision:** R384 and R385 are two failed confirmatory tests of the state-conditioned basin/quotient mechanism. Retire that flagship, retaining the ONE state-retention kernel. Next target: prospective word-conditioned **early** transition-map capture, with cycle composition/transition-count controls and first-error horizon as primary. Do not reverse the failed R385 hypothesis post hoc. No universal novelty claim or publication-ready discovery.
+
+**Authoritative raw evidence:** 39-file complete SHA256-verified local archive `NOESIS_R385_Reproducibility.zip`, SHA256 `283c52307b3bebc5e1f51eca80e0ccd65e80114b68836827b240b1ce0a807aa2`. The archive includes frozen protocol, all checkpoints, 1,728 full suffix-one traces, source, independent checks, exact statistics, figures, and negatives. **Raw evidence is not uploaded to GitHub.**
+
+Prior art: Weiss et al. (ICML 2018) automata extraction; Brandoit et al. arXiv:2609.32447 finite-precision contraction/separation. Broader literature audit remains incomplete.
