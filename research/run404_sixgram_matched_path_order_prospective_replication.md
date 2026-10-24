@@ -28,6 +28,6 @@ Exact elementary identifiability fact: for fixed starting state, full intermedia
 
 ## Reproducibility and next test
 
-**200-entry SHA256-verified complete local archive:** `/mnt/data/NOESIS_R404_Reproducibility.zip`, SHA256 `60b00010852c300f9847d33d3c297ae244319ff43dd9b29a1cc9e64e7b34b909`. Contains frozen protocols, raw labels/endpoints, all 84 new checkpoints, all source, independent checks, failures, and all negatives; full raw NOT uploaded to GitHub.
+**200-entry SHA256-verified complete local archive:** `/mnt/data/NOESIS_R404_Reproducibility.zip`, SHA256 `8e0024b442557c1fa19e3b48d43e15a752fd23d72886b415038c11a0b32e96db`. Contains frozen protocols, raw labels/endpoints, all 84 new checkpoints, all source, independent checks, failures, and all negatives; full raw NOT uploaded to GitHub.
 
 Next: second decisive prospectively frozen path-order mechanism test, seek non-ceiling taskA retention, distinguish higher-order lexical effects, preserve all failures. If two primaries fail change mechanism, after three kill/reformulate. Existing branch `research/kernel-001-causal-generalization`, authorized DRAFT PR #22 only; no new branches/PRs, force-push or merge.
