@@ -1,0 +1,25 @@
+# NOESIS R432 — Bounded lexical nuisance and sharp partial identification
+
+**2026-10-26.** Kernel: causal transition dynamics of learned DFA-state retention under full-state-neutral cycles. This is exact classical structural partial identification and a separately frozen retrospective neural observable-gap surrogate screen. **Not a novel learned-RNN theorem, prospective replication, physical independent path intervention, or causal discovery.**
+
+## Frozen exact structural experiment
+
+Protocol SHA256 `f813323c78bbdd37ee11afa458118d1c37606ecf78ac4f8aff5583e2f4fcc234`. All nine immutable complete DFA states, 47 R429 matched 20-bit lexical state-word pairs, exact R418 u/v words. The assumed auxiliary semigroup generator is
+
+`F_(q,w)(z) = z/2 + theta_0 phi_0(q,w) + theta_1 phi_1(q,w) + eta_(q,w)`,
+
+where `phi_j` is the fraction of 20 post-transition DFA states with count residue j, `theta in [-2,2]^2` and independent word-specific lexical nuisance `|eta| <= 1/64`. **These restrictions are hypothetical, not established for learned RNNs.** Given exact observable generator offsets `a_(q,w)`, the identified parameter set is the rational polytope `Theta_q={theta: |a_(q,w)-theta.phi(q,w)|<=1/64}`. For structural path contrast `tau_q=theta.(phi(q,v)-phi(q,u))`, exact vertex extrema give a **sharp** interval. Every feasible vertex defines a matching lexical residual and therefore an indistinguishable entire mixed-word semigroup; arbitrarily long concatenations cannot separate endpoint models. This is a classical robust-set identification theorem, not a physically realizable `do(path)`.
+
+Frozen exact synthetic truth `theta=(3/8,-1/4)`, `eta=(SHA256('R432|task|state|word')[0] mod3-1)/64`. Fraction vertex enumeration and independent SymPy implementation agreed: 47/47 word constraints, 9/9 state polytopes, 18/18 endpoint witnesses, 36/36 interval extrema. Frozen primary passed: **4/6 Task-B states had strictly tighter full-lexical than u/v-only contrast intervals**, exceeding >=2 gate. In four Task-B cases the interval narrowed from width 1/16 to zero, reflecting saturated synthetic assumptions, **not neural identification**. Task A's three lexical classes have only u/v, so no extra information. In Task-B state 1|1 the two words share the selected phase-occupancy features, making this specific modeled contrast identically zero without ruling out neural path effects.
+
+## Separately frozen retrospective neural observable-gap surrogate
+
+Post-exact protocol SHA256 `353a51c87f1c86db92928d16a24baf84eb0f319a26640b6ff83834cb9267e6ee`. All 108 archived R429 contexts (24 LSTM/GRU/MGU networks, both tasks, 4 seeds, all nine states), cycles n=0,1,2,16,32,512, 648 case-times, all lexical words. Frozen minimax LP tested the *observable oracle-vs-rival logit-gap* surrogate `gap(q,w,n)=alpha+theta.phi(q,w)+residual` with theta bounded as above and residual <=1/64. This is **not a direct test of the latent affine-semigroup assumption**; nonlinear readouts could break the observable surrogate.
+
+**292/432 Task-B case-times failed** the surrogate epsilon criterion (140 passed). In **163** Task-B case-times two words with identical phase occupancy had archived logit-gap differences >1/32, giving an unavoidable surrogate error >1/64; **115** had differences >1/10. Strong counterexamples spanned all 3 architectures, 4 seeds and 4 Task-B states. Task A 192/216 passed but two-word classes offer weak falsification power. Frozen screen gates all passed as a *negative* screen for the restrictive observable-gap surrogate. Independent exact-dyadic Fraction audit of archived float64 outputs rederived all 648 cases, 163/163 threshold events and 115/115 strong events. **These are exact comparisons of archived float64 numbers, not directed-MPFR certificates of exact-real neural execution.** Archived n0..2 signed margins, CE and d32 retained.
+
+## Interpretation, negative results, preservation
+
+R431 word-only path-mediation nonidentifiability still holds without restrictions. R432 shows exactly what a strong bounded-nuisance/low-dimensional assumption could identify, and separately shows the analogous observable-gap surrogate is often untenable on real archived neural readouts. No neural causal mechanism identified, no new training, no novelty or external replication. Do not recycle R382–383/R408–409 state perturbations, R390–391 quotient, R406–407 factorial, R404 latent-only association, R412 finite trace, R425 boundary clock, R429 missing-word or R430 Hankel. Next seek a *physically implementable, pre-frozen intervention-support or structural test* with independent controls; no doomed prospective cohort.
+
+Complete local reproducibility archive `NOESIS_R432_Reproducibility.zip` SHA256 `6e6ae8beb6cc54c2fdfc7eafc285c9b799ee7a8dd193067a3055c08cfde1875f`: 25 entries, 24 SHA256-manifested payloads, exact protocols/source/47 responses/vertices/648 neural case-times/all negatives/independent audits/logs, immutable full R431 dependency with R418 checkpoints. No spend or user-laptop access. Only existing branch and OPEN/DRAFT PR #22; no merge/new branch/new PR.
