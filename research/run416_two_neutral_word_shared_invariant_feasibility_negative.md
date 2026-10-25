@@ -1,0 +1,30 @@
+# R416: Two-neutral-word shared invariant-set feasibility FAILED (retrospective)
+
+**Date:** 2026-10-25. **Scope:** causal transition dynamics of learned DFA-state retention under full-state-neutral cycles. **Status:** frozen negative pilot, not prospective fresh-model replication, not a novel neural theorem.
+
+## Frozen pilot and primary
+
+Frozen protocol SHA256 `b91084631e86cae19968c494660d5cb44fd6d57ee02617d493937c7280601ee6` selected 18 immutable R415 networks/contexts: LSTM, GRU and MGU-style; Task A and Task B; seeds 99940–99942; state rotation covers all 3+6 complete DFA states. Each context has two distinct 20-bit full-state-neutral words matched on overlapping 1..5-gram histograms and 4-bit boundaries. This was a retrospective feasibility test, not new training.
+
+The target was a **single common invariant box** B containing both independently reached n16 states, such that both full-word maps F_u and F_v map B strictly into itself and the oracle suffix-1 readout dominates throughout B. Such a set suffices for arbitrary infinite switching by induction, but the sufficient condition is classical. Candidate center = float64 midpoint of two n16 endpoints; coordinatewise radii = half their separation plus one of three frozen weighted offsets 2^-28, 2^-12, 2^-4. Interval enclosures used exact binary64 dyadic weights, 1024-bit MPFR directed RNDD/RNDU arithmetic, and uniform full-word interval Jacobians with a mean-value residual inequality. No invalid R415 requirement that approximate Torch Jacobians lie inside exact-real intervals was reused.
+
+**FROZEN FEASIBILITY FAILED: 0/18 shared certificates; 18 negatives.** Required >=6 across both tasks, >=2 architectures and >=3 seeds, plus non-ceiling controls; these gates failed. In the same 18 cases, R415 had individually certified u in 10, v in 11, and **both individually in 10**. Individual-word certification is not a guarantee under arbitrary switching. A separate posthoc descriptive audit (SHA256 `57a952ba0762bf2b0f0bda236291b73860f52c24b1f995d81573d26a86f430ce`) found 21/54 candidate case×radius boxes failed readout, while the remaining 33/54 failed the first word's invariant inequality. All 54 contained both n16 entries. No second-word invariant inequality was reached. **This is failure of the frozen box construction, NOT proof that no other safe invariant set exists.** No thresholds were retuned and no fresh confirmatory neural cohort was launched.
+
+## Independent finite and exact science
+
+All 18 contexts × six frozen switching patterns × n0..512 yielded **108 trajectories / 55,404 float64 classifications**. First-error counts: n0=18, n1=20, n2=2, n3=1, none through n512=67. The one n3 case was Task-B GRU under a frozen hash-random pattern; no case had both pure trajectories error-free through n512 and a mixed trajectory with an error. All 36 pure-word early/first-error outcomes reproduced R415. This is finite observation, not infinite proof.
+
+An independent exact DFA transition-semigroup checker passed **9,198/9,198** switched-string state/oracle checks to depth 8 and 18/18 lexical pair checks. Frozen selected independent Numba/NumPy, PyTorch and 120/160/220-digit pointwise calculations agreed on **48/48** phase classifications (n0,1,2,16), max Torch-vs-HP state difference 4.2633e-14. The directed MPFR backend had passed 3,741 arithmetic selftests in R415. No IEEE/Torch floating-point execution theorem is claimed.
+
+Two **separately frozen, classical exact mathematical results** sharpen the boundary:
+
+1. Pure-word infinite retention need not survive switching. For scalar contractions U(x)=-x/2+4, V(x)=-x/2+1, x0=0, oracle x>-1/4, both pure orbits remain nonnegative for every n, but V(U(0))=-1 is incorrect. Exact Fraction 258 pure-iterate checks and 8,191 exhaustive switched strings through length12; independent SymPy checks. Frozen SHA256 `c142fe94df94a8ccd47107e4f54cb6e0435935fa535f735e9674fdf9ed449132`.
+2. A disconnected graph of boxes can certify switching when **no connected safe invariant set containing both branches exists**. U(x,y)=(2y²-1,-1), V(x,y)=(2y²-1,1), oracle affine x>0; B±=[1/2,3/2]×[±9/10,±11/10] map respectively into B−/B+. Their x-images are exactly [31/50,71/50]. Any connected set containing (1,-1) and (1,1) crosses y=0, whose image x=-1 is unsafe. Four exact rational edge checks, 8,191 switched strings, independent SymPy. Frozen SHA256 `ee0ff3bd7169369043d82aa95e86f76f7272e6f4c1a5ceb561f4de97d8572160`. **Elementary switched-system/topological example, NOT exact RNN realization or novelty.**
+
+Prior art: Hutchinson iterated-function systems; Mason–Boscain–Chitour, *SIAM J. Control Optim.* 45 (2006), DOI 10.1137/040613147; Ahmadi–Jungers (2018), arXiv:1803.02070; Danielson–Bridgeman–Di Cairano (2019), DOI 10.1002/rnc.4509. Classical robust invariance/common Lyapunov theory already addresses these principles.
+
+## Reproducibility and next action
+
+Complete SHA256-verified 58-entry archive `NOESIS_R416_Reproducibility.zip`, SHA256 `653ab4b915c2f890e584ae93747ceed0249b4d033b7b664513bc451ae2024891`, contains frozen protocols, 18 raw negative certificate records, 108 full switching trajectories, source, independent checks, corrected checker/import failures, interruption/recovery logs, and immutable complete R415 dependency/checkpoints. Full raw data are **not** committed to GitHub.
+
+**Decision:** R416 common-axis-box feasibility is **retired as tested**, not rescued. Next R417 candidate is a **distinct pre-frozen graph-directed multi-box invariant-set pilot**, requiring directed MPFR verification of all reachable edges under both neutral words, oracle readout on every reachable node, and honest non-ceiling gates before any new prospective cohort. If it fails, change certificate direction rather than force confirmation. No personal spending or user laptop. No publication-grade neural novelty.
