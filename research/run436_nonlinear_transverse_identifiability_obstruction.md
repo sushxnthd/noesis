@@ -1,0 +1,19 @@
+# NOESIS R436: physical-word nonlinear transverse-dynamics identifiability obstruction
+
+Date: 2026-10-26. Scope: one kernel, causal transition dynamics of learned DFA-state retention under full-state-neutral cycles. **Classical exact negative result, NOT learned RNN mechanism, NOT novel theorem, NO prospective neural replication.**
+
+## Frozen exact experiment
+Primary pre-outcome protocol SHA256 `fbca381ef79ac2f85c856047572e46e94da2af6f6d6f2f33fa9abd6263ac4c03`. For each of the nine complete DFA states use the original immutable R418 20-bit full-neutral u/v words. Two nonlinear rational polynomial auxiliary transition systems act on (x,y) initially (0,0):
+`T_j^s(x,y)=(x/3+2j/3,(1/4+s*x/8)*y)`, j=0/1, s=+1/-1. Both are contractions on [0,1]x[-1,1] with sup-norm Lipschitz <=1/2. All physically allowed neutral-word sequences preserve y=0, so the two systems yield exactly identical **full hidden trajectories** and all suffix1 oracle-conditioned readouts `G(x,y)=2+x/4+y/4` for every input history. Oracle gap >=7/4 everywhere in the declared domain. Physical input total effect `G(T_v(0,0))-G(T_u(0,0))=1/6` is nonzero and identified.
+
+At physically reachable (x,y)=(2/3,0), hypothetical transverse next-word readout derivatives are 1/12 vs 1/24. Thus input-only data, even unlimited and exact, have a two-point minimax absolute error >=1/48 for this **off-support derivative**. The derivative's y perturbation is NOT physically implementable with these controls; this is NOT an unidentified on-support total effect or do(DFA path) mediation.
+
+Exact Fraction checker: 9 states, 4,599 histories lengths 0..8, 32,274 block transitions, all full-hidden/readout agreements and sharp witnesses passed. Independent SymPy checked four Jacobians and quadratic-feature ranks. A post-primary independent checker correction was **separately frozen**: the original rank design included some unreachable x coordinates; corrected physical reachable coordinates generated from legal u/v still give univariate quadratic rank3, bivariate on-support rank3, three invisible coefficient directions, and hypothetical off-support rank6. Addendum protocol SHA256 `09fc1bafd842447011801621378d6eca74a299fd68bac6f8ca26b10125b97da0`. Original checker and correction both preserved.
+
+## Scientific interpretation
+This is classical structural identifiability/invariant-manifold geometry. Distinct from R431 path-mediation SCM, R433 scalar affine IFS threshold, R434 zero-volume neural attractor, and R435 linear-head reconstruction. Zero-volume by itself does NOT imply analytic nonidentifiability; scalar degree-two polynomial transitions are identified by three distinct reachable x values. Actual R418 network weights are known, so this black-box counterexample does NOT prevent computing their white-box Jacobians. No neural test was run: the strong R425 early ceiling and lack of physically supported transverse intervention made a new cohort unjustified.
+
+Prior art: Villaverde (2019), DOI 10.1155/2019/8497093; Villaverde et al. (2017), structural reachability/identifiability; classical polynomial interpolation and analytic identity theorem.
+
+## Preservation and next decision
+Complete 24-entry ZIP (23 SHA256-manifest payloads plus manifest), with raw records, frozen sources/protocols, independent negative/correction checks, error logs and immutable nested R435->R418 checkpoint chain: `NOESIS_R436_Reproducibility.zip` SHA256 `34e6de37490613c512e7d1e460cff339b450121be9d17161e0c3942ab69c3397`, local path `/mnt/data/NOESIS_R436_Reproducibility.zip`. Clean SHA256 verification passed. Retire black-box transverse Jacobian mediation without physically supported excitation. R437 must find a genuinely on-support, nonlinear pre-readout total-effect prediction that improves matched early n0..2 controls, or conduct a separately frozen exact support-aware bound. No personal spend/laptop, no new branch/PR, no force-push/merge.
