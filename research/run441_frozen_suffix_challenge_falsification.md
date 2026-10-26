@@ -1,0 +1,17 @@
+# NOESIS R441 — Frozen physical neutral-cycle suffix challenge
+
+**Disposition: frozen conjunctive primary FAILED (7/12 gates), 0/108 qualifying contexts, 0 qualifying late-onset witnesses.** No causal DFA-path mediation, neural novelty, or prospective replication claimed.
+
+Frozen neural protocol SHA256 `9fc90b2eeb85366f49c18a985c62ef774b48422443f955ecb5873f20ac929598`, frozen exact protocol SHA256 `d5b1d523cba29566eac3f70539d4dbf8636ca1daa58a4c8353e38827c05448c7`. All 108 immutable R418 models, both DFA tasks, LSTM/GRU/MGU, four seeds, nine full states, original 20-bit full-state-neutral u/v words. No training. All 28 suffixes of lengths 2–4 plus original suffix1 control, n=0,1,2,16,32, two neutral words: 31,320 archived real-valued three-logit evaluations. Actual suffix appended before oracle/readout.
+
+A late-onset witness required matched n0/1/2 suffix-specific oracle margins >=0.5 and CE <=0.2, n16/32 margin <=-0.1, and original R425 early contrast margin >=1, CE<=0.1, d32<=0.1. A positive context required two distinct qualifying heldout suffixes. **No positive contexts**; failed gates were total, TaskA, TaskB, architecture, seed coverage. Seven other frozen gates passed.
+
+Raw behavioral errors remain: **1,045 late-error word–suffix pairs in 35 contexts**, TaskA 28 in one context and TaskB 1,017 in 34. Twenty-one late-error pairs had positive early matched suffix margins; twenty met matched early strong margin/CE but **failed R425 early robustness**. Two R425-robust contexts had late suffix errors, but those suffixes already failed the strong matched early criterion. All **24 R418 graph-certified contexts** had zero errors, as expected from their earlier stronger conditional all-future certificates. No retuning or post-hoc rescue.
+
+Exact classical DFA congruence: 2,610/2,610 word/cycle/suffix oracle checks and independent 2,610/2,610. Shortest characterization sets TaskA {0}, TaskB {0,1}; classical Chow W-method, not neural novelty. Independent CPU PyTorch 96/96 checks (6 SHA-selected cases, both tasks/all architectures) max abs three-logit discrepancy 1.78e-15. Separately frozen mpmath 120/160/220-digit pointwise 18/18 checks, max 1.78e-15, **not directed exact-real/IEEE interval certification**. Pre-neural R438 helper missing-dependency error and frozen erratum preserved.
+
+Complete SHA256-manifest-verified local archive: `/mnt/data/NOESIS_R441_Reproducibility.zip` SHA256 `19a1569e610dd122917d7be9c957218e883cbc65376dcfc532ebd78085743f86`, 44 entries / 43 verified payloads, includes raw/source/frozen/negative/errors/independent and immutable R440→R418 dependency. Clean rehydration reproduced 6/6 output hashes.
+
+Prior art: Chow W-method; Weiss–Goldberg–Yahav (Machine Learning 2024, DOI 10.1007/s10994-022-06163-2); Dave–Kifer–Giles–Mali (2024, arXiv 2402.02627). This finite suffix test is a negative retrospective diagnostic, not a new learned-RNN theorem.
+
+**Next:** Retire finite suffix characterization as breakthrough candidate. Seek genuinely distinct non-ceiling cross-task on-support readout mechanism or independently checked exact feasibility limit. Do not repeat R425 prefix probes, R429 lexical gaps, R430 Hankel, R438 tangent, R440 float32 or retune R441 suffix/early gates.
