@@ -1,0 +1,15 @@
+# NOESIS R470 — nonrecurrent lexical-surrogate falsification of directional-readout specificity
+
+**Frozen lexical-surrogate gate PASSED (12/12 Task B checkpoints). This is a NEGATIVE CONTROL, not a neural causal breakthrough.** R469's 1,918/1,920 oracle-aligned neural directional signs under physical adjacent swaps are not specific to recurrent DFA-state retention.
+
+Using all 24 original R418 checkpoints and 256 physical length-eight words, a task-informed, **nonrecurrent** #01-mod-3 one-hot surrogate was fitted **without oracle labels in the objective** to original neural logits on 128 words, then tested on the disjoint opposite-first-bit family. Ridge alpha=.01 was frozen. The surrogate achieved 1,920/1,920 oracle-aligned signs on Task B changed swap edges and agreed with original neural signs on 1,918/1,920; 3,040/3,072 heldout words were oracle-correct, with 1,860/1,920 changed edges both-endpoint-correct. Both difficult LSTM seeds 99961/99962 passed the directional surrogate gate despite wrong absolute classifications on some heldout words.
+
+Negative controls: plain bigram-linear 1,165/1,920 positive signs; trigram-linear 1,281/1,920; unigram-linear and wrong-task #ones-mod3 Fourier each 0/1,920. The oracle-equivalent #01-mod3 feature is **task-informed** and therefore cannot be presented as an unexpected generic lexical discovery.
+
+Exact classical witness: s_k(x)=1[k=#01(x) mod3] has D=2 on all 160 Task B q-changing adjacent swaps, identical logits on all 160 neutral swaps, and correct outputs on all 256 words, without any recurrent hidden state. Task A's 320 swaps are all q-neutral. This proves **non-identification of recurrence from the R469 total-input directional metric**, not that a static surrogate generated the neural checkpoints.
+
+Independent checker: 24 models, 288 fits, 4,032 coefficient checks, 36,864 heldout predictions, 11,520 directional checks, 11,520 sign agreements, 46,080 endpoint comparisons, 6,144 original oracle checks, 640 exact Fraction witness checks. Maximum SVD-vs-normal-equation coefficient difference 7.32e-12. Three complete clean replay pairs (6/6 SHA output hashes) matched. Original Python variable-shadowing error and R462 oracle/prediction-schema correction preserved; no science retune.
+
+Frozen original protocol SHA256 b03cb79880c490305a2adf39acfc0599254f562a1450ebd30cee5267bcbc68fe. Original primary source SHA256 700384bc0d1f9d9e25982bdbf8e4dfeeea48275cb4397b81d34ed7800c86a33d. Independent protocol SHA256 b8f0ff2e8549117ddaef3245015bf17853a91536c17c8fe4b2084f79f2b5d7bb. Complete immutable local archive NOESIS_R470_Reproducibility.zip SHA256 400ec10c1fb638bb74413facff2ce9c9a90892bc9406d10db023198d79888838; 27/27 local and 29/29 nested R469 payloads verified.
+
+**R471:** retire R469 directional-sign fidelity as a mechanistic discriminator. No new RNN training without genuinely disjoint balanced physical corpora, same-length non-ceiling contrasts and independent seed power. A new causal claim must distinguish a recurrent mechanism from a task-informed nonrecurrent global lexical oracle. No personal spend, laptop access, branch/PR creation or merge.

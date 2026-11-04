@@ -1,0 +1,15 @@
+# NOESIS R502: sharp 2D affine-flow orientation obstruction, nonlinear escape (structural only)
+
+**Frozen before outcomes:** protocol SHA256 `004b03e3a774670266112b6317ecd57c0aac7ce2fd71ee6f26462171fd344e63`; primary source `522ff6abb4984e8d5b5ebc3c9c6740f23f93e185a360d2ec2e22b12bec8a6765`; independent source `673d465626a0a21db0d13fd871bb40ffa4d5001388b243b26fcc679133eb67a3`.
+
+**Architecture-specific necessary condition:** TaskC symbol 0 swaps states 0/1 and symbol 1 swaps states 1/2. All are naturally reachable by prefixes '', '0', '01'. Fix 2D representatives x0=(0,0), x1=(1,0), x2=(2,1). Any affine F(x)=Ax+b with det(A)>0 incurs max representative transition error >=1/(2 sqrt(5))=0.22360679775 for either generator. The source triangle has minimum width 1/sqrt(5); target transpositions reverse orientation, so a positive-orientation predicted triangle must cross a collinear triple, requiring at least half the width in max Euclidean displacement. The bound is sharp as an infimum. Linear continuous-time recurrence A=exp(M) always has det(A)>0.
+
+**Crucial nonlinear escape:** Exact negative-determinant affine generators A0=[[-1,3],[0,1]], b0=(1,0); A1=[[2,-3],[1,-2]], b1=(0,0) realize TaskC. A C2 radial-twist time-one flow for each symbol also realizes the generators *exactly* while having Jacobian determinant identically +1. Thus the obstruction is NOT valid for arbitrary nonlinear orientation-preserving neural ODE-style recurrences. The explicit flow is NOT a trained finite neural net.
+
+**Pre-frozen and independent checks:** 6,141 exact Fraction word/state checks through length10, zero errors; 1–5gram N/C matching exact; positive-det approximants at delta1e-4 have errors 0.22432234/0.22454595, approaching sharp infimum. Flow 210 physical word/state checks max error 6.21e-16, 128 Jacobian checks max det deviation 1.92e-7, six RK4 symbol checks with 512 steps; independent 2,883 natural physical prefix/cycle/suffix checks max error 9.78e-16 and zero oracle/lexical mismatches. Two isolated full source replays each matched 4/4 scientific hashes.
+
+**Scope and novelty:** Classical orientation/triangle-width geometry; a sharp TaskC-specific architecture falsification, NOT a new general theorem, NOT learned DFA-state mediation, NOT external replication, and no hidden-state do/path intervention. R480 generic affine and R488 scalar monotonicity prior work acknowledged. No 32-seed confirmation.
+
+**Preservation:** SHA256-verified local `NOESIS_R502_Reproducibility.zip`, SHA256 `7daee788e3258ee0842d6e0bc81b72374beb9c95999875d4f03852224420f42a`, 18 verified payloads, nested immutable R501 archive, ZIP CRC pass. Frozen protocol, source, raw outputs, independent checker, and replays retained.
+
+**Next:** retire orientation parity as novelty candidate; seek genuinely distinct learned fixed-width on-support causal intervention with non-ceiling, locality, sham/no-cycle/q-changing gates, exact permutation-scan baseline, >=95% baseline before prospective >=32 new-seed confirmation. No R501 retuning.
